@@ -16,32 +16,32 @@ def testGauss(x, y):
 
 
 print 'cell 1...'
-cell = ReadStruct('INPUT_c1', 'crystal')
+cell = ReadStruct('../inputs/INPUT_c1', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
 plt.plot(x, testGauss(x, y), 'k--', label='clean Si fixed boxsize cell')
 
 print 'cell 2...'
-cell = ReadStruct('INPUT_c2', 'crystal')
+cell = ReadStruct('../inputs/INPUT_c2', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
 plt.plot(x, testGauss(x, y), color='k', label='clean Si boxsize relaxed')
 
 print 'cell 3...'
-cell = ReadStruct('INPUT_c3', 'crystal')
+cell = ReadStruct('../inputs/INPUT_c3', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
 plt.plot(x, testGauss(x, y), color='k')
 
 print 'cell 4...'
-cell = ReadStruct('INPUT_c4', 'crystal')
+cell = ReadStruct('../inputs/INPUT_c4', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
 plt.plot(x, testGauss(x, y), color='k')
 
 print 'cell 5...'
-cell = ReadStruct('INPUT_c5', 'crystal')
+cell = ReadStruct('../inputs/INPUT_c5', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
 plt.plot(x, testGauss(x, y), color='k')
 
 print 'cell 6...'
-cell = ReadStruct('INPUT_c6', 'crystal')
+cell = ReadStruct('../inputs/INPUT_c6', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
 plt.plot(x, testGauss(x, y), color='k')
 

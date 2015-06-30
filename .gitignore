@@ -2,5 +2,8 @@
 *.swp
 *.png
 *.pdf
+.directory
+INPUT_marked
+INPUT_test
 PrintStruct.out
 core
