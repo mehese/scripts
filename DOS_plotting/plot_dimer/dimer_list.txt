@@ -1,0 +1,21 @@
+cell 1 - Y
+57 -- DONE
+113 -- close Si @ 2.5 A -- DONE
+cell 2 - Y
+102 -- DONE
+114 -- DONE
+cell 3 - Y
+101 -- REDO
+73 -- DONE
+cell 4 - Y
+-
+cell 5 - Y
+65 -- DONE
+cell 6
+113 -- DONE
+cell 2 ox - Y
+86 -- DONE
+cell 3 ox - Y
+73 -- DONE
+cell 5 ox - Y
+117 -- DONE

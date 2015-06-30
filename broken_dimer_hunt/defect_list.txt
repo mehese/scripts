@@ -1,0 +1,23 @@
+cell 1
+	107 DONE
+cell 2
+	82 DONE
+cell 3
+	58 DONE 
+	66 DONE
+cell 4
+	65 -- 1.9 SiO bond DONE
+	119 DONE
+cell 5
+	82 REDO
+	102 - 1.9 SiO bond DONE
+cell 6
+	66  - long SiO bond DONE
+	119 - long SiO bond DONE
+	101 - O adsorbed DONE
+cell 2 ox
+	72 - O adsorbed DONE
+cell 3 ox
+	65 - long SiO DONE
+cell 5 ox
+	65 - O adsorbed DONE

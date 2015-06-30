@@ -1,0 +1,44 @@
+Starting...
+
+
+============================== ATOM 65 ==============================
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   65   65 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  4.256052E-01 YY  4.168902E-01 ZZ -8.424954E-01 XY -3.385639E-02 XZ -2.634297E-01 YZ -2.445112E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  4.864929E-01 BB  4.533083E-01 CC -9.398012E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.313873E-01  4.934313E-01 -2.555791E-01
+ B -5.219621E-01  8.512252E-01 -5.450966E-02
+ C  1.906586E-01  1.787212E-01  9.652503E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     33.758484     60.433639    104.807899
+ B    121.463956     31.654823     93.124722
+ C     79.008781     79.704717     15.148834
+
+
+Axx tensor is
+ [[ 0.4256052  -0.03385639 -0.2634297 ]
+ [-0.03385639  0.4168902  -0.2445112 ]
+ [-0.2634297  -0.2445112  -0.8424954 ]] 
+
+
+Density string:
+
+  65   65 SI    1.9673   -7.9196    1.5064  -0.37112E+00
+Spin density at the nuclear position
+    ρ(m) =  -0.37112  bohr⁻³
+
+  65   65 SI     29   -1.1106000    0.11769E+02   0.32983E+03   0.11002E-01
+
+Hyperfine coupling constant
+	AN =  11.769  mT 
+

@@ -1,0 +1,44 @@
+Starting...
+
+
+============================== ATOM 113 ==============================
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  113  113 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.843809E-06 YY -3.226266E-07 ZZ  2.166436E-06 XY  9.161108E-07 XZ -2.085467E-06 YZ  3.033081E-07
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -3.068645E-06 BB  1.231156E-08 CC  3.056333E-06
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.692857E-01 -3.329460E-01  3.653619E-01
+ B  2.966411E-01  9.426198E-01  1.532058E-01
+ C -3.954066E-01 -2.479826E-02  9.181714E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     29.624257    109.447683     68.570146
+ B     72.744027     19.503729     81.187246
+ C    113.291333     91.420982     23.339802
+
+
+Axx tensor is
+ [[ -1.84380900e-06   9.16110800e-07  -2.08546700e-06]
+ [  9.16110800e-07  -3.22626600e-07   3.03308100e-07]
+ [ -2.08546700e-06   3.03308100e-07   2.16643600e-06]] 
+
+
+Density string:
+
+ 113  113 SI   -6.2262    3.7084   19.6346  -0.90656E-07
+Spin density at the nuclear position
+    ρ(m) =  -9.0656e-08  bohr⁻³
+
+ 113  113 SI     29   -1.1106000    0.28749E-05   0.80570E-04   0.26875E-08
+
+Hyperfine coupling constant
+	AN =  2.8749e-06  mT 
+

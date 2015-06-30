@@ -1,0 +1,44 @@
+Starting...
+
+
+============================== ATOM 86 ==============================
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   86   86 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -3.151165E-01 YY -3.072765E-01 ZZ  6.223930E-01 XY  5.066003E-02 XZ  2.353416E-01 YZ  2.082735E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -3.709595E-01 BB -3.517976E-01 CC  7.227570E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.739949E-01 -6.407093E-02 -2.173219E-01
+ B  1.675909E-02  9.769286E-01 -2.129074E-01
+ C  2.259492E-01  2.037287E-01  9.525973E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     13.095209     93.673510    102.551785
+ B     89.039730     12.331413    102.292791
+ C     76.941300     78.244914     17.712092
+
+
+Axx tensor is
+ [[-0.3151165   0.05066003  0.2353416 ]
+ [ 0.05066003 -0.3072765   0.2082735 ]
+ [ 0.2353416   0.2082735   0.622393  ]] 
+
+
+Density string:
+
+  86   86 SI   -2.6466   -7.5686    6.6005   0.28888E+00
+Spin density at the nuclear position
+    ρ(m) =  0.28888  bohr⁻³
+
+  86   86 SI     29   -1.1106000   -0.91611E+01  -0.25674E+03  -0.85639E-02
+
+Hyperfine coupling constant
+	AN =  -9.1611  mT 
+

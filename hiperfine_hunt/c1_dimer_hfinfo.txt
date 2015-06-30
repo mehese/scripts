@@ -1,0 +1,86 @@
+Starting...
+
+
+============================== ATOM 57 ==============================
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   57   57 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.654170E-12 YY  1.372662E-12 ZZ -4.026832E-12 XY -5.845399E-13 XZ  1.211554E-12 YZ  9.291726E-13
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.654170E-12 BB  1.372662E-12 CC -4.026832E-12
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  1.000000E+00  0.000000E+00  0.000000E+00
+ B  0.000000E+00  1.000000E+00  0.000000E+00
+ C  0.000000E+00  0.000000E+00  1.000000E+00
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A      0.000000     90.000000     90.000000
+ B     90.000000      0.000000     90.000000
+ C     90.000000     90.000000      0.000000
+
+
+Axx tensor is
+ [[  2.65417000e-12  -5.84539900e-13   1.21155400e-12]
+ [ -5.84539900e-13   1.37266200e-12   9.29172600e-13]
+ [  1.21155400e-12   9.29172600e-13  -4.02683200e-12]] 
+
+
+Density string:
+
+  57   57 SI    2.1557    2.3228    0.7624   0.50870E-11
+Spin density at the nuclear position
+    ρ(m) =  5.087e-12  bohr⁻³
+
+  57   57 SI     29   -1.1106000   -0.16132E-09  -0.45210E-08  -0.15081E-12
+
+Hyperfine coupling constant
+	AN =  -1.6132e-10  mT 
+
+
+============================== ATOM 113 ==============================
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  113  113 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  7.611537E-14 YY  3.639575E-13 ZZ -4.400729E-13 XY  1.223111E-13 XZ -1.392560E-12 YZ -1.480082E-12
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  7.611537E-14 BB  3.639575E-13 CC -4.400729E-13
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  1.000000E+00  0.000000E+00  0.000000E+00
+ B  0.000000E+00  1.000000E+00  0.000000E+00
+ C  0.000000E+00  0.000000E+00  1.000000E+00
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A      0.000000     90.000000     90.000000
+ B     90.000000      0.000000     90.000000
+ C     90.000000     90.000000      0.000000
+
+
+Axx tensor is
+ [[  7.61153700e-14   1.22311100e-13  -1.39256000e-12]
+ [  1.22311100e-13   3.63957500e-13  -1.48008200e-12]
+ [ -1.39256000e-12  -1.48008200e-12  -4.40072900e-13]] 
+
+
+Density string:
+
+ 113  113 SI   -5.6845    4.3931  -17.3174  -0.11125E-10
+Spin density at the nuclear position
+    ρ(m) =  -1.1125e-11  bohr⁻³
+
+ 113  113 SI     29   -1.1106000    0.35281E-09   0.98876E-08   0.32982E-12
+
+Hyperfine coupling constant
+	AN =  3.5281e-10  mT 
+
