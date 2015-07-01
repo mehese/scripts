@@ -2,6 +2,7 @@
 *.swp
 *.png
 *.pdf
+*pass.dat
 .directory
 INPUT_marked
 INPUT_test
