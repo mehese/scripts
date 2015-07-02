@@ -1,5 +1,23 @@
 #! /usr/bin/python2.7
 
+# declare Ef dictionary (values given in eV)
+Ef = {'c1'  : -2.3426257615,
+      'c2'  : -2.6798582799,
+      'c3'  : -2.9144629464,
+      'c4'  : -2.8464169090,
+      'c5'  : -2.1814821940,
+      'c6'  : -2.6493136764,
+      'c1p' : None,
+      'c2p' : -2.4503246978,
+      'c3p' : -3.1518898092,
+      'c4p' : -2.6477992909,
+      'c5p' : -1.8596621865,
+      'c6p' : -2.2754045847,
+      'c2ox': -2.4185825506,
+      'c3ox': -1.9995085485,
+      'c5ox': -2.0594598285,
+     }
+
 def get_at_pdos(nm, no, passified=False, verbose=False, total=False,
                 pdos_dir = '/home/eric/Dropbox/interfaces/PDOS_files/'):
 
