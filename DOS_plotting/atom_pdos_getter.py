@@ -18,6 +18,20 @@ Ef = {'c1'  : -2.3426257615,
       'c5ox': -2.0594598285,
      }
 
+def integrate_dos(x_, y_u, y_d, emin=-3.313, emax=-2.27):
+    """Simply returns the integrated DOS between emin and emax
+    Default values are bulk Si limits
+    """
+    import numpy as np
+
+    imin = np.where(emin < x_)[0].item(0)
+    imax = np.where(emax > x_)[0].item(-1)
+
+    x_, y_u, y_d = x_[imin:imax], y_u[imin:imax], y_d[imin:imax]
+
+    return np.trapz(y_u, x=x_) + np.trapz(-y_d, x=x_)
+
+
 def get_at_pdos(nm, no, passified=False, verbose=False, total=False,
                 pdos_dir = '/home/eric/Dropbox/interfaces/PDOS_files/'):
 
@@ -29,6 +43,11 @@ def get_at_pdos(nm, no, passified=False, verbose=False, total=False,
     """
     import numpy as np
 
+    if ('Si' in nm) or ('si' in nm):
+        dat = np.loadtxt(pdos_dir+'SiBulk.dat')
+        E, dos_u, dos_d = dat[:, 0], dat[:, 1], -dat[:, 1]
+        return E, dos_u, dos_d 
+        
 
     file_name = pdos_dir + nm + ('p' if passified else '') + '_' + \
                 str(no) + '.dat'
