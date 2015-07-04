@@ -5,7 +5,39 @@ from astools.ReadWrite import ReadStruct
 from astools.analysis  import distance
 from astools.operations import expand
 
+def get_A0(i, cell):
+    """ Get AN in MT from CRYSTAL cryapi ISO/ANISO output files. i -- atom
+    index, cell is an identification string (like c3, c4p, c2ox)
+    (int, str) -> float
+    """
+    import re
+    A0 = None
+    try:
+        f = open('crystal_files/gtensor_'+cell, 'r')
+    except IOError:
+        print 'No file crystal_files/gtensor_'+cell+' found :('
+        return
+    except:
+        print r'¯\_(ツ)_/¯ Dunno whut happened'
+    
+    # A line that has twice the index, 1-2 letters with, atomic mass, nuclear g
+    # factor and AN (mT), AN (MHz) and AN (whatever)
+    regex = r'^\s+'+str(i)+r'\s+'+str(i)+r'\s+\w{1,3}\s+\d{1,3}\s+'+\
+            r'[-]?\d{1,3}\.\d{2,10}\s+(?P<AmT>[-]?\d{1,4}\.\d{2,10}E[-+]\d{2})'
+
+    result = re.search(regex, f.read(), re.M)
+
+    print result.group()
+    A0 = float(result.group('AmT'))
+ 
+    return A0
+
 def get_spin_mom(i, cell):
+    """ Given an atom number and a an identification string (like c1, c2ox, c5p
+    ...) it opens the corresponding output file, scans through it, and returns
+    the spin momentum on that atom at the final SCF step
+    (int, str) -> float
+    """
     import re
 
     try:
@@ -34,7 +66,7 @@ def get_spin_mom(i, cell):
 
     # return n-th element
     vals = map(float, x.group().replace('\n', '').split())
-
+    f.close()
     if i <= len(vals):
         return vals[i-1]
     else:
@@ -61,8 +93,12 @@ def get_similar(at, str_x):
     return i_x, at_x
 
 if __name__== "__main__":
-    #from random import randint
-    #print 'Testing 10 times...'
+    from random import randint
+
+    print get_A0(1, 'c5ox')
+    print get_A0(11, 'c5ox')
+
+    #print 'Testing get_similar 10 times...'
     #s = ReadStruct('crystal_files/INPUT_c2')
     #s2 = ReadStruct('crystal_files/INPUT_c2p')
     #for _ in range(10):
@@ -72,6 +108,6 @@ if __name__== "__main__":
     #    print ii, s.atoms[ii]
     #    print i, ax
 
-    print get_spin_mom(1, 'c5')
+    #print get_spin_mom(4, 'c5')
 
     print '\nDone'

@@ -1,16 +1,15 @@
-#! /usr/bin/python3
+#! /usr/bin/python2.7
 # -*- coding: utf-8 -*-p
+from __future__ import print_function
 
-import numpy as np
-import re
+def get_A(i, cell):
+    """Returns the block of text containing the output of the out_gtensor files for a
+    particular atom. It also creates a numpy matrix with the hyperfine A0 and
+    anisotropic Axx matrices
+    """
+    import numpy as np
+    import re
 
-# Returns the block of text containing the output of the out_gtensor files for a
-# particular atom. At also creates a numpy matrix with the hyperfine A0 and
-# anisotropic Axx matrices
-
-print('Starting...\n')
-
-def get_atom(i, cell):
     with open('crystal_files/gtensor_'+cell, 'r') as f:
         Axx = np.zeros((3,3))
         A0  = np.zeros((3,3))
@@ -44,13 +43,16 @@ def get_atom(i, cell):
         print(words.group())
         rho_m = float(words.group('density'))
         A0[0,0] = A0[1,1] = A0[2,2] = rho_m
-        print('  ρ(m) =', rho_m)
-        #print('  A0 =\n', A0)
+        print('  ρ(m) =', rho_m, 'bohr⁻³')
 
-        #print(np.linalg.eig(Axx))
+        return Axx, rho_m
         
 if __name__ == "__main__":
-    get_atom(141)
-    get_atom(150)
-    get_atom(151)
-    get_atom(154)
+    print('Starting...\n')
+
+    get_A(141, 'c5ox')
+    #get_A(150, 'c2ox')
+    #get_A(151, 'c2ox')
+    #get_A(154, 'c2ox')
+
+    print('Done')
