@@ -1,0 +1,4051 @@
+
+         
+ *******************************************************************************
+ *                                                                             *
+ *                                CRYSTAL09                                    *
+ *                              public : 2.0                                   *
+ *                      December 10th, 2012 - sequential executable            *
+ *                                                                             *
+ *                                                                             *
+ *                                                                             *
+ *                              MAIN AUTHORS                                   *
+ *                                                                             *
+ *    R. DOVESI(1,10), V.R. SAUNDERS(2), C. ROETTI(1,10), R. ORLANDO (1,3),    *
+ *  C.M. ZICOVICH-WILSON(1,4), F. PASCALE(5), B. CIVALLERI(1,10), K. DOLL(6),  *
+ *       N.M. HARRISON(2,7), I. J. BUSH(2), Ph. D'ARCO(8), M. LLUNELL(9)       *
+ *                                                                             *
+ * (1) THEORETICAL CHEMISTRY GROUP - UNIVERSITA' DI TORINO - TORINO (ITALY)    *
+ *      http://www.crystal.unito.it                                            *
+ * (2) COMPUTATIONAL SCIENCE & ENGINEERING DEPARTMENT - CCLRC DARESBURY (UK)   *
+ *     http://www.cse.clrc.ac.uk/cmg/CRYSTAL/                                  *
+ * (3) UNIVERSITA' DEL PIEMONTE ORIENTALE - ALESSANDRIA (ITALY)                *
+ * (4) UNIVERSIDAD AUTONOMA DEL ESTADO DE MORELOS - CUERNAVACA (MEXICO)        *
+ * (5) UNIVERSITE' HENRI POINCARE' - NANCY (FRANCE)                            *
+ * (6) MPI FUER FESTKOERPERFORSCHUNG - STUTTGART (GERMANY)                     *
+ * (7) IMPERIAL COLLEGE - LONDON (UK)                                          *
+ * (8) UNIVERSITE' PIERRE ET MARIE CURIE - PARIS (FRANCE)                      *
+ * (9) UNIVERSIDAD DE BARCELONA - BARCELONA (SPAIN)                            *
+ *(10) NIS - NANOSTRUCTURED INTERFACES AND SURFACES - TORINO (ITALY)           *
+ *     http://www.crystal.unito.it                                             *
+ *******************************************************************************
+ EEEEEEEEEE STARTING  DATE 11 05 2015 TIME 11:56:40.6
+
+ *******************************************************************************
+ Created with astools                                                            
+ CRYSTAL - PROPERTIES - TYPE OF CALCULATION :  UNRESTRICTED OPEN SHELL
+ *******************************************************************************
+ SPIN POLARIZED SYSTEM: SUMMED SPIN DENSITY   -3.50000000
+
+ KOHN-SHAM HAMILTONIAN
+
+ (EXCHANGE)[CORRELATION] FUNCTIONAL:(BECKE)[LEE-YANG-PARR]
+
+ NON-LOCAL WEIGHTING FACTOR (EXCHANGE) =           0.9000
+ NON-LOCAL WEIGHTING FACTOR [CORRELATION] =        0.8100
+
+ HYBRID EXCHANGE - PERCENTAGE OF FOCK EXCHANGE     5.0000
+
+ SPIN POLARIZED DFT SELECTED
+
+ DIRECT LATTICE VECTOR COMPONENTS (ANGSTROM)
+        11.07340    0.00000    0.00000
+         0.00000   10.63895    0.00000
+         0.00000    0.00000   21.60988
+
+ LATTICE PARAMETERS  (ANGSTROM AND DEGREES) - PRIMITIVE CELL
+       A          B          C         ALPHA      BETA     GAMMA        VOLUME
+   11.07340   10.63895   21.60988     47.6259   47.6259   47.6259    2545.84565
+ *******************************************************************************
+ N. OF ATOMS PER CELL      156  COULOMB OVERLAP TOL         (T1) 10** -8
+ NUMBER OF SHELLS          808  COULOMB PENETRATION TOL     (T2) 10** -8
+ NUMBER OF AO             2856  EXCHANGE OVERLAP TOL        (T3) 10** -8
+ N. OF ELECTRONS PER CELL 1800  EXCHANGE PSEUDO OVP (F(G))  (T4) 10** -8
+ CORE ELECTRONS PER CELL  1048  EXCHANGE PSEUDO OVP (P(G))  (T5) 10**-16
+ N. OF SYMMETRY OPERATORS    1  POLE ORDER IN MONO ZONE                4
+ *******************************************************************************
+   ATOM N.AT.  SHELL    X(A)      Y(A)      Z(A)      EXAD       N.ELECT.
+ *******************************************************************************
+    1    8 O     4     0.241     1.402     2.040   1.900E-01       8.642
+    2    8 O     4     0.773    -4.190     1.495   1.900E-01       8.608
+    3    8 O     4    -4.842     1.196     1.109   1.900E-01       8.803
+    4    8 O     4    -4.199    -4.194     0.854   1.900E-01       8.554
+    5    8 O     4    -1.800     2.942     1.019   1.900E-01       8.638
+    6    8 O     4     5.464    -1.891     1.836   1.900E-01       8.718
+    7    8 O     4    -4.994     4.381    -0.669   1.900E-01       8.564
+    8    8 O     4     3.664    -5.201     0.096   1.900E-01       8.623
+    9    8 O     4     1.953     4.859    -9.705   1.900E-01       8.576
+   10    8 O     4     2.114    -0.362    -9.632   1.900E-01       8.677
+   11    8 O     4    -3.942     4.443    -9.232   1.900E-01       8.759
+   12    8 O     4    -3.080    -0.063    -9.102   1.900E-01       8.694
+   13    8 O     4    -2.085     5.145    -7.863   1.900E-01       8.799
+   14    8 O     4    -5.162    -4.411    -8.325   1.900E-01       8.656
+   15    8 O     4     3.739     2.844    -9.125   1.900E-01       8.620
+   16    8 O     4    -1.584     2.772    -8.956   1.900E-01       8.672
+   17    8 O     4     0.137     1.008    -8.659   1.900E-01       8.728
+   18    8 O     4     2.603    -3.417    -8.596   1.900E-01       8.579
+   19    8 O     4     0.092    -4.028    -8.949   1.900E-01       8.631
+   20    8 O     4     0.667    -2.045    -7.296   1.900E-01       8.813
+   21    8 O     4    -1.818    -2.239    -8.525   1.900E-01       8.600
+   22    8 O     4     4.141    -0.707    -8.091   1.900E-01       8.737
+   23    8 O     4     3.940     1.414    -6.868   1.900E-01       8.665
+   24    8 O     4     2.637    -2.013    -3.373   1.900E-01       8.650
+   25    8 O     4     2.660     3.795    -6.940   1.900E-01       8.683
+   26    8 O     4     1.411     2.042    -1.668   1.900E-01       8.669
+   27    8 O     4     1.832    -4.349    -6.272   1.900E-01       8.636
+   28    8 O     4     5.249     3.758    -7.289   1.900E-01       8.758
+   29    8 O     4     3.379     0.320    -2.566   1.900E-01       8.708
+   30    8 O     4    -3.438     1.813    -7.104   1.900E-01       8.690
+   31    8 O     4     1.713    -4.439    -1.496   1.900E-01       8.617
+   32    8 O     4    -2.450     0.186    -3.629   1.900E-01       8.674
+   33    8 O     4     3.930     3.966    -2.025   1.900E-01       8.628
+   34    8 O     4     2.600     5.208    -3.815   1.900E-01       8.625
+   35    8 O     4     0.498    -1.671    -4.750   1.900E-01       8.807
+   36    8 O     4    -0.831    -2.249     0.436   1.900E-01       8.634
+   37    8 O     4     1.751     0.167    -6.470   1.900E-01       8.507
+   38    8 O     4    -1.682    -5.110    -4.696   1.900E-01       8.846
+   39    8 O     4     4.847    -4.287    -3.280   1.900E-01       8.559
+   40    8 O     4    -1.990    -2.310    -4.296   1.900E-01       8.590
+   41    8 O     4     3.818    -0.116     0.596   1.900E-01       8.647
+   42    8 O     4     5.161    -1.769    -3.107   1.900E-01       8.564
+   43    8 O     4     5.380    -2.058    -0.672   1.900E-01       8.597
+   44    8 O     4    -1.373    -0.043    -1.102   1.900E-01       8.679
+   45    8 O     4    -3.537     1.407    -1.490   1.900E-01       8.656
+   46    8 O     4    -0.994    -3.662    -6.406   1.900E-01       8.776
+   47    8 O     4     0.403    -1.679    -1.933   1.900E-01       8.629
+   48    8 O     4     0.968    -0.308     0.300   1.900E-01       8.659
+   49    8 O     4     0.382     4.106    -3.007   1.900E-01       8.717
+   50    8 O     4     0.577     1.351    -4.134   1.900E-01       8.624
+   51    8 O     4    -1.248     2.293    -2.405   1.900E-01       8.746
+   52    8 O     4    -1.153    -0.384    -6.083   1.900E-01       8.666
+   53    8 O     4     4.098    -0.211    -5.022   1.900E-01       8.570
+   54    8 O     4     5.022     4.032    -4.452   1.900E-01       8.653
+   55    8 O     4    -4.189    -2.270    -6.250   1.900E-01       8.614
+   56    8 O     4     0.055     4.441    -6.557   1.900E-01       8.646
+   57    8 O     4    -3.428     3.599    -3.910   1.900E-01       8.722
+   58    8 O     4     3.097    -1.971    -6.321   1.900E-01       8.652
+   59    8 O     4    -4.357    -3.888    -1.752   1.900E-01       8.550
+   60    8 O     4    -2.492     5.063    -0.460   1.900E-01       8.710
+   61    8 O     4     0.356    -3.783    -3.616   1.900E-01       8.851
+   62    8 O     4    -3.985     4.853    -6.130   1.900E-01       8.701
+   63    8 O     4     3.045    -2.690     0.391   1.900E-01       8.543
+   64    8 O     4     4.300     3.027     0.704   1.900E-01       8.608
+   65   14 SI    6     1.859    -5.073     2.390   6.000E-01      13.482
+   66   14 SI    6     5.003     2.141     1.924   6.000E-01      13.258
+   67   14 SI    6     0.879     3.875     3.544   6.000E-01      13.995
+   68   14 SI    6     3.297     0.929     3.056   6.000E-01      13.952
+   69   14 SI    6     2.097     2.230     4.673   6.000E-01      14.042
+   70   14 SI    6     4.706     4.799     4.758   6.000E-01      14.004
+   71   14 SI    6     1.332     0.104     1.897   6.000E-01      13.236
+   72   14 SI    6    -5.515    -4.037     1.785   6.000E-01      13.432
+   73   14 SI    6     0.600    -1.662     3.359   6.000E-01      14.110
+   74   14 SI    6     3.683    -4.102     3.521   6.000E-01      14.039
+   75   14 SI    6     1.942    -3.058     4.768   6.000E-01      14.034
+   76   14 SI    6     4.570    -0.367     4.689   6.000E-01      14.020
+   77   14 SI    6    -3.992    -4.956    -0.591   6.000E-01      12.883
+   78   14 SI    6    -1.381     1.576     1.795   6.000E-01      13.291
+   79   14 SI    6    -4.917     3.598     3.357   6.000E-01      14.010
+   80   14 SI    6    -2.658     0.516     3.415   6.000E-01      14.134
+   81   14 SI    6    -3.633     2.198     4.736   6.000E-01      14.026
+   82   14 SI    6    -0.868     4.984     4.630   6.000E-01      14.059
+   83   14 SI    6    -3.785    -0.245     1.323   6.000E-01      13.453
+   84   14 SI    6    -0.458    -3.098     1.853   6.000E-01      13.343
+   85   14 SI    6     5.457    -2.233     3.590   6.000E-01      13.835
+   86   14 SI    6    -2.144    -4.416     3.054   6.000E-01      13.980
+   87   14 SI    6    -3.559    -3.129     4.504   6.000E-01      14.034
+   88   14 SI    6    -0.916    -0.502     4.701   6.000E-01      13.984
+   89   14 SI    6     0.584     0.892     5.954   6.000E-01      13.995
+   90   14 SI    6     3.349     3.493     6.190   6.000E-01      13.999
+   91   14 SI    6     0.569    -4.465     6.090   6.000E-01      13.975
+   92   14 SI    6     3.304    -1.720     6.153   6.000E-01      14.023
+   93   14 SI    6    -4.971     0.825     6.123   6.000E-01      13.981
+   94   14 SI    6    -2.182     3.553     6.044   6.000E-01      13.967
+   95   14 SI    6    -4.904    -4.444     5.969   6.000E-01      14.020
+   96   14 SI    6    -2.239    -1.864     6.092   6.000E-01      14.001
+   97   14 SI    6    -1.167     4.335     0.270   6.000E-01      13.208
+   98   14 SI    6     3.199    -3.856    -0.811   6.000E-01      13.304
+   99   14 SI    6     4.476     4.127    -0.478   6.000E-01      12.920
+  100   14 SI    6     4.332    -1.602     0.474   6.000E-01      13.027
+  101   14 SI    6     1.907     4.829     7.517   6.000E-01      14.002
+  102   14 SI    6     4.760     2.168     7.521   6.000E-01      14.003
+  103   14 SI    6     0.441     3.500     8.869   6.000E-01      13.985
+  104   14 SI    6     3.366     0.812     8.863   6.000E-01      14.045
+  105   14 SI    6     1.892     2.171    10.099   6.000E-01      14.117
+  106   14 SI    6     4.739     4.892    10.133   6.000E-01      14.080
+  107   14 SI    6     1.883    -0.427     7.474   6.000E-01      13.987
+  108   14 SI    6     4.815    -3.087     7.372   6.000E-01      13.990
+  109   14 SI    6     0.535    -1.839     8.821   6.000E-01      14.029
+  110   14 SI    6     3.411    -4.404     8.714   6.000E-01      14.035
+  111   14 SI    6     2.211    -2.920    10.053   6.000E-01      14.043
+  112   14 SI    6     5.110    -0.044    10.248   6.000E-01      13.975
+  113   14 SI    6    -3.595     4.918     7.418   6.000E-01      14.003
+  114   14 SI    6    -0.783     2.185     7.362   6.000E-01      14.012
+  115   14 SI    6    -4.893     3.525     8.817   6.000E-01      14.014
+  116   14 SI    6    -2.109     0.861     8.811   6.000E-01      14.018
+  117   14 SI    6    -3.209     2.506    10.094   6.000E-01      13.926
+  118   14 SI    6    -1.513     4.333    10.051   6.000E-01      14.008
+  119   14 SI    6    -3.563    -0.527     7.529   6.000E-01      14.001
+  120   14 SI    6    -0.841    -3.195     7.474   6.000E-01      13.996
+  121   14 SI    6    -5.010    -1.791     8.946   6.000E-01      14.022
+  122   14 SI    6    -2.284    -4.415     8.904   6.000E-01      14.030
+  123   14 SI    6    -3.573    -3.022    10.419   6.000E-01      14.079
+  124   14 SI    6    -0.776    -0.510    10.248   6.000E-01      14.099
+  125   14 SI    6     0.854     0.611   -10.089   6.000E-01      13.230
+  126   14 SI    6     3.053     3.750   -10.309   6.000E-01      13.323
+  127   14 SI    6     1.593    -4.175    -9.705   6.000E-01      13.171
+  128   14 SI    6     3.672    -0.862    -9.670   6.000E-01      13.175
+  129   14 SI    6    -4.005     1.255    -8.493   6.000E-01      13.289
+  130   14 SI    6    -2.146     4.249    -9.300   6.000E-01      13.116
+  131   14 SI    6    -4.805    -4.702   -10.003   6.000E-01      13.373
+  132   14 SI    6    -2.399    -1.361    -9.846   6.000E-01      13.306
+  133   14 SI    6     3.876     2.865    -7.509   6.000E-01      12.640
+  134   14 SI    6     2.197    -3.004    -7.085   6.000E-01      12.914
+  135   14 SI    6    -4.642     4.800    -7.636   6.000E-01      12.615
+  136   14 SI    6    -0.866     1.931    -7.661   6.000E-01      13.063
+  137   14 SI    6    -4.648    -2.153    -7.728   6.000E-01      13.339
+  138   14 SI    6    -0.602    -3.034    -7.873   6.000E-01      12.650
+  139   14 SI    6     2.948     1.394    -1.366   6.000E-01      13.112
+  140   14 SI    6     3.877    -0.883    -3.565   6.000E-01      12.713
+  141   14 SI    6    -2.426    -0.782    -4.978   6.000E-01      12.788
+  142   14 SI    6     0.457    -0.669    -6.053   6.000E-01      12.658
+  143   14 SI    6     1.280    -5.190    -2.887   6.000E-01      12.701
+  144   14 SI    6    -1.076    -3.544    -4.761   6.000E-01      12.539
+  145   14 SI    6     5.179    -3.109    -2.068   6.000E-01      13.035
+  146   14 SI    6    -2.140     0.915    -2.205   6.000E-01      12.615
+  147   14 SI    6     0.382     2.329    -2.932   6.000E-01      12.955
+  148   14 SI    6     1.059    -2.140    -3.309   6.000E-01      12.640
+  149   14 SI    6    -5.041     0.993    -0.925   6.000E-01      13.220
+  150   14 SI    6    -4.596     3.572    -5.101   6.000E-01      12.825
+  151   14 SI    6    -1.554     4.656    -6.325   6.000E-01      12.912
+  152   14 SI    6     3.424    -0.206    -6.553   6.000E-01      12.671
+  153   14 SI    6    -0.222    -1.062    -0.536   6.000E-01      12.673
+  154   14 SI    6     1.605     4.645    -6.052   6.000E-01      12.908
+  155   14 SI    6     4.179     4.910    -3.377   6.000E-01      12.839
+  156   14 SI    6    -2.264     4.431    -3.114   6.000E-01      13.018
+ *******************************************************************************
+ DE(K)                   0.000E+00  ENERGY LEVEL SHIFTING        0.00000
+ TOTAL ENERGY -3.1446573573049E+04  CONVERGENCE ON ENER        4.585E-08
+ KIN. ENERGY   3.1335928631685E+04  VIR. COEFF.           1.03710925E+00
+ N. OF SCF CYCLES              136  FERMI ENERGY              -0.947E-01
+ WEIGHT OF F(I) IN F(I+1)      95
+ SHRINK. FACT.(MONKH.)     2  2  2  SHRINKING FACTOR(GILAT NET)        2
+ NUMBER OF K POINTS IN THE IBZ   8  CELL VOLUME (A.U.)       17180.21830
+ *******************************************************************************
+
+ GCALCO - MAX INDICES DIRECT LATTICE VECTOR    18    19     9
+ NO.OF VECTORS CREATED 6999 STARS 1061 RMAX   306.06095 BOHR
+
+ DIMENSIONS  P(G)= 6599730 F(G)= 1177824 P(G),F(G) (IRR) 3308517
+ MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS  55
+
+
+ CAPPA:IS1  2;IS2  2;IS3  2; K PTS MONK NET    8; SYMMOPS: K SPACE  2;G SPACE  1
+
+
+ CAPPA:IS1  6;IS2  6;IS3  3; K PTS MONK NET   56; SYMMOPS: K SPACE  2;G SPACE  1
+
+ *******************************************************************************
+ RESTART WITH NEW K POINTS NET
+ *******************************************************************************
+ POINTS IN THE IBZ                  56 POINTS(GILAT NET)                56
+ SHRINK FACTORS(MONK.)         6  6  3 SHRINK FACTOR(GILAT)              6
+ *******************************************************************************
+ *** K POINTS COORDINATES (OBLIQUE COORDINATES IN UNITS OF IS =  6)
+   1-R(  0  0  0)   2-C(  1  0  0)   3-C(  2  0  0)   4-R(  3  0  0)
+   5-C(  0  1  0)   6-C(  1  1  0)   7-C(  2  1  0)   8-C(  3  1  0)
+   9-C(  4  1  0)  10-C(  5  1  0)  11-C(  0  2  0)  12-C(  1  2  0)
+  13-C(  2  2  0)  14-C(  3  2  0)  15-C(  4  2  0)  16-C(  5  2  0)
+  17-R(  0  3  0)  18-C(  1  3  0)  19-C(  2  3  0)  20-R(  3  3  0)
+  21-C(  0  0  1)  22-C(  1  0  1)  23-C(  2  0  1)  24-C(  3  0  1)
+  25-C(  4  0  1)  26-C(  5  0  1)  27-C(  0  1  1)  28-C(  1  1  1)
+  29-C(  2  1  1)  30-C(  3  1  1)  31-C(  4  1  1)  32-C(  5  1  1)
+  33-C(  0  2  1)  34-C(  1  2  1)  35-C(  2  2  1)  36-C(  3  2  1)
+  37-C(  4  2  1)  38-C(  5  2  1)  39-C(  0  3  1)  40-C(  1  3  1)
+  41-C(  2  3  1)  42-C(  3  3  1)  43-C(  4  3  1)  44-C(  5  3  1)
+  45-C(  0  4  1)  46-C(  1  4  1)  47-C(  2  4  1)  48-C(  3  4  1)
+  49-C(  4  4  1)  50-C(  5  4  1)  51-C(  0  5  1)  52-C(  1  5  1)
+  53-C(  2  5  1)  54-C(  3  5  1)  55-C(  4  5  1)  56-C(  5  5  1)
+
+ FERMI ENERGY AND DENSITY MATRIX CALCULATION ON COMPUTED EIGENVECTORS
+ DENSITY MATRIX AT SCF CYCLE (136+1)
+
+ POSSIBLY CONDUCTING STATE - EFERMI(AU) -9.5376242E-02 (RES. CHARGE  0.00E+00;IT.  8)
+
+ CORE DENSITY MATRIX CALCULATION
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NEWK        TELAPSE   119619.48 TCPU   119425.21
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SETPRINT    TELAPSE   119619.48 TCPU   119425.21
+
+ *******************************************************************************
+ HYPERFINE ELECTRON-NUCLEAR SPIN INTERACTION TENSOR
+ ANISOTROPIC COMPONENTS - THE TENSOR IS TRACELESS
+ *******************************************************************************
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+    1    1 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  6.041774E-02 YY  2.865081E-02 ZZ -8.906855E-02 XY -2.896248E-02 XZ -5.580201E-02 YZ -9.553285E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  7.754325E-02 BB  8.276720E-02 CC -1.603105E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.883045E-01 -4.579234E-01 -3.494621E-02
+ B  3.686862E-01  7.564275E-01 -5.402665E-01
+ C  2.738349E-01  4.670370E-01  8.407680E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     27.339037    117.253187     92.002678
+ B     68.365388     40.849739    122.701784
+ C     74.107404     62.157866     32.778691
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+    2    2 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.044292E-03 YY  3.422430E-03 ZZ -1.378138E-03 XY -2.497702E-03 XZ  6.813236E-03 YZ  3.538383E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -9.893188E-03 BB  4.129162E-03 CC  5.764025E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.777949E-01  3.049240E-01 -6.690407E-01
+ B -6.134840E-01  7.360871E-01 -2.860300E-01
+ C  4.052548E-01  6.043154E-01  6.859821E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     47.328434     72.246407    131.993068
+ B    127.841849     42.600845    106.620424
+ C     66.092903     52.820405     46.687109
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+    3    3 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.059847E-02 YY -2.784340E-02 ZZ  1.724493E-02 XY -2.822976E-02 XZ  9.945454E-03 YZ  2.103134E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.636165E-02 BB -5.072322E-02 CC  2.436158E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  5.799441E-01 -5.390311E-01 -6.108275E-01
+ B  4.384746E-01  8.384628E-01 -3.236049E-01
+ C  6.865893E-01 -8.015960E-02  7.226130E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     54.553386    122.617706    127.649363
+ B     63.993405     33.021848    108.881073
+ C     46.639277     94.597740     43.729358
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+    4    4 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  4.113191E-03 YY -2.765432E-03 ZZ -1.347758E-03 XY -2.394091E-03 XZ -3.975576E-03 YZ  2.493006E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  6.735638E-03 BB -4.241670E-03 CC -2.493967E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.702978E-01 -2.307166E-01 -4.351454E-01
+ B  4.684431E-01  6.606320E-01  5.866229E-01
+ C  1.521273E-01 -7.143775E-01  6.830242E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     29.506732    103.339265    115.794547
+ B     62.066717     48.651912     54.082276
+ C     81.249772    135.592208     46.919583
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+    5    5 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  7.315275E-02 YY -4.424314E-02 ZZ -2.890961E-02 XY -1.043927E-02 XZ -6.994851E-03 YZ -9.688219E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  7.417339E-02 BB -1.345037E-01 CC  6.033029E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.881312E-01 -1.395831E-01  6.413548E-02
+ B  5.968197E-02  7.335634E-01  6.769954E-01
+ C -1.415445E-01 -6.651325E-01  7.331875E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A      8.836334     98.023722     86.322784
+ B     86.578442     42.814033     47.390704
+ C     98.137232    131.692492     42.845718
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+    6    6 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.758701E-02 YY  7.070964E-03 ZZ  2.051604E-02 XY -2.591759E-02 XZ  1.240337E-02 YZ  2.784682E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -4.377646E-02 BB  1.842269E-02 CC  2.535377E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.709089E-01  4.541923E-01 -1.876888E-01
+ B -2.703859E-01  7.617537E-01  5.887468E-01
+ C  4.103769E-01 -4.619964E-01  7.862252E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     29.435570     62.987023    100.817936
+ B    105.687230     40.380957     53.931871
+ C     65.771487    117.516009     38.165861
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+    7    7 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  4.638186E-04 YY  1.137817E-03 ZZ -1.601636E-03 XY  3.494518E-04 XZ -5.650606E-04 YZ -3.591043E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  3.776291E-04 BB  1.392612E-03 CC -1.770241E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.656363E-01 -4.740388E-01 -1.611243E-01
+ B  4.443887E-01  8.756944E-01 -1.888862E-01
+ C  2.306350E-01  9.190498E-02  9.686903E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     30.044561    118.296786     99.272159
+ B     63.615765     28.872737    100.887794
+ C     76.665538     84.726791     14.375289
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+    8    8 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.556279E-04 YY  2.120688E-04 ZZ -5.644085E-05 XY  3.928846E-04 XZ  1.234287E-03 YZ  5.148294E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.345186E-03 BB -1.160254E-04 CC  1.461211E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.106032E-01  5.267513E-02 -7.016184E-01
+ B -3.558549E-01  8.871554E-01 -2.938072E-01
+ C  6.069682E-01  4.584547E-01  6.491601E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     44.715986     86.980540    134.556996
+ B    110.845846     27.482061    107.086028
+ C     52.629393     62.712564     49.521691
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+    9    9 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.224865E-03 YY  3.518751E-03 ZZ -1.293886E-03 XY -2.996490E-03 XZ  5.178245E-03 YZ -7.257369E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -3.041071E-03 BB  1.106147E-02 CC -8.020396E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.660512E-01  6.012869E-01  2.271994E-01
+ B -3.880562E-01  7.144048E-01 -5.822698E-01
+ C -5.124236E-01  3.578824E-01  7.806038E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     39.999397     53.037876     76.867758
+ B    112.833606     44.405559    125.610349
+ C    120.825397     69.029797     38.684108
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   10   10 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  4.210312E-04 YY  8.710536E-03 ZZ -9.131568E-03 XY  1.753153E-02 XZ  5.390365E-03 YZ  5.206978E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.584915E-02 BB  2.302434E-02 CC -7.175189E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.989165E-01 -4.878212E-01 -5.230164E-01
+ B  6.259694E-01  7.709576E-01  1.174167E-01
+ C  3.459451E-01 -4.094567E-01  8.441962E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     45.659862    119.197479    121.534805
+ B     51.246625     39.560042     83.256966
+ C     69.760499    114.170712     32.414087
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   11   11 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -7.663690E-03 YY  1.039698E-02 ZZ -2.733291E-03 XY -1.007686E-02 XZ -4.735507E-03 YZ  1.525277E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.376092E-02 BB  2.425121E-02 CC -1.049029E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  5.210845E-01  6.003788E-01 -6.066435E-01
+ B -3.269912E-01  7.969651E-01  5.078616E-01
+ C  7.883830E-01 -6.627173E-02  6.116047E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     58.594974     53.102971    127.347197
+ B    109.086254     37.158737     59.478506
+ C     37.965347     93.799875     52.294374
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   12   12 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  8.589745E-02 YY -5.242753E-02 ZZ -3.346992E-02 XY -3.887209E-02 XZ -6.193671E-02 YZ  1.667048E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.224564E-01 BB -6.266269E-02 CC -5.979367E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.944393E-01 -2.350731E-01 -3.804196E-01
+ B  1.983139E-01  9.709739E-01 -1.337211E-01
+ C  4.008117E-01  4.416292E-02  9.150954E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     26.563506    103.595931    112.359675
+ B     78.561624     13.838475     97.684674
+ C     66.371068     87.468828     23.780720
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   13   13 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.090877E-01 YY -3.168112E-02 ZZ -7.740656E-02 XY  2.703571E-02 XZ -2.942191E-02 YZ  1.977595E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.134245E-01 BB  1.445448E-01 CC -2.579692E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.939382E-01  5.738347E-02 -9.377632E-02
+ B  1.944629E-02  7.477624E-01  6.636815E-01
+ C  1.082068E-01 -6.614820E-01  7.421137E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A      6.311872     86.710362     95.380894
+ B     88.885740     41.603077     48.418744
+ C     83.788047    131.413000     42.088213
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   14   14 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.684850E-03 YY  5.985938E-04 ZZ -2.283444E-03 XY  1.507686E-04 XZ -4.456115E-03 YZ  6.372709E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  7.215837E-03 BB  1.456216E-03 CC -8.672053E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  4.930737E-01 -5.976319E-01 -6.322297E-01
+ B  8.007476E-01  5.958627E-01  6.124519E-02
+ C  3.401200E-01 -5.364548E-01  7.723566E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     60.457190    126.700484    129.214817
+ B     36.798450     53.425844     86.488712
+ C     70.115814    122.442625     39.434021
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   15   15 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  6.126730E-03 YY  7.635367E-03 ZZ -1.376210E-02 XY -7.994450E-04 XZ  9.846853E-03 YZ -1.316900E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  5.885197E-03 BB  1.674651E-02 CC -2.263171E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.191047E-01  5.730348E-01  2.643171E-02
+ B -4.944064E-01  7.285786E-01 -4.740628E-01
+ C -2.909121E-01  3.752391E-01  8.800942E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     35.004727     55.037880     88.485398
+ B    119.630612     43.232634    118.298348
+ C    106.912567     67.960909     28.346271
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   16   16 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.234415E-02 YY -1.836219E-02 ZZ  3.070634E-02 XY  6.824947E-03 XZ  1.984060E-02 YZ  1.325487E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.927857E-02 BB -2.281664E-02 CC  4.209521E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.734053E-01  4.654006E-01 -4.304029E-01
+ B -5.226023E-01  8.523996E-01 -1.737010E-02
+ C  3.587912E-01  2.383637E-01  9.024697E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     39.339330     62.263851    115.493130
+ B    121.506973     31.526370     90.995284
+ C     68.974023     76.210017     25.515372
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   17   17 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.779215E-02 YY  1.815493E-02 ZZ -3.594708E-02 XY  1.655599E-02 XZ  3.150589E-02 YZ -1.789931E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.078475E-02 BB  3.685463E-02 CC -5.763939E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  3.685603E-01 -8.080308E-01  4.596188E-01
+ B  8.279685E-01  5.101267E-01  2.328925E-01
+ C -4.226481E-01  2.947150E-01  8.570365E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     68.373146    143.903984     62.637486
+ B     34.109383     59.327732     76.532575
+ C    115.001889     72.859552     31.014544
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   18   18 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.823281E-03 YY  5.754001E-03 ZZ -7.577282E-03 XY -2.011035E-03 XZ  6.123260E-03 YZ  3.599134E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  4.820125E-03 BB  6.754608E-03 CC -1.157473E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.794780E-01  1.037239E-01  4.644995E-01
+ B -1.977669E-01  9.673605E-01  1.584356E-01
+ C -4.329049E-01 -2.312033E-01  8.712855E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     28.420539     84.046351     62.322166
+ B    101.406405     14.679038     80.883894
+ C    115.652054    103.367925     29.391634
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   19   19 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -6.306407E-05 YY -1.176851E-03 ZZ  1.239915E-03 XY -1.837085E-03 XZ -1.137969E-03 YZ  3.299629E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  4.438981E-03 BB -3.716876E-03 CC -7.221049E-04
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  4.100585E-01 -5.580233E-01 -7.214305E-01
+ B  2.640395E-01  8.297503E-01 -4.917291E-01
+ C  8.730035E-01  1.115156E-02  4.875864E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     65.791490    123.919206    136.172714
+ B     74.690113     33.926899    119.454295
+ C     29.190432     89.361049     60.817936
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   20   20 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.676432E-03 YY -1.101795E-02 ZZ  7.341517E-03 XY  7.984614E-03 XZ  1.655942E-03 YZ -1.470075E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  6.414719E-03 BB -1.470521E-02 CC  8.290487E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.799853E-01  3.650737E-01 -6.358782E-01
+ B -4.036485E-01  9.103751E-01  9.102206E-02
+ C  6.121175E-01  1.947776E-01  7.664032E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     47.157503     68.587882    129.485152
+ B    113.806464     24.442758     84.777592
+ C     52.257231     78.768265     39.968012
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   21   21 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.877284E-03 YY -3.231751E-03 ZZ -6.455328E-04 XY -3.092436E-04 XZ  5.491415E-04 YZ -6.647109E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  3.963956E-03 BB -3.396704E-03 CC -5.672524E-04
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.905711E-01 -5.419418E-02  1.258246E-01
+ B  2.397550E-02  9.728335E-01  2.302609E-01
+ C -1.348852E-01 -2.250731E-01  9.649601E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A      7.874251     93.106620     82.771624
+ B     88.626174     13.385739     76.687566
+ C     97.751980    103.007178     15.212309
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   22   22 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  6.240219E-03 YY -3.489464E-03 ZZ -2.750755E-03 XY  1.056106E-02 XZ -4.030461E-03 YZ -6.216800E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.554182E-02 BB -1.159318E-02 CC -3.948644E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.649660E-01  5.394501E-01 -3.518815E-01
+ B -3.989039E-01  8.257616E-01  3.987400E-01
+ C  5.056705E-01 -1.646556E-01  8.468683E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     40.096030     57.353790    110.602440
+ B    113.509671     34.334222     66.500568
+ C     59.624126     99.477231     32.127341
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   23   23 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  4.035232E-03 YY -6.377285E-03 ZZ  2.342053E-03 XY -4.707725E-03 XZ -2.084068E-02 YZ -3.690085E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.407035E-02 BB -3.862264E-03 CC -2.020808E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.238052E-01 -2.835860E-02 -6.894214E-01
+ B -2.529801E-01  9.186720E-01 -3.033856E-01
+ C  6.419557E-01  3.940020E-01  6.577654E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     43.630458     91.625046    133.584325
+ B    104.653929     23.267297    107.661065
+ C     50.062192     66.796256     48.870330
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   24   24 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.207945E-03 YY -2.876717E-03 ZZ  5.084662E-03 XY -1.658121E-03 XZ -7.334708E-04 YZ -1.209181E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -8.568561E-04 BB -4.439936E-03 CC  5.296792E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.814099E-01 -6.232781E-01 -3.038069E-02
+ B  6.203736E-01  7.706708E-01  1.456131E-01
+ C -6.734395E-02 -1.326309E-01  9.888750E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     38.610156    128.555918     91.740953
+ B     51.656578     39.585839     81.627216
+ C     93.861447     97.621648      8.554416
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   25   25 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  9.345420E-02 YY  1.432567E-01 ZZ -2.367109E-01 XY  1.960307E-02 XZ  1.215990E-01 YZ -2.491496E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.270218E-01 BB  1.517438E-01 CC -2.787655E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.065482E-01 -5.068040E-01  3.043511E-01
+ B  5.014372E-01  8.591771E-01  1.018597E-01
+ C -3.131145E-01  7.045818E-02  9.470982E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     36.239956    120.451181     72.280870
+ B     59.904870     30.775685     84.153727
+ C    108.247023     85.959696     18.720020
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   26   26 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.634617E-04 YY  8.456938E-04 ZZ -1.209156E-03 XY  1.138489E-03 XZ -1.787196E-03 YZ  3.662899E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  3.633608E-03 BB  1.209646E-03 CC -4.843254E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.408482E-02 -7.843964E-01 -6.169404E-01
+ B  9.243649E-01  2.796387E-01 -2.595223E-01
+ C  3.760887E-01 -5.536466E-01  7.429891E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     86.325692    141.664887    128.093047
+ B     22.427225     73.761360    105.041720
+ C     67.908380    123.617544     42.013336
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   27   27 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  6.297604E-02 YY -5.258140E-02 ZZ -1.039464E-02 XY -2.034749E-02 XZ  3.717996E-03 YZ  9.225250E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  7.369666E-02 BB -1.278669E-01 CC  5.417027E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.319066E-01 -4.749118E-01 -4.886425E-01
+ B  9.532854E-02  7.814222E-01 -6.166780E-01
+ C  6.747038E-01  4.047691E-01  6.172008E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     42.953528    118.353608    119.251395
+ B     84.529771     38.609021    128.073948
+ C     47.568850     66.123339     51.887994
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   28   28 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.614131E-02 YY  4.033706E-02 ZZ -6.647838E-02 XY  1.974471E-02 XZ -6.098961E-02 YZ  5.345464E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  6.468634E-02 BB  5.247223E-02 CC -1.171586E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  3.891579E-01 -7.755759E-01 -4.970294E-01
+ B  8.260912E-01  5.325708E-01 -1.842328E-01
+ C  4.075898E-01 -3.388959E-01  8.479505E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     67.097885    140.857271    119.803657
+ B     34.300723     57.820683    100.616404
+ C     65.946481    109.809622     32.010547
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   29   29 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.333677E-03 YY -1.456453E-04 ZZ  2.479323E-03 XY -7.912026E-04 XZ  3.074593E-05 YZ  1.036749E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.615404E-03 BB -2.345992E-04 CC  2.850003E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.404261E-01  3.320163E-01 -7.323898E-02
+ B -3.368802E-01  8.808203E-01 -3.326669E-01
+ C -4.594045E-02  3.375214E-01  9.401961E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     19.876765     70.608797     94.200045
+ B    109.686911     28.258520    109.430726
+ C     92.633121     70.274064     19.915478
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   30   30 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.124414E-01 YY -1.875239E-01 ZZ -2.491752E-02 XY  1.355702E-01 XZ  3.852021E-01 YZ -5.624446E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  5.129916E-01 BB -1.570974E-01 CC -3.558942E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.044471E-01  1.510714E-01  5.744931E-01
+ B  1.744371E-01  8.644048E-01 -4.715676E-01
+ C -5.678350E-01  4.795641E-01  6.690155E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     36.443107     81.310977     54.935861
+ B     79.954098     30.185184    118.136098
+ C    124.599389     61.343066     48.008873
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   31   31 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  4.154294E-03 YY  5.278373E-03 ZZ -9.432667E-03 XY  4.744625E-03 XZ  6.972026E-03 YZ -9.200018E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  6.931420E-03 BB  1.020085E-02 CC -1.713227E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.555699E-01 -2.005407E-01  4.772667E-01
+ B  3.665249E-01  8.857211E-01 -2.848817E-01
+ C -3.655948E-01  4.186663E-01  8.312995E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     31.177243    101.568579     61.492963
+ B     68.498543     27.659605    106.551777
+ C    111.444194     65.249583     33.767536
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   32   32 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.351598E-02 YY  7.771060E-02 ZZ -9.122657E-02 XY -4.956675E-02 XZ -1.461225E-01 YZ -8.529069E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.217935E-01 BB  1.041179E-01 CC -2.259114E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  5.867730E-01  5.280217E-01 -6.139142E-01
+ B -6.022711E-01  7.913569E-01  1.049938E-01
+ C  5.412642E-01  3.081352E-01  7.823591E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     54.071657     58.128117    127.873063
+ B    127.032728     37.687499     83.973191
+ C     57.230259     72.053112     38.522920
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   33   33 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.160091E-04 YY -8.524089E-04 ZZ  1.068418E-03 XY  8.247346E-03 XZ -7.263344E-04 YZ  6.361687E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  9.783447E-03 BB -1.107136E-02 CC  1.287908E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  5.429039E-01  6.992066E-01  4.651509E-01
+ B -5.694609E-01  7.136031E-01 -4.080256E-01
+ C -6.172274E-01 -4.336654E-02  7.855887E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     57.118459     45.636612     62.280008
+ B    124.712638     44.471164    114.080868
+ C    128.113946     92.485499     38.224837
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   34   34 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  4.602335E-02 YY  6.620540E-02 ZZ -1.122287E-01 XY -7.887467E-02 XZ -1.524818E-01 YZ -1.389695E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.438050E-01 BB  1.350343E-01 CC -2.788393E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  3.871394E-01  6.938701E-01 -6.071799E-01
+ B -7.949082E-01  5.848395E-01  1.615047E-01
+ C  4.671661E-01  4.201274E-01  7.779774E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     67.223382     46.062753    127.385868
+ B    142.646582     54.208348     80.705754
+ C     62.149503     65.157369     38.924241
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   35   35 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -7.109512E-03 YY -1.854034E-03 ZZ  8.963546E-03 XY  4.744350E-03 XZ -3.214546E-03 YZ  1.213240E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.049513E-02 BB  9.039366E-04 CC  9.591197E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.531922E-01 -4.925417E-01  1.716559E-01
+ B  4.892143E-01  8.697984E-01  6.418772E-02
+ C -1.809211E-01  2.921204E-02  9.830637E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     31.439413    119.507777     80.115891
+ B     60.711049     29.564774     86.319784
+ C    100.423418     88.326035     10.559954
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   36   36 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  6.390432E-04 YY -5.406450E-03 ZZ  4.767406E-03 XY  4.612069E-03 XZ  7.597533E-04 YZ -4.609392E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.561303E-03 BB -9.302984E-03 CC  6.741681E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.847541E-01  3.116748E-01  3.465097E-01
+ B -4.200001E-01  8.554734E-01  3.029276E-01
+ C -2.020150E-01 -4.135505E-01  8.877871E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     27.778722     71.839811     69.726018
+ B    114.834595     31.187923     72.366476
+ C    101.654815    114.428069     27.403523
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   37   37 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.618885E-02 YY  8.458171E-04 ZZ  1.534303E-02 XY -8.908815E-04 XZ  3.645201E-03 YZ  3.097042E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.665316E-02 BB  8.913456E-04 CC  1.576182E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.921444E-01  5.252002E-02 -1.135395E-01
+ B -5.375488E-02  9.985234E-01 -7.839885E-03
+ C  1.129601E-01  1.388160E-02  9.935026E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A      7.186427     86.989440     96.519391
+ B     93.081413      3.114044     90.449197
+ C     83.514021     89.204617      6.534982
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   38   38 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.101827E-01 YY -2.300507E-03 ZZ -1.078822E-01 XY -1.173802E-02 XZ -1.870152E-02 YZ -1.605830E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.109272E-01 BB  1.146477E-01 CC -2.255749E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.989076E-01 -3.863216E-01  2.066901E-01
+ B  4.332178E-01  7.131953E-01 -5.510670E-01
+ C  6.547865E-02  5.849001E-01  8.084580E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     25.985155    112.725808     78.071546
+ B     64.328054     44.504511    123.440244
+ C     86.245663     54.204064     36.054452
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   39   39 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.144866E-02 YY -2.341120E-03 ZZ  1.378978E-02 XY -5.398086E-03 XZ  4.664477E-03 YZ -1.115992E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.397003E-02 BB -6.886692E-03 CC  2.085672E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.965115E-01  4.421892E-01  2.712690E-02
+ B -3.943290E-01  7.685721E-01  5.037872E-01
+ C  2.019203E-01 -4.623479E-01  8.634018E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     26.296762     63.756354     88.445552
+ B    113.224134     39.774160     59.749126
+ C     78.350726    117.538717     30.299293
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   40   40 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.798396E-02 YY -1.262605E-02 ZZ -5.357913E-03 XY  6.561341E-02 XZ -7.373103E-02 YZ  7.173288E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  6.025639E-02 BB -1.415716E-01 CC  8.131524E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  2.924352E-01  7.914874E-01  5.366836E-01
+ B -5.254150E-01  6.019025E-01 -6.013755E-01
+ C -7.990123E-01 -1.061183E-01  5.918769E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     72.996194     37.675269     57.541838
+ B    121.696187     52.993726    126.968473
+ C    143.035889     96.091598     53.709690
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   41   41 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.680020E-03 YY -1.827425E-03 ZZ  3.507444E-03 XY -9.798054E-05 XZ  1.037141E-03 YZ  8.540128E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.656012E-03 BB -2.170305E-03 CC  3.826318E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.566936E-01 -6.522802E-01 -4.410643E-02
+ B  6.283006E-01  7.442052E-01 -2.267090E-01
+ C  1.807020E-01  1.438372E-01  9.729633E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     40.826427    130.713739     92.527933
+ B     51.075148     41.909120    103.103395
+ C     79.589346     81.730052     13.353577
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   42   42 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.872799E-03 YY -1.079783E-03 ZZ  3.952582E-03 XY -2.721675E-03 XZ  4.038308E-03 YZ  7.266511E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -6.243797E-03 BB  3.786119E-04 CC  5.865185E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.062437E-01  4.746196E-01 -3.531393E-01
+ B -3.974734E-01  8.767268E-01  2.708600E-01
+ C  4.381621E-01 -7.801566E-02  8.955040E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     36.269465     61.665416    110.679451
+ B    113.420320     28.749999     74.284554
+ C     64.013323     94.474515     26.426754
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   43   43 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.043758E-04 YY  1.518425E-03 ZZ -1.822801E-03 XY -1.553351E-03 XZ -3.139335E-03 YZ -1.494084E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.988594E-03 BB  2.799798E-03 CC -4.788392E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  2.829987E-01  7.905982E-01 -5.430158E-01
+ B -7.743492E-01  5.224081E-01  3.570339E-01
+ C  5.659462E-01  3.194437E-01  7.600399E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     73.560739     37.758547    122.889173
+ B    140.746062     58.506082     69.081851
+ C     55.531977     71.370716     40.532285
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   44   44 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.329888E-02 YY  2.662364E-02 ZZ -5.992252E-02 XY  7.949185E-03 XZ  1.600188E-02 YZ -3.112016E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  3.381591E-02 BB  3.907641E-02 CC -7.289232E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.240405E-01 -6.081287E-01  3.254917E-01
+ B  6.699219E-01  7.323509E-01 -1.219293E-01
+ C -1.642254E-01  3.063357E-01  9.376505E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     43.610912    127.454319     71.004635
+ B     47.938963     42.916155     97.003461
+ C     99.452241     72.161457     20.339344
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   45   45 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.509304E-03 YY  3.643752E-03 ZZ -6.153056E-03 XY  1.214067E-03 XZ  2.791003E-04 YZ -1.687182E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.749941E-03 BB  4.416571E-03 CC -6.166512E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.428108E-01 -5.366291E-01  4.122082E-02
+ B  5.370605E-01  8.435434E-01  7.164517E-04
+ C -3.515602E-02  2.153424E-02  9.991498E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     32.561863    122.454458     87.637552
+ B     57.516244     32.483789     89.958950
+ C     92.014707     88.766084      2.362805
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   46   46 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -9.510482E-05 YY -9.178299E-03 ZZ  9.273403E-03 XY  3.796837E-03 XZ -2.568277E-04 YZ  2.723414E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.280177E-03 BB -1.056229E-02 CC  9.282112E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.396567E-01  3.416154E-01  1.855245E-02
+ B -3.413208E-01  9.397872E-01 -1.732249E-02
+ C -2.335298E-02  9.944860E-03  9.996778E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     20.006013     70.024679     88.936962
+ B    109.957364     19.984144     90.992555
+ C     91.338149     89.430192      1.454456
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   47   47 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -3.220184E-04 YY -1.271395E-03 ZZ  1.593413E-03 XY  1.473599E-03 XZ -1.755829E-03 YZ -1.682655E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.234779E-03 BB -2.394554E-03 CC  3.629333E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.212849E-01  2.981509E-01  6.251833E-01
+ B -4.856532E-01  8.612606E-01  1.495700E-01
+ C -4.938513E-01 -4.115049E-01  7.660122E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     43.839337     72.653423     51.304357
+ B    119.055278     30.541585     81.397991
+ C    119.594032    114.299404     40.002877
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   48   48 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.280548E-02 YY  6.620712E-03 ZZ  6.184769E-03 XY  6.198670E-04 XZ -5.217751E-03 YZ -3.150615E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.415779E-02 BB  6.439458E-03 CC  7.718334E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.684320E-01 -2.512988E-02  2.480081E-01
+ B -7.430302E-02  9.205800E-01  3.834209E-01
+ C -2.379466E-01 -3.897448E-01  8.896519E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     14.434791     91.439987     75.640328
+ B     94.261176     22.988982     67.454258
+ C    103.765378    112.938621     27.170469
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   49   49 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.009826E-02 YY  3.618205E-02 ZZ -4.628031E-02 XY -2.866052E-03 XZ  3.780034E-02 YZ  1.531808E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.740595E-02 BB  4.000830E-02 CC -6.741425E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.587983E-01 -3.584395E-01  3.660419E-01
+ B  2.656245E-01  9.224831E-01  2.801224E-01
+ C -4.380744E-01 -1.433389E-01  8.874372E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     30.818082    111.004389     68.528281
+ B     74.595939     22.708160     73.732492
+ C    115.981086     98.241101     27.447049
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   50   50 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.453857E-03 YY -2.006727E-02 ZZ  1.661341E-02 XY -1.880855E-02 XZ  2.142686E-03 YZ  1.264689E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.171252E-02 BB -3.343749E-02 CC  2.172497E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.356675E-01 -3.157367E-01  4.494108E-01
+ B  4.521826E-01  8.599573E-01 -2.366525E-01
+ C -3.117542E-01  4.009785E-01  8.614090E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     33.314589    108.405295     63.294111
+ B     63.116199     30.688212    103.689051
+ C    108.164980     66.360634     30.524841
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   51   51 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.022273E-02 YY -1.325182E-02 ZZ  3.029095E-03 XY -4.149927E-03 XZ -2.325633E-03 YZ -9.444341E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.104827E-02 BB -1.836637E-02 CC  7.318106E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.813691E-01 -1.050818E-01 -1.608491E-01
+ B  1.636472E-01  8.958090E-01  4.132141E-01
+ C  1.006688E-01 -4.318381E-01  8.963156E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     11.077219     96.031877     99.256187
+ B     80.581343     26.387472     65.593099
+ C     84.222313    115.584267     26.322083
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   52   52 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.185554E-01 YY  5.563324E-02 ZZ  6.292218E-02 XY -3.955162E-02 XZ  7.149364E-02 YZ  2.981476E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.539841E-01 BB  5.865922E-02 CC  9.532486E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.169959E-01  2.203207E-01 -3.325316E-01
+ B -3.400982E-01  8.674514E-01 -3.631270E-01
+ C  2.084507E-01  4.460794E-01  8.703801E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     23.509216     77.272132    109.422506
+ B    109.882858     29.836182    111.292359
+ C     77.968428     63.507583     29.497160
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   53   53 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -7.184335E-03 YY -3.144421E-03 ZZ  1.032876E-02 XY -2.801333E-03 XZ -1.086091E-03 YZ -7.651038E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -8.708938E-03 BB -1.713551E-03 CC  1.042249E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.872339E-01  4.561384E-01  6.894794E-02
+ B -4.581050E-01  8.887690E-01  1.515130E-02
+ C -5.436770E-02 -4.502814E-02  9.975052E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     27.472310     62.861797     86.046437
+ B    117.264893     27.281040     89.131861
+ C     93.116576     92.580795      4.048051
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   54   54 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.114027E-02 YY -8.838747E-02 ZZ  6.724721E-02 XY  1.169466E-01 XZ  6.190077E-02 YZ -1.022353E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  9.525768E-02 BB -2.135971E-01 CC  1.183394E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.628924E-01  4.962568E-01  9.563401E-02
+ B -4.909671E-01  7.782452E-01  3.915172E-01
+ C  1.198663E-01 -3.847903E-01  9.151877E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     30.357088     60.247342     84.512188
+ B    119.404168     38.899813     66.951066
+ C     83.115611    112.630725     23.767609
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   55   55 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.415237E-02 YY -8.844178E-02 ZZ  6.428941E-02 XY -1.727459E-01 XZ -1.148744E-01 YZ -1.542749E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.492205E-01 BB -3.121122E-01 CC  1.628918E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.571698E-01 -6.388372E-01  1.363117E-01
+ B  5.249570E-01  7.192863E-01  4.550246E-01
+ C -3.887338E-01 -2.729731E-01  8.799840E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     40.784673    129.705167     82.165522
+ B     58.334648     44.004415     62.933485
+ C    112.875734    105.841259     28.359573
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   56   56 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.232301E-01 YY  2.597624E-01 ZZ -1.365323E-01 XY -7.400883E-02 XZ -1.329693E-01 YZ  1.005159E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.640357E-01 BB  3.098578E-01 CC -4.582215E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.727726E-01 -4.663556E-02  7.383780E-01
+ B -2.450621E-01  9.276261E-01  2.818765E-01
+ C -6.980842E-01 -3.705873E-01  6.126528E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     47.718580     92.672990     42.406569
+ B    104.185504     21.932259     73.627766
+ C    134.273501    111.751841     52.218431
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   57   57 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.784267E-02 YY  3.193999E-02 ZZ -6.978266E-02 XY -1.010934E-01 XZ -8.060518E-02 YZ -1.534673E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.588160E-01 BB  7.874791E-02 CC -2.375640E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  4.144500E-01 -8.164752E-01  4.019944E-01
+ B  8.095875E-01  1.290090E-01 -5.726471E-01
+ C  4.156913E-01  5.627833E-01  7.144759E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     65.515314    144.733485     66.297083
+ B     35.944350     82.587672    124.935026
+ C     65.437142     55.751502     44.399739
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   58   58 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -3.440030E-03 YY -6.083977E-03 ZZ  9.524007E-03 XY -2.833017E-03 XZ -1.047250E-03 YZ -6.484541E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.660871E-03 BB -7.958875E-03 CC  9.619747E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.380101E-01 -5.436314E-01  4.694528E-02
+ B  5.406272E-01  8.388625E-01  6.349842E-02
+ C -7.390037E-02 -2.783243E-02  9.968772E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     33.069411    122.931190     87.309244
+ B     57.273657     32.979808     86.359359
+ C     94.238043     91.594886      4.529236
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   59   59 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  8.812033E-04 YY -5.056567E-04 ZZ -3.755466E-04 XY -6.710289E-04 XZ  4.068851E-04 YZ -6.778879E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.392396E-03 BB -1.152175E-03 CC -2.402210E-04
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.349469E-01 -4.215393E-01  3.537913E-01
+ B  1.354465E-01  7.805005E-01  6.103059E-01
+ C -5.334022E-01 -4.616532E-01  7.087725E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     33.389691    114.931807     69.280613
+ B     82.215558     38.693580     52.388377
+ C    122.235618    117.493836     44.864872
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   60   60 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  9.460893E-03 YY  1.075306E-02 ZZ -2.021395E-02 XY  5.682515E-03 XZ  1.380095E-02 YZ -8.647398E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.194684E-02 BB  1.632814E-02 CC -2.827498E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  4.543860E-01 -7.919188E-01  4.079191E-01
+ B  8.123120E-01  5.563039E-01  1.751432E-01
+ C -3.656262E-01  2.517750E-01  8.960618E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     62.974563    142.365185     65.925815
+ B     35.677559     56.199428     79.913008
+ C    111.446126     75.417428     26.354852
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   61   61 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.640970E-02 YY  1.606799E-03 ZZ  1.480290E-02 XY  1.282015E-02 XZ -6.550126E-03 YZ -8.065340E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.319641E-02 BB  9.095173E-04 CC  2.228689E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.945911E-01 -4.428098E-01  6.021881E-02
+ B  3.277685E-01  7.417506E-01  5.851272E-01
+ C -3.037674E-01 -5.037117E-01  8.087026E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     26.544048    116.283295     86.547628
+ B     70.866610     42.119244     54.188026
+ C    107.684022    120.245870     36.030635
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   62   62 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -6.674396E-02 YY -1.382920E-01 ZZ  2.050359E-01 XY -3.629073E-02 XZ  3.197953E-02 YZ  7.483436E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -5.156037E-02 BB -1.710843E-01 CC  2.226446E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.219088E-01 -3.874022E-01 -1.914372E-03
+ B  3.782681E-01  9.012174E-01 -2.114719E-01
+ C  8.364995E-02  1.942337E-01  9.773822E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     22.793245    112.792951     90.109686
+ B     67.773552     25.681444    102.208626
+ C     85.201604     78.800038     12.209134
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   63   63 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -3.395697E-03 YY  3.062552E-03 ZZ  3.331446E-04 XY  1.247279E-04 XZ -3.389978E-03 YZ -4.677563E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -5.402154E-03 BB  3.292130E-03 CC  2.110023E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.602077E-01  1.549171E-02  5.097084E-01
+ B  2.116794E-01  8.985066E-01 -3.845486E-01
+ C -4.639337E-01  4.386865E-01  7.696231E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     30.660085     89.112355     59.355591
+ B     77.779212     26.037539    112.615721
+ C    117.641235     63.979897     39.679945
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   64   64 O      17      -0.7575220
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.326022E-03 YY  1.256515E-03 ZZ  6.950660E-05 XY  5.853869E-05 XZ -1.354369E-04 YZ -6.749058E-06
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.340323E-03 BB  1.257923E-03 CC  8.240028E-05
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.951830E-01 -2.218556E-02  9.549169E-02
+ B  2.308342E-02  9.996990E-01 -8.308010E-03
+ C -9.527863E-02  1.047226E-02  9.953956E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A      5.626028     91.271243     84.520380
+ B     88.677300      1.405777     90.476019
+ C     95.467357     89.399972      5.500383
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   65   65 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  4.410140E-03 YY -2.407893E-03 ZZ -2.002247E-03 XY  3.765200E-03 XZ  4.209219E-03 YZ -8.040098E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  6.520476E-03 BB -1.216406E-02 CC  5.643587E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.359990E-01 -1.279635E-01  5.336018E-01
+ B -3.219939E-01  6.730099E-01  6.658660E-01
+ C -4.443259E-01 -7.284799E-01  5.214322E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     33.279991     97.351929     57.750858
+ B    108.783552     47.700201     48.251201
+ C    116.380219    136.759111     58.571633
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   66   66 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.461072E-03 YY -3.650565E-05 ZZ -1.424566E-03 XY -2.805967E-03 XZ -4.742095E-03 YZ -4.606643E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  3.315794E-03 BB -8.397254E-03 CC  5.081460E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  5.076640E-01 -8.137637E-01  2.829590E-01
+ B  4.846025E-01  5.412576E-01  6.871686E-01
+ C -7.123466E-01 -2.117281E-01  6.691290E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     59.491644    144.465306     73.563111
+ B     61.013567     57.230710     46.593609
+ C    135.426162    102.223642     48.000127
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   67   67 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.535122E-03 YY -3.698932E-03 ZZ  1.163809E-03 XY -2.182516E-03 XZ -2.951879E-03 YZ -6.666898E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  3.094133E-03 BB -9.387727E-03 CC  6.293594E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.857975E-01 -4.372340E-01  1.555289E-01
+ B  2.821141E-01  7.734467E-01  5.676195E-01
+ C -3.684758E-01 -4.589190E-01  8.084670E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     27.650177    115.927529     81.052527
+ B     73.613581     39.335582     55.415611
+ C    111.621648    117.317375     36.053576
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   68   68 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.423669E-03 YY  1.936188E-03 ZZ -5.125192E-04 XY -2.673927E-03 XZ -4.132393E-03 YZ  3.602021E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -5.161534E-03 BB  7.079568E-03 CC -1.918033E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.101430E-01 -8.702931E-02  6.986579E-01
+ B -4.865570E-01  6.565755E-01  5.763427E-01
+ C -5.088804E-01 -7.492226E-01  4.239178E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     44.753451     94.992728     45.680574
+ B    119.114535     48.960780     54.806285
+ C    120.589280    138.523083     64.917820
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   69   69 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  5.808475E-04 YY -4.122167E-04 ZZ -1.686308E-04 XY  7.715595E-03 XZ -2.429815E-03 YZ -4.414594E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.008569E-02 BB -8.026151E-03 CC -2.059535E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.330708E-01  6.451679E-01 -4.277613E-01
+ B -6.109588E-01  7.557664E-01  2.356831E-01
+ C  4.753428E-01  1.121404E-01  8.726246E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     50.722955     49.821732    115.325568
+ B    127.658861     40.907619     76.368108
+ C     61.618330     83.561284     29.234912
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   70   70 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.059354E-03 YY  4.549110E-04 ZZ  1.604443E-03 XY  5.681836E-04 XZ -1.676491E-03 YZ  3.679758E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -3.969603E-03 BB -9.077440E-04 CC  4.877347E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.407649E-01 -5.378868E-01  5.478121E-01
+ B  7.557639E-01  5.674531E-01 -3.268301E-01
+ C -1.350601E-01  6.234379E-01  7.701195E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     50.151117    122.539899     56.782958
+ B     40.907839     55.427186    109.076487
+ C     97.762094     51.432378     39.635381
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   71   71 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.038680E-03 YY  1.381668E-03 ZZ  6.570122E-04 XY -3.067820E-03 XZ  2.205985E-04 YZ  6.806096E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -6.920005E-03 BB  8.267987E-03 CC -1.347982E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  4.426109E-01  6.606562E-01 -6.063242E-01
+ B -2.041805E-01  7.326521E-01  6.492544E-01
+ C  8.731586E-01 -1.635675E-01  4.591729E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     63.729412     48.650066    127.324188
+ B    101.781528     42.890808     49.514591
+ C     29.172213     99.414031     62.666250
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   72   72 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.134117E-02 YY -1.643169E-02 ZZ  5.090524E-03 XY  1.087110E-02 XZ  3.920954E-03 YZ  1.704462E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.225479E-02 BB -2.740268E-02 CC  5.147891E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.630875E-01  4.499080E-01  5.982455E-01
+ B -2.020136E-01  8.771178E-01 -4.357234E-01
+ C -7.207672E-01  1.680690E-01  6.724934E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     48.464226     63.262219     53.255655
+ B    101.654736     28.703386    115.831334
+ C    136.117861     80.324434     47.740198
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   73   73 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.972636E-03 YY -5.586883E-03 ZZ  2.614247E-03 XY -1.137489E-02 XZ -7.997287E-03 YZ -1.059787E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.107570E-02 BB -2.093585E-02 CC  9.860142E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.584377E-01 -3.440920E-01 -3.803754E-01
+ B  5.027291E-01  7.115234E-01  4.909154E-01
+ C  1.017259E-01 -6.126461E-01  7.837835E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     30.858381    110.126376    112.356936
+ B     59.819280     44.641003     60.599233
+ C     84.161435    127.781078     38.391690
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   74   74 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -6.300517E-04 YY  3.405654E-03 ZZ -2.775602E-03 XY -7.434106E-05 XZ  8.712119E-04 YZ -9.567986E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -3.584580E-04 BB  3.560551E-03 CC -3.202093E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.479291E-01  9.591757E-02  3.036944E-01
+ B -4.989778E-02  9.865225E-01 -1.558319E-01
+ C -3.145484E-01  1.325639E-01  9.399394E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     18.571118     84.495866     72.320367
+ B     92.860120      9.417409     98.965048
+ C    108.333552     82.382223     19.958614
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   75   75 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.240536E-03 YY  2.045029E-04 ZZ -1.445039E-03 XY  2.830814E-03 XZ  1.427390E-04 YZ  1.287225E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  3.771974E-03 BB -2.810342E-03 CC -9.616319E-04
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.376635E-01  6.505399E-01  1.806943E-01
+ B -4.495478E-01  6.729208E-01 -5.874388E-01
+ C -5.037453E-01  3.521014E-01  7.888379E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     42.467241     49.417679     79.589798
+ B    116.714676     47.707103    125.975467
+ C    120.248099     69.384098     37.922956
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   76   76 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.291681E-05 YY -1.752911E-04 ZZ  1.423743E-04 XY  9.076344E-04 XZ -2.560192E-04 YZ -1.331613E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.718346E-03 BB -1.547682E-03 CC -1.706632E-04
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  4.430650E-01  6.480026E-01 -6.195047E-01
+ B -3.485030E-01  7.611793E-01  5.469476E-01
+ C  8.259776E-01 -2.643408E-02  5.630827E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     63.700397     49.608827    128.279976
+ B    110.395781     40.431728     56.842140
+ C     34.312265     91.514737     55.730741
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   77   77 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -5.341534E-05 YY  6.378601E-04 ZZ -5.844448E-04 XY  8.581443E-04 XZ -5.649007E-04 YZ -8.741992E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -6.320875E-04 BB  1.692904E-03 CC -1.060817E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.402286E-01 -5.408167E-01  3.915694E-02
+ B  5.058839E-01  7.558625E-01 -4.156361E-01
+ C  1.951857E-01  3.690382E-01  9.086877E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     32.835735    122.739251     87.755899
+ B     59.609956     40.899208    114.559380
+ C     78.744431     68.343689     24.675370
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   78   78 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.279693E-01 YY  2.130595E-02 ZZ -3.492752E-01 XY -4.435945E-02 XZ -6.986890E-02 YZ -4.660873E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  3.333228E-01 BB  3.390700E-01 CC -6.723928E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.580278E-01 -4.608054E-01  2.268188E-01
+ B  5.069483E-01  6.889863E-01 -5.179781E-01
+ C  8.241199E-02  5.594250E-01  8.247739E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     30.904144    117.439088     76.890144
+ B     59.539227     46.450082    121.196721
+ C     85.272780     55.983959     34.434428
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   79   79 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.649467E-03 YY -1.054251E-02 ZZ  7.893039E-03 XY -6.046920E-03 XZ -2.042999E-03 YZ  3.290796E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  3.123681E-03 BB -1.315850E-02 CC  1.003482E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.218630E-01 -2.391451E-01  5.170597E-01
+ B  3.422759E-01  9.328278E-01 -1.126035E-01
+ C -4.553991E-01  2.695217E-01  8.485103E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     34.728271    103.836092     58.864772
+ B     69.984402     21.120009     96.465417
+ C    117.090614     74.364191     31.949991
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   80   80 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.118047E-02 YY  5.304344E-03 ZZ -1.648481E-02 XY -6.825227E-02 XZ  7.388320E-02 YZ  8.271979E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  7.876782E-02 BB -1.512715E-01 CC  7.250367E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  3.279969E-01 -8.243120E-01 -4.614409E-01
+ B  5.263563E-01  5.650836E-01 -6.353186E-01
+ C  7.844534E-01 -3.449976E-02  6.192275E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     70.852758    145.518805    117.480123
+ B     58.240410     55.591906    129.443615
+ C     38.329849     91.977083     51.740258
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   81   81 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -5.477952E-04 YY -7.518661E-03 ZZ  8.066456E-03 XY  2.644341E-02 XZ  1.800618E-02 YZ -2.622632E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.060278E-02 BB -4.843129E-02 CC  2.782851E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.198444E-01  3.441265E-01  4.576375E-01
+ B -5.553501E-01  6.725244E-01  4.891801E-01
+ C -1.394325E-01 -6.552006E-01  7.424761E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     34.930779     69.871514     62.765236
+ B    123.734831     47.737798     60.713293
+ C     98.015010    130.934862     42.057230
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   82   82 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.669754E-04 YY  9.188294E-04 ZZ -1.185805E-03 XY  4.203168E-03 XZ -2.743555E-03 YZ  6.816983E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -9.450929E-03 BB  7.141193E-03 CC  2.309737E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  4.484107E-01 -6.107686E-01  6.526022E-01
+ B  2.581525E-01  7.875018E-01  5.596412E-01
+ C -8.557366E-01 -8.247823E-02  5.107956E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     63.358239    127.645098     49.261918
+ B     75.039536     38.047341     55.969014
+ C    148.841209     94.731029     59.283159
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   83   83 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -4.084542E-02 YY -3.659130E-02 ZZ  7.743672E-02 XY -1.823817E-01 XZ  9.405527E-02 YZ  9.768498E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.734856E-01 BB  1.443534E-01 CC  1.291322E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.613874E-01  6.577965E-01 -3.603755E-01
+ B -6.351667E-01  7.467422E-01  1.973307E-01
+ C  3.989110E-01  9.838648E-02  9.116963E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     48.594233     48.867962    111.123259
+ B    129.432349     41.691043     78.619090
+ C     66.489880     84.353736     24.259175
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   84   84 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.299649E-02 YY  3.029514E-03 ZZ  9.966978E-03 XY -1.488273E-02 XZ  1.055342E-02 YZ  7.344582E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.641131E-02 BB  1.166979E-02 CC  1.474152E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.056001E-01  4.902356E-01 -3.326823E-01
+ B -5.791130E-01  7.701013E-01 -2.675298E-01
+ C  1.250465E-01  4.081827E-01  9.042955E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     36.331748     60.643935    109.431664
+ B    125.388177     39.637014    105.517326
+ C     82.816558     65.909277     25.271440
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   85   85 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.767162E-03 YY  2.448793E-03 ZZ -6.215955E-03 XY -1.987246E-03 XZ  2.729086E-04 YZ  4.819291E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  5.965995E-03 BB  2.491257E-03 CC -8.457252E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.256998E-01 -7.300579E-01 -2.748002E-01
+ B  7.751038E-01  5.422021E-01  3.243934E-01
+ C -8.782872E-02 -4.159716E-01  9.051264E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     51.266428    136.891250    105.950108
+ B     39.185560     57.166330     71.071172
+ C     95.038707    114.580515     25.159690
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   86   86 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  5.285257E-03 YY -2.247429E-02 ZZ  1.718903E-02 XY -1.033202E-01 XZ -8.405688E-02 YZ -9.686378E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  9.535448E-02 BB -1.916151E-01 CC  9.626060E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.143782E-01 -3.116573E-01 -4.895486E-01
+ B  5.602995E-01  6.419862E-01  5.233720E-01
+ C  1.511707E-01 -7.005166E-01  6.974410E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     35.474070    108.159135    119.310916
+ B     55.923489     50.059918     58.441286
+ C     81.305223    134.468466     45.777949
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   87   87 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -6.901114E-05 YY  3.867934E-03 ZZ -3.798923E-03 XY  8.196568E-03 XZ  7.105978E-04 YZ -1.798064E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -7.332655E-03 BB  1.039645E-02 CC -3.063798E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.930013E-01 -5.766079E-01 -4.327501E-01
+ B  6.122097E-01  7.876681E-01 -6.912424E-02
+ C  3.807210E-01 -2.170306E-01  8.988600E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     46.131842    125.212310    115.642213
+ B     52.250547     38.031874     93.963688
+ C     67.621649    102.534686     25.991384
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   88   88 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.245074E-03 YY -1.314614E-03 ZZ  6.954006E-05 XY  2.974962E-03 XZ -5.824527E-04 YZ -6.806591E-05
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  3.289338E-03 BB -3.294245E-03 CC  4.907617E-06
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.278480E-01  5.373173E-01 -1.611142E-01
+ B -5.535066E-01  8.290833E-01 -7.906542E-02
+ C  9.109390E-02  1.546319E-01  9.837636E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     34.121694     57.498797     99.271576
+ B    123.607917     33.995318     94.534848
+ C     84.773459     81.104549     10.338835
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   89   89 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -3.594624E-04 YY  1.709180E-03 ZZ -1.349718E-03 XY -1.239787E-02 XZ -8.964152E-03 YZ  1.271660E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.320632E-02 BB  2.295571E-02 CC -9.749389E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  3.479568E-01  7.587279E-01 -5.506887E-01
+ B -5.476372E-01  6.412554E-01  5.374803E-01
+ C  7.609334E-01  1.145577E-01  6.386368E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     69.637607     40.647819    123.414274
+ B    123.205063     50.114504     57.487726
+ C     40.453447     83.421885     50.309759
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   90   90 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.304812E-03 YY -4.659062E-03 ZZ  1.354250E-03 XY -8.568154E-03 XZ -3.426619E-03 YZ  1.819750E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.042159E-02 BB -1.013427E-02 CC -2.873147E-04
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.785494E-01 -4.896991E-01 -3.924991E-01
+ B  5.425878E-01  8.395032E-01  2.885973E-02
+ C  3.153717E-01 -2.354340E-01  9.192995E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     38.872046    119.320806    113.110092
+ B     57.140027     32.912303     88.346229
+ C     71.616746    103.617204     23.176114
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   91   91 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.110746E-03 YY  2.289859E-03 ZZ -5.400605E-03 XY -9.697572E-03 XZ -1.207412E-02 YZ -1.339548E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.261642E-02 BB -2.425059E-02 CC  1.163416E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  4.274058E-01 -8.388121E-01  3.372219E-01
+ B  4.924656E-01  5.288262E-01  6.912456E-01
+ C -7.581570E-01 -1.293722E-01  6.391094E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     64.696963    147.014888     70.292291
+ B     60.497235     58.073819     46.271209
+ C    139.301988     97.433315     50.274556
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   92   92 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  7.813396E-04 YY  1.380968E-03 ZZ -2.162308E-03 XY -5.125879E-04 XZ  3.986318E-04 YZ  1.508590E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  7.676262E-04 BB  2.035304E-03 CC -2.802930E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.485914E-01  2.097245E-01  2.370443E-01
+ B -2.770596E-01  9.123034E-01  3.015635E-01
+ C -1.530110E-01 -3.517360E-01  9.235093E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     18.451593     77.893790     76.287844
+ B    106.084788     24.174374     72.448463
+ C     98.801460    110.593531     22.555365
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   93   93 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.129152E-03 YY -4.602118E-03 ZZ  3.472966E-03 XY -1.018010E-02 XZ  4.223656E-03 YZ  1.004226E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.123649E-02 BB -1.765505E-02 CC  6.418555E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  3.986050E-01 -6.599720E-01 -6.368289E-01
+ B  5.015141E-01  7.382151E-01 -4.511342E-01
+ C  7.678526E-01 -1.395543E-01  6.252415E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     66.509003    131.297738    129.555762
+ B     59.899777     42.420409    116.816477
+ C     39.838552     98.022058     51.300087
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   94   94 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.121260E-03 YY -5.533872E-04 ZZ -5.678727E-04 XY -2.313196E-04 XZ  1.272567E-03 YZ  1.260634E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.882456E-03 BB  3.027061E-04 CC -2.185162E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.255511E-01  1.955631E-01  5.293585E-01
+ B -4.633807E-01  7.703007E-01  4.380813E-01
+ C -3.220927E-01 -6.069530E-01  7.265428E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     34.355593     78.722379     58.037879
+ B    117.605472     39.619102     64.018477
+ C    108.789528    127.369508     43.402661
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   95   95 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.450343E-03 YY  4.625526E-04 ZZ  1.987791E-03 XY -1.440394E-02 XZ  1.371338E-02 YZ -1.071608E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.649879E-02 BB  2.589287E-02 CC -9.394073E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.122884E-01  4.877502E-01 -3.198238E-01
+ B -5.741311E-01  5.720376E-01 -5.857870E-01
+ C -1.027665E-01  6.594488E-01  7.446921E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     35.679876     60.807186    108.652270
+ B    125.038808     55.107563    125.858607
+ C     95.898498     48.742151     41.867341
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   96   96 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.391752E-05 YY -1.870215E-03 ZZ  1.856298E-03 XY -1.587324E-02 XZ  2.720657E-03 YZ -6.044107E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.741400E-02 BB -1.718812E-02 CC -2.258880E-04
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.570225E-01 -6.567937E-01  3.700587E-01
+ B  6.593839E-01  7.386153E-01  1.402150E-01
+ C -3.654233E-01  1.518863E-01  9.183661E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     48.926811    131.055797     68.280764
+ B     48.747096     42.386404     81.939712
+ C    111.433638     81.263742     23.311624
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   97   97 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.512614E-02 YY  2.681719E-02 ZZ -4.194333E-02 XY  1.324371E-02 XZ  3.707703E-02 YZ -1.663682E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.793595E-02 BB  3.697488E-02 CC -6.491083E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  4.864673E-01 -7.559308E-01  4.380847E-01
+ B  7.549177E-01  6.160901E-01  2.247938E-01
+ C -4.398282E-01  2.213631E-01  8.703732E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     60.891352    139.106768     64.018257
+ B     40.981821     51.968829     77.009247
+ C    116.092921     77.210894     29.497962
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   98   98 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.720871E-03 YY  1.227813E-03 ZZ  4.930582E-04 XY -3.370387E-04 XZ  9.387990E-04 YZ -1.540216E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.083881E-03 BB  2.612385E-03 CC -5.285041E-04
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.184566E-01 -8.606903E-02 -3.860435E-01
+ B -1.952105E-01  7.502311E-01 -6.317010E-01
+ C  3.439917E-01  6.555497E-01  6.722531E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     23.298517     94.937501    112.708535
+ B    101.257021     41.389599    129.175731
+ C     69.879742     49.038656     47.758797
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+   99   99 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -3.246243E-04 YY  1.272368E-03 ZZ -9.477440E-04 XY  2.745106E-04 XZ -2.722221E-04 YZ -6.815901E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -3.437918E-04 BB  1.527123E-03 CC -1.183332E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.577039E-01 -2.335584E-01 -1.680883E-01
+ B  1.808848E-01  9.429283E-01 -2.795833E-01
+ C  2.237943E-01  2.373534E-01  9.452933E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     16.723625    103.506658     99.676688
+ B     79.578697     19.450703    106.235335
+ C     77.068014     76.269613     19.039598
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  100  100 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -5.719681E-04 YY  1.880166E-04 ZZ  3.839515E-04 XY -3.701221E-04 XZ -4.271822E-04 YZ  8.101811E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -7.450901E-04 BB -5.299279E-04 CC  1.275018E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.558542E-01  1.727932E-01  2.376662E-01
+ B  2.679414E-02  7.542009E-01 -6.560968E-01
+ C -2.926172E-01  6.335010E-01  7.162763E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     17.088072     80.049739     76.251159
+ B     88.464625     41.044403    131.002869
+ C    107.014707     50.691107     44.252107
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  101  101 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.652163E-03 YY  1.280996E-04 ZZ -2.780263E-03 XY  2.025684E-02 XZ  1.035962E-02 YZ  1.617001E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  3.183256E-02 BB -2.106764E-02 CC -1.076492E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.090594E-01  6.329213E-01  4.779721E-01
+ B -4.810953E-01  7.739352E-01 -4.117907E-01
+ C -6.305506E-01  2.085485E-02  7.758680E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     52.478481     50.734018     61.446960
+ B    118.756964     39.291407    114.317375
+ C    129.090753     88.805018     39.116210
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  102  102 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.746279E-05 YY -5.638479E-03 ZZ  5.601016E-03 XY  1.161309E-02 XZ  6.398373E-03 YZ -1.011788E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  8.661642E-03 BB -2.025217E-02 CC  1.159053E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.318801E-01  4.144137E-01  3.691027E-01
+ B -5.469593E-01  7.247549E-01  4.190058E-01
+ C -9.386719E-02 -5.504468E-01  8.295766E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     33.707645     65.517598     68.339712
+ B    123.158657     43.551540     65.228162
+ C     95.386123    123.397668     33.944732
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  103  103 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  7.964874E-03 YY -1.123534E-03 ZZ -6.841340E-03 XY -9.911323E-03 XZ -1.003115E-02 YZ  7.559504E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.014435E-02 BB -7.349875E-03 CC -1.279448E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.554036E-01 -5.018085E-01 -4.213711E-01
+ B  6.004982E-01  7.875063E-01  1.386928E-01
+ C  2.622352E-01 -3.578017E-01  8.962202E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     40.939349    120.119719    114.921182
+ B     53.094415     38.046918     82.027787
+ C     74.797268    110.965250     26.334404
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  104  104 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  9.163677E-03 YY -2.965210E-03 ZZ -6.198467E-03 XY -8.392890E-03 XZ  6.641501E-03 YZ -4.055469E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.521639E-02 BB -5.028692E-03 CC -1.018770E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.699019E-01 -4.077492E-01  2.775089E-01
+ B  1.571166E-01  7.624164E-01  6.277226E-01
+ C -4.675307E-01 -5.024559E-01  7.272916E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     29.552753    114.063520     73.888413
+ B     80.960429     40.322315     51.117701
+ C    117.874130    120.162612     43.340180
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  105  105 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.271230E-03 YY  1.181153E-03 ZZ -2.452383E-03 XY  8.692008E-04 XZ  3.545401E-03 YZ -5.165235E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.043156E-03 BB  5.411682E-03 CC -7.454838E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.442562E-01  5.333058E-01  5.306967E-02
+ B -3.899202E-01  6.791502E-01 -6.218659E-01
+ C -3.676870E-01  5.043212E-01  7.813235E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     32.407670     57.770911     86.957903
+ B    112.949535     47.222725    128.452520
+ C    111.573038     59.713698     38.618085
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  106  106 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.330842E-03 YY  1.517652E-03 ZZ -3.848494E-03 XY -2.816867E-03 XZ -4.088828E-03 YZ  1.577483E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  6.467638E-03 BB -5.800593E-04 CC -5.887579E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.469013E-01 -5.459845E-01 -3.795252E-01
+ B  4.998192E-01  8.374353E-01 -2.210949E-01
+ C  4.385422E-01 -2.455786E-02  8.983750E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     41.677332    123.091967    112.304273
+ B     60.011962     33.129727    102.773351
+ C     63.989098     91.407203     26.054713
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  107  107 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  8.630623E-03 YY  2.114340E-03 ZZ -1.074496E-02 XY  1.470128E-02 XZ  5.579704E-03 YZ  3.975938E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.186543E-02 BB -9.628049E-03 CC -1.223738E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.648427E-01  6.106238E-01  2.053149E-01
+ B -5.932659E-01  7.918455E-01 -1.449703E-01
+ C -2.511000E-01 -1.092683E-02  9.678995E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     40.106996     52.365381     78.152068
+ B    126.389108     37.641692     98.335559
+ C    104.542612     90.626073     14.556678
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  108  108 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  8.153636E-04 YY  5.958933E-03 ZZ -6.774297E-03 XY  1.325081E-02 XZ  9.306797E-03 YZ  1.089821E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.009667E-02 BB  2.363722E-02 CC -1.354055E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.504562E-01 -6.584111E-01  5.753584E-02
+ B  5.779040E-01  6.959428E-01  4.262518E-01
+ C -3.206905E-01 -2.866331E-01  9.027730E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     41.370090    131.178804     86.701618
+ B     54.696741     45.897609     64.770076
+ C    108.704691    106.656492     25.475010
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  109  109 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.377404E-02 YY -7.651824E-03 ZZ -6.122216E-03 XY -2.384837E-03 XZ  4.134299E-03 YZ -3.357630E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.500154E-02 BB -1.035505E-02 CC -4.646493E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.684337E-01 -1.331829E-01  2.107093E-01
+ B -3.413112E-02  7.664929E-01  6.413453E-01
+ C -2.469234E-01 -6.282921E-01  7.377519E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     14.434386     97.653557     77.836075
+ B     91.955949     39.960013     50.107793
+ C    104.295530    128.924232     42.459741
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  110  110 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -5.522269E-03 YY  8.864610E-03 ZZ -3.342341E-03 XY -2.304734E-03 XZ -1.439903E-03 YZ  6.017923E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -6.330930E-03 BB  1.174824E-02 CC -5.417308E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.462265E-01 -1.441949E-01  6.498876E-01
+ B -1.533736E-01  9.127526E-01  3.786281E-01
+ C -6.477828E-01 -3.822179E-01  6.590044E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     41.735449     98.290663     49.466872
+ B     98.822481     24.111446     67.751268
+ C    130.374646    112.471133     48.776011
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  111  111 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  5.091261E-03 YY  5.251746E-02 ZZ -5.760872E-02 XY  1.384911E-01 XZ  8.675464E-02 YZ  1.043009E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.116284E-01 BB  2.327055E-01 CC -1.210772E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.863021E-01 -6.126578E-01 -7.987129E-02
+ B  5.831931E-01  6.932941E-01  4.233546E-01
+ C -2.039972E-01 -3.794650E-01  9.024364E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     38.158734    127.781930     94.581167
+ B     54.324558     46.108566     64.953440
+ C    101.770804    112.300547     25.519808
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  112  112 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  3.999337E-02 YY  1.082941E-01 ZZ -1.482874E-01 XY  2.114499E-01 XZ  4.521178E-02 YZ  4.626384E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.390136E-01 BB  2.976735E-01 CC -1.586599E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.188930E-01 -6.570842E-01  2.267888E-01
+ B  6.427091E-01  7.526017E-01  1.432329E-01
+ C -2.647977E-01  4.279014E-02  9.633541E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     44.036841    131.077878     76.891909
+ B     50.005869     41.183750     81.765037
+ C    105.354935     87.547557     15.559136
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  113  113 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.220010E-03 YY  3.890045E-03 ZZ -1.670035E-03 XY  2.096725E-02 XZ -2.089929E-02 YZ -2.046496E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.877797E-02 BB  4.167190E-02 CC -2.289393E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  3.530457E-01 -7.854743E-01 -5.083196E-01
+ B  5.587964E-01  6.127816E-01 -5.587891E-01
+ C  7.504034E-01 -8.676907E-02  6.552601E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     69.326280    141.764564    120.551967
+ B     56.027398     52.209096    123.972099
+ C     41.374666     94.977761     49.060622
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  114  114 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -7.315235E-04 YY  3.184052E-03 ZZ -2.452528E-03 XY  2.136342E-02 XZ -1.945881E-02 YZ -2.324132E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.982874E-02 BB  4.290921E-02 CC -2.308047E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.292428E-01 -4.790010E-01  2.879487E-01
+ B  5.520768E-01  6.218548E-01 -5.554347E-01
+ C  8.699149E-02  6.195600E-01  7.801140E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     33.978964    118.620173     73.264815
+ B     56.490391     51.548288    123.740662
+ C     85.009447     51.715988     38.728986
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  115  115 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -4.529871E-03 YY  1.006174E-02 ZZ -5.531870E-03 XY -3.084455E-02 XZ  2.829043E-02 YZ -3.205528E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.812017E-02 BB  6.162476E-02 CC -3.350459E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  5.844782E-01  7.440024E-01  3.237989E-01
+ B -5.340848E-01  6.531757E-01 -5.367634E-01
+ C -6.108508E-01  1.407904E-01  7.791273E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     54.233868     41.926516     71.107178
+ B    122.281865     49.218535    122.463581
+ C    127.651049     81.906413     38.819260
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  116  116 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.826254E-03 YY -2.392515E-03 ZZ  5.662613E-04 XY -2.512885E-02 XZ -2.579574E-02 YZ  2.608897E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  5.138320E-02 BB -2.426703E-02 CC -2.711617E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  5.878401E-01 -5.585849E-01 -5.851726E-01
+ B  7.984734E-01  2.844378E-01  5.305991E-01
+ C -1.299395E-01 -7.791522E-01  6.132191E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     53.996115    123.957989    125.815182
+ B     37.015433     73.474756     57.954057
+ C     97.466094    141.183014     52.177371
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  117  117 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.797968E-01 YY -2.728096E-01 ZZ  5.526063E-01 XY  4.485105E-02 XZ -1.856432E-01 YZ -2.023951E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -3.179195E-01 BB -3.213284E-01 CC  6.392479E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.206283E-01  6.254865E-01  2.991010E-01
+ B -6.627982E-01  7.480942E-01  3.245853E-02
+ C -2.034534E-01 -2.216342E-01  9.536692E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     43.893618     51.282096     72.596383
+ B    131.513633     41.574440     88.139937
+ C    101.738976    102.805034     17.509089
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  118  118 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  5.643888E-03 YY  2.629180E-02 ZZ -3.193569E-02 XY  3.698196E-02 XZ  1.809307E-03 YZ  5.088811E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.216371E-02 BB  5.466984E-02 CC -3.250613E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.927543E-01 -5.882836E-01 -1.595713E-01
+ B  6.025457E-01  7.958743E-01  5.935237E-02
+ C  9.208269E-02 -1.432009E-01  9.854006E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     37.556344    126.035302     99.182015
+ B     52.947558     37.262085     86.597360
+ C     84.716566     98.233109      9.802466
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  119  119 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.116798E-03 YY  4.228409E-03 ZZ -2.111612E-03 XY  1.457299E-03 XZ -4.797644E-05 YZ -1.027611E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.540535E-03 BB  4.698220E-03 CC -2.157685E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.164531E-01 -2.544628E-01 -5.183175E-01
+ B  2.078174E-01  9.670002E-01 -1.473855E-01
+ C  5.387173E-01  1.261795E-02  8.423921E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     35.268709    104.741759    121.219463
+ B     78.005524     14.760283     98.475443
+ C     57.403636     89.277025     32.606412
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  120  120 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -5.230251E-03 YY  1.371838E-02 ZZ -8.488133E-03 XY  2.219876E-02 XZ  8.546376E-03 YZ  1.602735E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.044280E-02 BB  3.577662E-02 CC -1.533383E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.262897E-01 -6.155241E-01  3.059957E-01
+ B  5.004093E-01  7.786474E-01  3.785482E-01
+ C -4.712683E-01 -1.218126E-01  8.735376E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     43.423759    127.990011     72.181921
+ B     59.972919     38.863100     67.756215
+ C    118.116658     96.996723     29.127634
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  121  121 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -6.353610E-03 YY  1.368152E-02 ZZ -7.327911E-03 XY -1.644513E-02 XZ -1.267067E-02 YZ  1.837215E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.483855E-02 BB  3.469587E-02 CC -1.985731E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.043447E-01  6.240619E-01 -3.382976E-01
+ B -4.493246E-01  7.608961E-01  4.681288E-01
+ C  5.495507E-01 -1.777186E-01  8.163395E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     45.223374     51.386632    109.773191
+ B    116.700359     40.456743     62.087098
+ C     56.663805    100.236902     35.279978
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  122  122 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -4.768053E-03 YY  1.025830E-02 ZZ -5.490243E-03 XY -6.048073E-03 XZ  6.457701E-03 YZ -1.258196E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -6.511448E-03 BB  2.010335E-02 CC -1.359190E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.655557E-01  4.602689E-01  1.973976E-01
+ B -3.231780E-01  8.144353E-01 -4.819244E-01
+ C -3.825824E-01  3.533379E-01  8.536879E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     30.053777     62.595538     78.615183
+ B    108.855224     35.468437    118.811165
+ C    112.493734     69.308387     31.384919
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  123  123 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.212123E-03 YY  2.325849E-03 ZZ -4.537972E-03 XY -4.278620E-03 XZ -5.037036E-04 YZ  1.278101E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.906910E-03 BB  6.690592E-03 CC -4.783682E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.185541E-01  6.696530E-01  1.877359E-01
+ B -6.929981E-01  7.121630E-01  1.121497E-01
+ C -5.859719E-02 -2.106863E-01  9.757959E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     44.064765     47.959708     79.179314
+ B    133.867904     44.588826     83.560748
+ C     93.359296    102.162573     12.631703
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  124  124 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -8.353979E-03 YY  6.792026E-03 ZZ  1.561952E-03 XY  1.008052E-03 XZ -4.200135E-03 YZ -1.493655E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -7.109885E-03 BB  1.977299E-02 CC -1.266311E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.287962E-01 -4.363910E-01 -3.502280E-01
+ B  1.234849E-01  7.531235E-01 -6.461861E-01
+ C  5.457548E-01  4.923087E-01  6.780736E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     34.024719    115.873839    110.501264
+ B     82.906730     41.138325    130.254663
+ C     56.923743     60.507559     47.306707
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  125  125 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  7.821699E-03 YY  4.572888E-03 ZZ -1.239459E-02 XY  1.295417E-03 XZ  6.491561E-03 YZ -7.691066E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.001300E-02 BB  7.061389E-03 CC -1.707439E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.858994E-01 -2.950755E-01  3.579284E-01
+ B  3.882100E-01  8.939677E-01 -2.238631E-01
+ C -2.539199E-01  3.372716E-01  9.065167E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     27.637599    107.162068     69.026973
+ B     67.156834     26.623856    102.936035
+ C    104.709595     70.289269     24.971660
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  126  126 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.565711E-03 YY  2.204010E-03 ZZ -3.769721E-03 XY  1.808595E-04 XZ -9.411499E-04 YZ -1.115238E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.567725E-03 BB  2.544629E-03 CC -4.112355E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.144305E-01 -3.971033E-01 -7.826790E-02
+ B  3.734627E-01  9.023761E-01 -2.150417E-01
+ C  1.560208E-01  1.674105E-01  9.734635E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     23.875025    113.397218     94.489012
+ B     68.070667     25.527823    102.417971
+ C     81.023993     80.362706     13.228920
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  127  127 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -3.908867E-03 YY -7.611335E-03 ZZ  1.152020E-02 XY -8.527414E-04 XZ  1.009367E-02 YZ  2.457909E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.025984E-02 BB -6.388141E-03 CC  1.664798E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.040714E-01  5.914430E-01 -3.930377E-01
+ B -5.597699E-01  8.028089E-01  2.053179E-01
+ C  4.369680E-01  7.545223E-02  8.963068E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     45.245424     53.740528    113.143646
+ B    124.039889     36.600821     78.151891
+ C     64.089413     85.672793     26.323216
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  128  128 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.127625E-02 YY -3.683940E-02 ZZ  1.556315E-02 XY  6.856441E-03 XZ -1.622820E-02 YZ -2.214505E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  4.011290E-02 BB -4.495626E-02 CC  4.843359E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.827869E-01  2.575897E-01 -6.837029E-01
+ B -1.395220E-02  9.402140E-01  3.402985E-01
+ C  7.304844E-01 -2.228122E-01  6.455597E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     46.938196     75.072909    133.133683
+ B     90.799428     19.912480     70.104941
+ C     43.072982    102.874258     49.792349
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  129  129 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.787709E-01 YY -1.620448E-01 ZZ -1.167261E-01 XY  2.405437E-02 XZ  1.733490E-01 YZ  1.802818E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  3.456358E-01 BB -1.604174E-01 CC -1.852184E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.341137E-01  5.677432E-02  3.524320E-01
+ B -1.776561E-01  9.302621E-01  3.210152E-01
+ C -3.096288E-01 -3.624764E-01  8.790568E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     20.914581     86.745321     69.363858
+ B    100.233266     21.524293     71.275671
+ C    108.036859    111.252357     28.471202
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  130  130 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.679628E-02 YY -1.731238E-02 ZZ  5.161005E-04 XY  1.126945E-02 XZ  2.059276E-03 YZ -3.927814E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.022015E-02 BB -2.155900E-02 CC  1.338842E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.580937E-01  2.831024E-01  4.369687E-02
+ B -2.861213E-01  9.384184E-01  1.936633E-01
+ C  1.382060E-02 -1.980502E-01  9.800944E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     16.645833     73.554546     87.495556
+ B    106.625885     20.212374     78.833353
+ C     89.208113    101.422963     11.451118
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  131  131 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.058247E-03 YY  3.432691E-03 ZZ -5.490938E-03 XY -7.496668E-04 XZ -4.455116E-04 YZ  3.139934E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.739265E-03 BB  3.786048E-03 CC -5.525314E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.110847E-01  4.104347E-01 -3.831497E-02
+ B -4.084481E-01  9.113856E-01  5.046309E-02
+ C  5.563151E-02 -3.032648E-02  9.979907E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     24.344319     65.767855     92.195823
+ B    114.107382     24.302465     87.107449
+ C     86.810903     91.737846      3.632726
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  132  132 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -8.064613E-04 YY  5.669449E-03 ZZ -4.862987E-03 XY -6.834504E-03 XZ -3.261304E-03 YZ  6.688862E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -4.943157E-03 BB  1.305374E-02 CC -8.110584E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.774674E-01  4.251678E-01  2.219986E-01
+ B -4.794635E-01  7.899644E-01  3.821925E-01
+ C -1.287503E-02 -4.418016E-01  8.970204E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     28.661651     64.838717     77.173555
+ B    118.650366     37.817818     67.530445
+ C     90.737705    116.218888     26.230868
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  133  133 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.186090E-02 YY  1.048497E-03 ZZ  1.081240E-02 XY  1.458243E-02 XZ -5.353397E-03 YZ  7.498212E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.208543E-02 BB  8.721566E-03 CC  1.336387E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.344866E-01 -5.308105E-01  1.478927E-01
+ B  3.407479E-01  7.080250E-01  6.185398E-01
+ C -4.330392E-01 -4.657691E-01  7.717099E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     33.437580    122.060235     81.495172
+ B     70.077554     44.925551     51.790417
+ C    115.660591    117.760006     39.492311
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  134  134 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  5.120222E-03 YY -1.812725E-02 ZZ  1.300703E-02 XY -1.763492E-02 XZ  8.751650E-03 YZ  1.829212E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.450386E-02 BB -3.599928E-02 CC  2.149542E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.996078E-01 -4.208742E-01  1.164937E-01
+ B  4.317398E-01  8.170760E-01 -3.820832E-01
+ C  6.562478E-02  3.940199E-01  9.167561E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     25.893444    114.889794     83.310215
+ B     64.421975     35.206848    112.462778
+ C     86.237273     66.795137     23.543644
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  135  135 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.797426E-03 YY -7.558196E-04 ZZ -1.041607E-03 XY  1.817038E-03 XZ -3.034214E-04 YZ  8.530327E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.794489E-03 BB  7.831358E-03 CC -9.625847E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.749595E-01 -3.816029E-02 -2.190841E-01
+ B  1.803347E-01  7.121438E-01  6.784767E-01
+ C  1.301285E-01 -7.009957E-01  7.011929E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     12.849014     92.186955    102.655241
+ B     79.610743     44.590392     47.275279
+ C     82.522983    134.506947     45.477207
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  136  136 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.614982E-02 YY  2.594406E-02 ZZ -5.209388E-02 XY  6.271717E-03 XZ  9.176449E-04 YZ  6.923890E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.535576E-02 BB  6.724305E-02 CC -9.259882E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.897048E-01 -1.123286E-01 -8.869388E-02
+ B  1.417183E-01  8.557539E-01  4.975954E-01
+ C  2.000595E-02 -5.050421E-01  8.628628E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A      8.228625     96.449565     95.088471
+ B     81.852711     31.156877     60.158960
+ C     88.853667    120.334148     30.360446
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  137  137 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  4.335019E-02 YY -2.208402E-02 ZZ -2.126617E-02 XY -2.690936E-02 XZ  2.080609E-02 YZ  7.293419E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  5.532803E-02 BB -1.024310E-01 CC  4.710300E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.855983E-01 -6.110812E-01 -3.956447E-01
+ B  2.257239E-01  6.951430E-01 -6.825137E-01
+ C  6.921009E-01  3.786238E-01  6.145245E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     46.717319    127.667719    113.306189
+ B     76.954553     45.961383    133.040383
+ C     46.203355     67.751538     52.082622
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  138  138 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.062711E-03 YY -3.690894E-03 ZZ  2.628183E-03 XY  3.429643E-04 XZ  9.709073E-04 YZ  1.453055E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  6.178298E-04 BB -4.012301E-03 CC  3.394471E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.154200E-01 -6.128914E-02 -3.978064E-01
+ B -2.585733E-02  9.773424E-01 -2.100791E-01
+ C  4.016686E-01  2.025968E-01  8.930940E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     23.734559     93.513811    113.441115
+ B     91.481681     12.219908    102.126986
+ C     66.317469     78.311147     26.735350
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  139  139 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -2.181812E-03 YY  2.178327E-03 ZZ  3.485340E-06 XY  1.672034E-04 XZ -1.050767E-03 YZ  1.672464E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.748930E-03 BB  3.110684E-03 CC -3.617536E-04
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.772526E-01 -1.807181E-01  4.447121E-01
+ B -7.006292E-02  8.683029E-01  4.910614E-01
+ C -4.748885E-01 -4.619427E-01  7.490593E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     28.687301    100.411592     63.595079
+ B     94.017601     29.737982     60.589632
+ C    118.352091    117.512538     41.491043
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  140  140 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -3.119038E-03 YY -2.100461E-03 ZZ  5.219499E-03 XY -9.439580E-04 XZ  1.024916E-03 YZ  4.563035E-04
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -3.819727E-03 BB -1.539592E-03 CC  5.359319E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.559119E-01  5.024246E-01 -1.224105E-01
+ B -5.042142E-01  8.633875E-01  1.816938E-02
+ C  1.148164E-01  4.616973E-02  9.923132E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     31.139374     59.839461     97.031241
+ B    120.279204     30.300919     88.958914
+ C     83.406962     87.353729      7.108669
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  141  141 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -4.952708E-01 YY  4.067359E-01 ZZ  8.853493E-02 XY  6.145846E-02 XZ -5.600891E-01 YZ  3.999793E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -8.392699E-01 BB  4.107377E-01 CC  4.285321E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.535040E-01 -5.871936E-02  5.177672E-01
+ B  1.181372E-01  9.895629E-01 -8.251598E-02
+ C -5.075180E-01  1.315953E-01  8.515329E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     31.405143     93.366308     58.817399
+ B     83.215393      8.285260     94.733199
+ C    120.498643     82.438213     31.621215
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  142  142 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -3.188646E-02 YY  4.636210E-03 ZZ  2.725025E-02 XY  2.997344E-02 XZ -1.183750E-02 YZ  6.561465E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -5.106233E-02 BB  2.147237E-02 CC  2.958996E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  8.592163E-01 -4.824376E-01  1.702979E-01
+ B  4.881903E-01  8.726893E-01  9.143615E-03
+ C -1.530284E-01  7.528143E-02  9.853502E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     30.771302    118.844728     80.194860
+ B     60.778298     29.227324     89.476102
+ C     98.802466     85.682607      9.819402
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  143  143 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  1.255991E-03 YY  2.481499E-03 ZZ -3.737489E-03 XY  7.573403E-04 XZ  1.849581E-03 YZ -4.097112E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  1.774987E-03 BB  4.522682E-03 CC -6.297669E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.655904E-01  1.588907E-01  2.058856E-01
+ B -4.995455E-02  8.902369E-01 -4.527504E-01
+ C -2.552248E-01  4.268865E-01  8.675415E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     15.074071     80.857483     78.118656
+ B     92.863377     27.096975    116.920281
+ C    104.786904     64.729869     29.825810
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  144  144 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.310160E-02 YY -1.634773E-02 ZZ -6.753865E-03 XY -5.352781E-03 XZ  5.570145E-03 YZ -3.557051E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.495372E-02 BB -1.782371E-02 CC -7.130013E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.720895E-01 -1.420656E-01  1.867065E-01
+ B  8.976721E-02  9.604842E-01  2.634614E-01
+ C -2.167574E-01 -2.393480E-01  9.464295E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     13.568646     98.167389     79.239358
+ B     84.849785     16.160825     74.724450
+ C    102.518653    103.848060     18.839036
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  145  145 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -5.111512E-04 YY -4.791294E-04 ZZ  9.902806E-04 XY -1.721493E-03 XZ  1.001810E-03 YZ -1.781891E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -2.347436E-03 BB  3.108971E-03 CC -7.615348E-04
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  5.947342E-01  7.696105E-01  2.323592E-01
+ B -4.578408E-01  5.618301E-01 -6.890057E-01
+ C -6.608124E-01  3.033918E-01  6.864987E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     53.506310     39.681071     76.563995
+ B    117.247863     55.817546    133.551450
+ C    131.361859     72.338565     46.646417
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  146  146 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  2.548545E-02 YY  1.187413E-03 ZZ -2.667286E-02 XY  2.166553E-03 XZ  3.047621E-05 YZ -3.085007E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.615022E-02 BB  2.046181E-02 CC -4.661204E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.414929E-01  2.912703E-01 -1.695663E-01
+ B -3.366206E-01  7.877854E-01 -5.158302E-01
+ C -1.666418E-02  5.427300E-01  8.397419E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     19.696199     73.065978     99.762604
+ B    109.671115     38.020972    121.052965
+ C     90.954831     57.130324     32.887126
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  147  147 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.754636E-04 YY  2.334904E-04 ZZ -5.802682E-05 XY -9.566586E-04 XZ  3.374845E-04 YZ  3.471934E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  7.457121E-06 BB  3.619490E-03 CC -3.626947E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.588385E-01 -8.811133E-02  2.699352E-01
+ B -1.232717E-01  7.272156E-01  6.752492E-01
+ C -2.557982E-01 -6.807304E-01  6.864208E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     16.496204     95.054963     74.339587
+ B     97.080957     43.346524     47.526493
+ C    104.820889    132.900742     46.652556
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  148  148 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -7.390824E-04 YY -3.980441E-03 ZZ  4.719523E-03 XY  3.164689E-04 XZ -1.460997E-03 YZ -1.357414E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.105350E-03 BB -4.189995E-03 CC  5.295345E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.703291E-01 -7.296496E-03  2.416780E-01
+ B -2.890806E-02  9.888739E-01  1.459200E-01
+ C -2.400537E-01 -1.485769E-01  9.593222E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     13.992098     90.418062     76.014404
+ B     91.656541      8.554837     81.609442
+ C    103.889712     98.544463     16.398327
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  149  149 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  6.590763E-04 YY  3.577161E-03 ZZ -4.236238E-03 XY -1.636645E-03 XZ -2.872967E-03 YZ  1.517851E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  5.400934E-04 BB  5.078386E-03 CC -5.618479E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.755267E-01  5.618276E-01 -2.879376E-01
+ B -4.904978E-01  8.233627E-01  2.854571E-01
+ C  3.974548E-01 -8.014688E-02  9.141150E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     39.147192     55.817714    106.734522
+ B    119.373303     34.577154     73.413825
+ C     66.580839     94.597008     23.919648
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  150  150 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  4.617689E-01 YY -6.427824E-01 ZZ  1.810135E-01 XY -1.167530E-01 XZ -5.859404E-02 YZ -5.813963E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  4.735048E-01 BB -9.554414E-01 CC  4.819366E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.777092E-01  7.034927E-03 -2.098456E-01
+ B  9.177930E-02  8.845786E-01  4.572715E-01
+ C  1.888418E-01 -4.663381E-01  8.642150E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     12.120212     89.596925    102.113304
+ B     84.734023     27.800291     62.788816
+ C     79.114800    117.796854     30.206810
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  151  151 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  5.452573E-02 YY -3.325249E-01 ZZ  2.779992E-01 XY -5.117328E-01 XZ  2.327487E-01 YZ  3.232395E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  4.048662E-01 BB -8.293330E-01 CC  4.244668E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.722746E-01 -6.340526E-01 -3.821310E-01
+ B  5.366475E-01  7.729640E-01 -3.384319E-01
+ C  5.099571E-01  2.244951E-02  8.599068E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     47.757137    129.349756    112.465745
+ B     57.544288     39.379200    109.781366
+ C     59.339024     88.713630     30.693879
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  152  152 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -5.289619E-03 YY -2.233976E-03 ZZ  7.523595E-03 XY  7.434312E-04 XZ -2.036957E-03 YZ -1.334505E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -5.690653E-03 BB -2.349164E-03 CC  8.039817E-03
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.781427E-01 -1.583306E-01  1.347895E-01
+ B  1.361677E-01  9.776404E-01  1.602424E-01
+ C -1.571470E-01 -1.383859E-01  9.778314E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     12.001344     99.110013     82.253550
+ B     82.173853     12.138982     80.779035
+ C     99.041335     97.954459     12.086841
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  153  153 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.086381E-04 YY -3.969655E-04 ZZ  5.056036E-04 XY  2.335720E-03 XZ  3.151963E-04 YZ -2.064366E-03
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  2.861079E-03 BB -3.402777E-03 CC  5.416981E-04
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  4.846612E-01  6.889437E-01 -5.389435E-01
+ B -5.504485E-01  7.190710E-01  4.241973E-01
+ C  6.797867E-01  9.106867E-02  7.277338E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     61.009724     46.453448    122.611749
+ B    123.397787     44.022168     64.900132
+ C     47.173020     84.774910     43.303254
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  154  154 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX  4.546585E-01 YY  4.082561E-01 ZZ -8.629146E-01 XY  1.707990E-02 XZ -8.580431E-02 YZ  3.080287E-01
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA  4.598074E-01 BB  4.793024E-01 CC -9.391098E-01
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  9.893428E-01  1.422555E-01 -3.105045E-02
+ B -1.314509E-01  9.643407E-01  2.297122E-01
+ C  6.262103E-02 -2.231826E-01  9.727632E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A      8.372301     81.821619     91.779345
+ B     97.553445     15.346993     76.719869
+ C     86.409730    102.896029     13.403146
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  155  155 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -1.021512E-02 YY  1.622085E-02 ZZ -6.005729E-03 XY  2.191413E-02 XZ  2.567146E-02 YZ -2.570127E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -5.072388E-02 BB  3.384080E-02 CC  1.688308E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  6.388155E-01 -4.489742E-01 -6.247695E-01
+ B  1.701951E-01  8.744127E-01 -4.543523E-01
+ C  7.502989E-01  1.839146E-01  6.350016E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     50.296449    116.677888    128.665271
+ B     80.200837     29.024453    117.023269
+ C     41.383727     79.402143     50.579896
+
+
+ POINT   ATOM  MASS NO  NUCLEAR G FACTOR
+  156  156 SI     29      -1.1106000
+
+ TENSOR IN ORIGINAL CARTESIAN AXES
+ XX -4.587018E-02 YY  3.923073E-02 ZZ  6.639454E-03 XY -5.140397E-02 XZ -7.181712E-02 YZ -3.082398E-02
+
+ TENSOR IN PRINCIPAL AXIS SYSTEM
+ AA -1.187275E-01 BB  6.401393E-02 CC  5.471357E-02
+
+ PRINCIPAL AXES
+         X             Y             Z
+ A  7.712433E-01  3.541927E-01  5.288962E-01
+ B -5.268815E-01  8.214551E-01  2.181911E-01
+ C -3.571828E-01 -4.469441E-01  8.201594E-01
+
+ ANGLES BETWEEN PRINCIPAL AXES AND ORIGINAL AXES (DEGREES)
+         X             Y             Z
+ A     39.534328     69.256023     58.069093
+ B    121.794993     34.769277     77.397191
+ C    110.927283    116.547787     34.899246
+
+ *******************************************************************************
+ THE COMPONENTS OF THE TENSOR IN MILLITESLA ARE OBTAINED BY MULTIPLYING
+ THE COMPUTED ONES BY 3.4066697*NUCLEAR G FACTOR
+ *******************************************************************************
+  OTHER CONVERSION FACTORS 
+     T (MHZ)      =      28.024940 * T (MILLI T) 
+     T (CM**(-1)) =  0.3335641E-04 * T (MHZ) 
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ANISOTRO    TELAPSE   119822.55 TCPU   119627.97
+ *******************************************************************************
+ SPIN DENSITY AT THE NUCLEAR POSITIONS
+ *******************************************************************************
+ POINT  ATOM     X(AU)     Y(AU)     Z(AU)    BOHR**(-3)
+   1    1 O     0.4548    2.6495    3.8542  -0.77797E-02
+   2    2 O     1.4616   -7.9183    2.8251   0.20005E-03
+   3    3 O    -9.1506    2.2596    2.0965  -0.26278E-02
+   4    4 O    -7.9351   -7.9259    1.6132  -0.43629E-02
+   5    5 O    -3.4021    5.5589    1.9250  -0.15166E-01
+   6    6 O    10.3251   -3.5730    3.4690  -0.43276E-01
+   7    7 O    -9.4377    8.2795   -1.2641   0.33208E-04
+   8    8 O     6.9236   -9.8278    0.1817   0.51326E-03
+   9    9 O     3.6907    9.1830  -18.3388   0.25923E-02
+  10   10 O     3.9941   -0.6832  -18.2027  -0.88515E-03
+  11   11 O    -7.4484    8.3959  -17.4456   0.13432E-02
+  12   12 O    -5.8209   -0.1188  -17.2011   0.20216E-01
+  13   13 O    -3.9395    9.7234  -14.8580  -0.76097E-01
+  14   14 O    -9.7549   -8.3351  -15.7326  -0.47742E-02
+  15   15 O     7.0648    5.3743  -17.2445  -0.26933E-02
+  16   16 O    -2.9936    5.2387  -16.9250   0.22414E-02
+  17   17 O     0.2581    1.9052  -16.3626  -0.43403E-01
+  18   18 O     4.9197   -6.4579  -16.2448  -0.19000E-02
+  19   19 O     0.1742   -7.6111  -16.9116  -0.11168E-03
+  20   20 O     1.2611   -3.8637  -13.7871  -0.88405E-02
+  21   21 O    -3.4361   -4.2318  -16.1105  -0.14802E-02
+  22   22 O     7.8244   -1.3353  -15.2905   0.17693E-02
+  23   23 O     7.4462    2.6719  -12.9778   0.78077E-03
+  24   24 O     4.9835   -3.8045   -6.3736  -0.11118E-02
+  25   25 O     5.0263    7.1717  -13.1141  -0.13135E+00
+  26   26 O     2.6661    3.8593   -3.1515   0.34375E-03
+  27   27 O     3.4613   -8.2177  -11.8531  -0.13963E+00
+  28   28 O     9.9183    7.1010  -13.7749  -0.32753E-01
+  29   29 O     6.3861    0.6039   -4.8483  -0.62715E-04
+  30   30 O    -6.4969    3.4265  -13.4251  -0.60319E-01
+  31   31 O     3.2376   -8.3881   -2.8270  -0.83623E-02
+  32   32 O    -4.6295    0.3520   -6.8587  -0.20351E+00
+  33   33 O     7.4274    7.4940   -3.8259  -0.48778E-02
+  34   34 O     4.9128    9.8411   -7.2101  -0.19119E+00
+  35   35 O     0.9412   -3.1573   -8.9762  -0.99715E-02
+  36   36 O    -1.5712   -4.2507    0.8245  -0.16583E-02
+  37   37 O     3.3086    0.3154  -12.2272  -0.99899E-02
+  38   38 O    -3.1782   -9.6567   -8.8743  -0.12793E+00
+  39   39 O     9.1588   -8.1007   -6.1978  -0.75292E-02
+  40   40 O    -3.7604   -4.3655   -8.1177  -0.11410E+00
+  41   41 O     7.2140   -0.2199    1.1261  -0.90230E-04
+  42   42 O     9.7529   -3.3422   -5.8721  -0.13890E-02
+  43   43 O    10.1660   -3.8891   -1.2706  -0.15469E-02
+  44   44 O    -2.5948   -0.0821   -2.0823  -0.31240E-01
+  45   45 O    -6.6846    2.6596   -2.8158  -0.16775E-02
+  46   46 O    -1.8783   -6.9207  -12.1051  -0.13671E-02
+  47   47 O     0.7611   -3.1726   -3.6530  -0.17267E-02
+  48   48 O     1.8298   -0.5819    0.5667  -0.40750E-03
+  49   49 O     0.7223    7.7589   -5.6827  -0.27387E-01
+  50   50 O     1.0895    2.5535   -7.8120  -0.70532E-02
+  51   51 O    -2.3576    4.3326   -4.5457  -0.49871E-02
+  52   52 O    -2.1787   -0.7263  -11.4947  -0.21761E+00
+  53   53 O     7.7441   -0.3985   -9.4896  -0.10073E-02
+  54   54 O     9.4907    7.6197   -8.4122  -0.17392E+00
+  55   55 O    -7.9170   -4.2899  -11.8113  -0.12561E+00
+  56   56 O     0.1032    8.3919  -12.3918  -0.18750E+00
+  57   57 O    -6.4782    6.8015   -7.3882  -0.12249E+00
+  58   58 O     5.8533   -3.7254  -11.9457  -0.16708E-02
+  59   59 O    -8.2343   -7.3474   -3.3101   0.20899E-03
+  60   60 O    -4.7092    9.5679   -0.8698  -0.37987E-02
+  61   61 O     0.6722   -7.1485   -6.8329  -0.33617E-01
+  62   62 O    -7.5298    9.1710  -11.5841  -0.96540E-01
+  63   63 O     5.7551   -5.0829    0.7387  -0.14141E-02
+  64   64 O     8.1252    5.7193    1.3310   0.16055E-03
+  65   65 SI    3.5130   -9.5866    4.5168  -0.34989E-02
+  66   66 SI    9.4539    4.0455    3.6351  -0.34503E-02
+  67   67 SI    1.6617    7.3228    6.6974  -0.60631E-03
+  68   68 SI    6.2301    1.7552    5.7744  -0.92333E-02
+  69   69 SI    3.9622    4.2139    8.8300   0.76942E-02
+  70   70 SI    8.8921    9.0697    8.9911  -0.78174E-02
+  71   71 SI    2.5169    0.1971    3.5839  -0.12963E-01
+  72   72 SI  -10.4228   -7.6279    3.3722   0.53628E-02
+  73   73 SI    1.1343   -3.1408    6.3470  -0.56866E-02
+  74   74 SI    6.9602   -7.7510    6.6535   0.10756E-02
+  75   75 SI    3.6707   -5.7797    9.0101   0.33467E-03
+  76   76 SI    8.6361   -0.6939    8.8611   0.17648E-02
+  77   77 SI   -7.5447   -9.3655   -1.1173  -0.57319E-03
+  78   78 SI   -2.6094    2.9785    3.3919  -0.10229E+00
+  79   79 SI   -9.2913    6.7996    6.3435  -0.30505E-01
+  80   80 SI   -5.0232    0.9742    6.4537  -0.17445E-01
+  81   81 SI   -6.8653    4.1540    8.9507  -0.19265E-01
+  82   82 SI   -1.6394    9.4177    8.7501   0.18190E-02
+  83   83 SI   -7.1533   -0.4629    2.4998  -0.95774E-01
+  84   84 SI   -0.8654   -5.8543    3.5017   0.25108E-03
+  85   85 SI   10.3124   -4.2198    6.7836   0.60817E-02
+  86   86 SI   -4.0510   -8.3452    5.7709  -0.91007E-01
+  87   87 SI   -6.7259   -5.9125    8.5109   0.53188E-02
+  88   88 SI   -1.7309   -0.9482    8.8830   0.68273E-03
+  89   89 SI    1.1035    1.6856   11.2511   0.79539E-02
+  90   90 SI    6.3292    6.6000   11.6968  -0.67653E-02
+  91   91 SI    1.0747   -8.4380   11.5093  -0.16010E-01
+  92   92 SI    6.2432   -3.2508   11.6277  -0.65388E-03
+  93   93 SI   -9.3939    1.5585   11.5702  -0.16075E-01
+  94   94 SI   -4.1232    6.7140   11.4214  -0.25486E-02
+  95   95 SI   -9.2676   -8.3987   11.2790   0.13066E-01
+  96   96 SI   -4.2306   -3.5219   11.5114  -0.10340E-01
+  97   97 SI   -2.2062    8.1926    0.5101  -0.18782E-01
+  98   98 SI    6.0443   -7.2859   -1.5317  -0.12102E-02
+  99   99 SI    8.4584    7.7982   -0.9036  -0.74498E-03
+ 100  100 SI    8.1857   -3.0273    0.8964  -0.43710E-03
+ 101  101 SI    3.6044    9.1251   14.2053  -0.19153E-02
+ 102  102 SI    8.9943    4.0970   14.2131  -0.11953E-01
+ 103  103 SI    0.8329    6.6136   16.7605   0.11680E-01
+ 104  104 SI    6.3604    1.5353   16.7489   0.60366E-02
+ 105  105 SI    3.5762    4.1029   19.0840  -0.28794E-02
+ 106  106 SI    8.9562    9.2436   19.1478   0.55008E-02
+ 107  107 SI    3.5589   -0.8061   14.1230   0.30686E-02
+ 108  108 SI    9.0981   -5.8332   13.9317   0.21113E-02
+ 109  109 SI    1.0109   -3.4761   16.6688  -0.37701E-02
+ 110  110 SI    6.4454   -8.3224   16.4670  -0.13950E-02
+ 111  111 SI    4.1783   -5.5183   18.9980   0.10179E+00
+ 112  112 SI    9.6562   -0.0831   19.3659   0.10988E+00
+ 113  113 SI   -6.7941    9.2929   14.0171   0.26582E-01
+ 114  114 SI   -1.4793    4.1298   13.9128   0.29815E-01
+ 115  115 SI   -9.2465    6.6612   16.6611   0.78924E-02
+ 116  116 SI   -3.9860    1.6280   16.6499   0.53587E-02
+ 117  117 SI   -6.0640    4.7347   19.0745   0.36641E+00
+ 118  118 SI   -2.8588    8.1880   18.9943   0.37803E-01
+ 119  119 SI   -6.7337   -0.9954   14.2286  -0.32324E-02
+ 120  120 SI   -1.5894   -6.0383   14.1243   0.18241E-02
+ 121  121 SI   -9.4681   -3.3840   16.9054   0.13947E-01
+ 122  122 SI   -4.3157   -8.3423   16.8262   0.72445E-02
+ 123  123 SI   -6.7527   -5.7113   19.6889  -0.18533E-03
+ 124  124 SI   -1.4665   -0.9645   19.3665   0.52367E-04
+ 125  125 SI    1.6135    1.1554  -19.0648  -0.10992E-01
+ 126  126 SI    5.7697    7.0863  -19.4814   0.67600E-04
+ 127  127 SI    3.0099   -7.8896  -18.3402   0.16239E-01
+ 128  128 SI    6.9392   -1.6298  -18.2741  -0.74281E-02
+ 129  129 SI   -7.5678    2.3725  -16.0504   0.59436E+00
+ 130  130 SI   -4.0561    8.0301  -17.5737   0.30413E-03
+ 131  131 SI   -9.0803   -8.8846  -18.9038  -0.42529E-02
+ 132  132 SI   -4.5328   -2.5717  -18.6065  -0.15745E-02
+ 133  133 SI    7.3238    5.4139  -14.1894  -0.11953E-01
+ 134  134 SI    4.1513   -5.6768  -13.3884  -0.46939E-01
+ 135  135 SI   -8.7722    9.0702  -14.4303   0.55371E-02
+ 136  136 SI   -1.6360    3.6483  -14.4771  -0.34750E+00
+ 137  137 SI   -8.7837   -4.0694  -14.6030   0.56988E-02
+ 138  138 SI   -1.1375   -5.7329  -14.8776   0.89785E-03
+ 139  139 SI    5.5705    2.6339   -2.5809  -0.13199E-02
+ 140  140 SI    7.3258   -1.6685   -6.7370  -0.14213E-03
+ 141  141 SI   -4.5849   -1.4786   -9.4071  -0.20280E+01
+ 142  142 SI    0.8638   -1.2648  -11.4393  -0.11590E+00
+ 143  143 SI    2.4183   -9.8071   -5.4551  -0.77657E-02
+ 144  144 SI   -2.0335   -6.6974   -8.9967  -0.10256E+00
+ 145  145 SI    9.7865   -5.8746   -3.9086  -0.71944E-03
+ 146  146 SI   -4.0445    1.7291   -4.1666  -0.58764E-01
+ 147  147 SI    0.7212    4.4005   -5.5401   0.30192E-03
+ 148  148 SI    2.0019   -4.0448   -6.2534  -0.36425E-02
+ 149  149 SI   -9.5263    1.8771   -1.7482   0.24335E-04
+ 150  150 SI   -8.6858    6.7506   -9.6397  -0.18084E+01
+ 151  151 SI   -2.9374    8.7993  -11.9523  -0.16262E+01
+ 152  152 SI    6.4711   -0.3886  -12.3833  -0.34795E-02
+ 153  153 SI   -0.4204   -2.0065   -1.0127  -0.42344E-03
+ 154  154 SI    3.0335    8.7781  -11.4374  -0.15545E+01
+ 155  155 SI    7.8981    9.2791   -6.3820  -0.61622E-01
+ 156  156 SI   -4.2778    8.3740   -5.8852  -0.38695E-01
+ *******************************************************************************
+ HYPERFINE COUPLING CONSTANTS (AN)
+ *******************************************************************************
+ POINT  ATOM  MASS N0    NUCLEAR      AN (MT)       AN (MHZ)    AN (CM**(-1))
+                        G FACTOR
+   1    1 O      17   -0.7575220    0.16828E+00   0.47160E+01   0.15731E-03
+   2    2 O      17   -0.7575220   -0.43271E-02  -0.12127E+00  -0.40450E-05
+   3    3 O      17   -0.7575220    0.56840E-01   0.15929E+01   0.53135E-04
+   4    4 O      17   -0.7575220    0.94372E-01   0.26448E+01   0.88220E-04
+   5    5 O      17   -0.7575220    0.32806E+00   0.91938E+01   0.30667E-03
+   6    6 O      17   -0.7575220    0.93608E+00   0.26234E+02   0.87506E-03
+   7    7 O      17   -0.7575220   -0.71831E-03  -0.20131E-01  -0.67149E-06
+   8    8 O      17   -0.7575220   -0.11102E-01  -0.31113E+00  -0.10378E-04
+   9    9 O      17   -0.7575220   -0.56073E-01  -0.15714E+01  -0.52418E-04
+  10   10 O      17   -0.7575220    0.19146E-01   0.53658E+00   0.17898E-04
+  11   11 O      17   -0.7575220   -0.29054E-01  -0.81424E+00  -0.27160E-04
+  12   12 O      17   -0.7575220   -0.43729E+00  -0.12255E+02  -0.40879E-03
+  13   13 O      17   -0.7575220    0.16460E+01   0.46130E+02   0.15387E-02
+  14   14 O      17   -0.7575220    0.10327E+00   0.28941E+01   0.96538E-04
+  15   15 O      17   -0.7575220    0.58257E-01   0.16326E+01   0.54459E-04
+  16   16 O      17   -0.7575220   -0.48484E-01  -0.13588E+01  -0.45323E-04
+  17   17 O      17   -0.7575220    0.93884E+00   0.26311E+02   0.87764E-03
+  18   18 O      17   -0.7575220    0.41098E-01   0.11518E+01   0.38418E-04
+  19   19 O      17   -0.7575220    0.24158E-02   0.67702E-01   0.22583E-05
+  20   20 O      17   -0.7575220    0.19123E+00   0.53591E+01   0.17876E-03
+  21   21 O      17   -0.7575220    0.32018E-01   0.89731E+00   0.29931E-04
+  22   22 O      17   -0.7575220   -0.38272E-01  -0.10726E+01  -0.35777E-04
+  23   23 O      17   -0.7575220   -0.16889E-01  -0.47330E+00  -0.15788E-04
+  24   24 O      17   -0.7575220    0.24048E-01   0.67395E+00   0.22481E-04
+  25   25 O      17   -0.7575220    0.28411E+01   0.79621E+02   0.26559E-02
+  26   26 O      17   -0.7575220   -0.74355E-02  -0.20838E+00  -0.69508E-05
+  27   27 O      17   -0.7575220    0.30204E+01   0.84646E+02   0.28235E-02
+  28   28 O      17   -0.7575220    0.70847E+00   0.19855E+02   0.66228E-03
+  29   29 O      17   -0.7575220    0.13566E-02   0.38018E-01   0.12681E-05
+  30   30 O      17   -0.7575220    0.13047E+01   0.36565E+02   0.12197E-02
+  31   31 O      17   -0.7575220    0.18088E+00   0.50692E+01   0.16909E-03
+  32   32 O      17   -0.7575220    0.44020E+01   0.12337E+03   0.41150E-02
+  33   33 O      17   -0.7575220    0.10551E+00   0.29569E+01   0.98631E-04
+  34   34 O      17   -0.7575220    0.41356E+01   0.11590E+03   0.38660E-02
+  35   35 O      17   -0.7575220    0.21569E+00   0.60447E+01   0.20163E-03
+  36   36 O      17   -0.7575220    0.35870E-01   0.10052E+01   0.33532E-04
+  37   37 O      17   -0.7575220    0.21609E+00   0.60559E+01   0.20200E-03
+  38   38 O      17   -0.7575220    0.27673E+01   0.77552E+02   0.25869E-02
+  39   39 O      17   -0.7575220    0.16286E+00   0.45642E+01   0.15225E-03
+  40   40 O      17   -0.7575220    0.24680E+01   0.69165E+02   0.23071E-02
+  41   41 O      17   -0.7575220    0.19517E-02   0.54697E-01   0.18245E-05
+  42   42 O      17   -0.7575220    0.30044E-01   0.84199E+00   0.28086E-04
+  43   43 O      17   -0.7575220    0.33461E-01   0.93773E+00   0.31279E-04
+  44   44 O      17   -0.7575220    0.67573E+00   0.18937E+02   0.63168E-03
+  45   45 O      17   -0.7575220    0.36285E-01   0.10169E+01   0.33920E-04
+  46   46 O      17   -0.7575220    0.29571E-01   0.82872E+00   0.27643E-04
+  47   47 O      17   -0.7575220    0.37350E-01   0.10467E+01   0.34915E-04
+  48   48 O      17   -0.7575220    0.88145E-02   0.24702E+00   0.82399E-05
+  49   49 O      17   -0.7575220    0.59239E+00   0.16602E+02   0.55378E-03
+  50   50 O      17   -0.7575220    0.15257E+00   0.42756E+01   0.14262E-03
+  51   51 O      17   -0.7575220    0.10787E+00   0.30232E+01   0.10084E-03
+  52   52 O      17   -0.7575220    0.47070E+01   0.13191E+03   0.44002E-02
+  53   53 O      17   -0.7575220    0.21788E-01   0.61061E+00   0.20368E-04
+  54   54 O      17   -0.7575220    0.37620E+01   0.10543E+03   0.35168E-02
+  55   55 O      17   -0.7575220    0.27171E+01   0.76147E+02   0.25400E-02
+  56   56 O      17   -0.7575220    0.40558E+01   0.11366E+03   0.37914E-02
+  57   57 O      17   -0.7575220    0.26496E+01   0.74254E+02   0.24769E-02
+  58   58 O      17   -0.7575220    0.36141E-01   0.10128E+01   0.33785E-04
+  59   59 O      17   -0.7575220   -0.45205E-02  -0.12669E+00  -0.42258E-05
+  60   60 O      17   -0.7575220    0.82167E-01   0.23027E+01   0.76811E-04
+  61   61 O      17   -0.7575220    0.72715E+00   0.20378E+02   0.67975E-03
+  62   62 O      17   -0.7575220    0.20882E+01   0.58522E+02   0.19521E-02
+  63   63 O      17   -0.7575220    0.30587E-01   0.85719E+00   0.28593E-04
+  64   64 O      17   -0.7575220   -0.34728E-02  -0.97325E-01  -0.32464E-05
+  65   65 SI     29   -1.1106000    0.11096E+00   0.31096E+01   0.10373E-03
+  66   66 SI     29   -1.1106000    0.10942E+00   0.30664E+01   0.10228E-03
+  67   67 SI     29   -1.1106000    0.19228E-01   0.53885E+00   0.17974E-04
+  68   68 SI     29   -1.1106000    0.29281E+00   0.82060E+01   0.27372E-03
+  69   69 SI     29   -1.1106000   -0.24400E+00  -0.68382E+01  -0.22810E-03
+  70   70 SI     29   -1.1106000    0.24791E+00   0.69476E+01   0.23175E-03
+  71   71 SI     29   -1.1106000    0.41109E+00   0.11521E+02   0.38429E-03
+  72   72 SI     29   -1.1106000   -0.17007E+00  -0.47661E+01  -0.15898E-03
+  73   73 SI     29   -1.1106000    0.18034E+00   0.50539E+01   0.16858E-03
+  74   74 SI     29   -1.1106000   -0.34110E-01  -0.95593E+00  -0.31886E-04
+  75   75 SI     29   -1.1106000   -0.10613E-01  -0.29744E+00  -0.99214E-05
+  76   76 SI     29   -1.1106000   -0.55967E-01  -0.15685E+01  -0.52319E-04
+  77   77 SI     29   -1.1106000    0.18177E-01   0.50942E+00   0.16992E-04
+  78   78 SI     29   -1.1106000    0.32440E+01   0.90913E+02   0.30325E-02
+  79   79 SI     29   -1.1106000    0.96739E+00   0.27111E+02   0.90433E-03
+  80   80 SI     29   -1.1106000    0.55322E+00   0.15504E+02   0.51715E-03
+  81   81 SI     29   -1.1106000    0.61094E+00   0.17122E+02   0.57111E-03
+  82   82 SI     29   -1.1106000   -0.57686E-01  -0.16166E+01  -0.53925E-04
+  83   83 SI     29   -1.1106000    0.30372E+01   0.85118E+02   0.28392E-02
+  84   84 SI     29   -1.1106000   -0.79624E-02  -0.22315E+00  -0.74433E-05
+  85   85 SI     29   -1.1106000   -0.19287E+00  -0.54051E+01  -0.18029E-03
+  86   86 SI     29   -1.1106000    0.28861E+01   0.80882E+02   0.26979E-02
+  87   87 SI     29   -1.1106000   -0.16867E+00  -0.47271E+01  -0.15768E-03
+  88   88 SI     29   -1.1106000   -0.21651E-01  -0.60677E+00  -0.20240E-04
+  89   89 SI     29   -1.1106000   -0.25224E+00  -0.70690E+01  -0.23580E-03
+  90   90 SI     29   -1.1106000    0.21454E+00   0.60126E+01   0.20056E-03
+  91   91 SI     29   -1.1106000    0.50773E+00   0.14229E+02   0.47463E-03
+  92   92 SI     29   -1.1106000    0.20736E-01   0.58113E+00   0.19384E-04
+  93   93 SI     29   -1.1106000    0.50978E+00   0.14287E+02   0.47655E-03
+  94   94 SI     29   -1.1106000    0.80821E-01   0.22650E+01   0.75553E-04
+  95   95 SI     29   -1.1106000   -0.41435E+00  -0.11612E+02  -0.38734E-03
+  96   96 SI     29   -1.1106000    0.32792E+00   0.91900E+01   0.30654E-03
+  97   97 SI     29   -1.1106000    0.59564E+00   0.16693E+02   0.55681E-03
+  98   98 SI     29   -1.1106000    0.38379E-01   0.10756E+01   0.35877E-04
+  99   99 SI     29   -1.1106000    0.23625E-01   0.66209E+00   0.22085E-04
+ 100  100 SI     29   -1.1106000    0.13862E-01   0.38847E+00   0.12958E-04
+ 101  101 SI     29   -1.1106000    0.60739E-01   0.17022E+01   0.56779E-04
+ 102  102 SI     29   -1.1106000    0.37906E+00   0.10623E+02   0.35435E-03
+ 103  103 SI     29   -1.1106000   -0.37040E+00  -0.10380E+02  -0.34625E-03
+ 104  104 SI     29   -1.1106000   -0.19143E+00  -0.53650E+01  -0.17896E-03
+ 105  105 SI     29   -1.1106000    0.91312E-01   0.25590E+01   0.85360E-04
+ 106  106 SI     29   -1.1106000   -0.17444E+00  -0.48888E+01  -0.16307E-03
+ 107  107 SI     29   -1.1106000   -0.97314E-01  -0.27272E+01  -0.90970E-04
+ 108  108 SI     29   -1.1106000   -0.66956E-01  -0.18764E+01  -0.62591E-04
+ 109  109 SI     29   -1.1106000    0.11956E+00   0.33507E+01   0.11177E-03
+ 110  110 SI     29   -1.1106000    0.44239E-01   0.12398E+01   0.41355E-04
+ 111  111 SI     29   -1.1106000   -0.32281E+01  -0.90468E+02  -0.30177E-02
+ 112  112 SI     29   -1.1106000   -0.34845E+01  -0.97653E+02  -0.32574E-02
+ 113  113 SI     29   -1.1106000   -0.84298E+00  -0.23624E+02  -0.78803E-03
+ 114  114 SI     29   -1.1106000   -0.94550E+00  -0.26498E+02  -0.88386E-03
+ 115  115 SI     29   -1.1106000   -0.25029E+00  -0.70143E+01  -0.23397E-03
+ 116  116 SI     29   -1.1106000   -0.16994E+00  -0.47625E+01  -0.15886E-03
+ 117  117 SI     29   -1.1106000   -0.11620E+02  -0.32564E+03  -0.10862E-01
+ 118  118 SI     29   -1.1106000   -0.11988E+01  -0.33597E+02  -0.11207E-02
+ 119  119 SI     29   -1.1106000    0.10251E+00   0.28728E+01   0.95825E-04
+ 120  120 SI     29   -1.1106000   -0.57848E-01  -0.16212E+01  -0.54077E-04
+ 121  121 SI     29   -1.1106000   -0.44230E+00  -0.12395E+02  -0.41347E-03
+ 122  122 SI     29   -1.1106000   -0.22974E+00  -0.64385E+01  -0.21477E-03
+ 123  123 SI     29   -1.1106000    0.58773E-02   0.16471E+00   0.54942E-05
+ 124  124 SI     29   -1.1106000   -0.16607E-02  -0.46541E-01  -0.15524E-05
+ 125  125 SI     29   -1.1106000    0.34859E+00   0.97692E+01   0.32586E-03
+ 126  126 SI     29   -1.1106000   -0.21438E-02  -0.60079E-01  -0.20040E-05
+ 127  127 SI     29   -1.1106000   -0.51497E+00  -0.14432E+02  -0.48140E-03
+ 128  128 SI     29   -1.1106000    0.23556E+00   0.66017E+01   0.22021E-03
+ 129  129 SI     29   -1.1106000   -0.18849E+02  -0.52823E+03  -0.17620E-01
+ 130  130 SI     29   -1.1106000   -0.96449E-02  -0.27030E+00  -0.90161E-05
+ 131  131 SI     29   -1.1106000    0.13487E+00   0.37797E+01   0.12608E-03
+ 132  132 SI     29   -1.1106000    0.49933E-01   0.13994E+01   0.46678E-04
+ 133  133 SI     29   -1.1106000    0.37905E+00   0.10623E+02   0.35434E-03
+ 134  134 SI     29   -1.1106000    0.14886E+01   0.41717E+02   0.13915E-02
+ 135  135 SI     29   -1.1106000   -0.17560E+00  -0.49211E+01  -0.16415E-03
+ 136  136 SI     29   -1.1106000    0.11020E+02   0.30884E+03   0.10302E-01
+ 137  137 SI     29   -1.1106000   -0.18072E+00  -0.50648E+01  -0.16894E-03
+ 138  138 SI     29   -1.1106000   -0.28473E-01  -0.79796E+00  -0.26617E-04
+ 139  139 SI     29   -1.1106000    0.41858E-01   0.11731E+01   0.39129E-04
+ 140  140 SI     29   -1.1106000    0.45073E-02   0.12632E+00   0.42135E-05
+ 141  141 SI     29   -1.1106000    0.64313E+02   0.18024E+04   0.60121E-01
+ 142  142 SI     29   -1.1106000    0.36756E+01   0.10301E+03   0.34360E-02
+ 143  143 SI     29   -1.1106000    0.24627E+00   0.69017E+01   0.23022E-03
+ 144  144 SI     29   -1.1106000    0.32525E+01   0.91151E+02   0.30405E-02
+ 145  145 SI     29   -1.1106000    0.22815E-01   0.63940E+00   0.21328E-04
+ 146  146 SI     29   -1.1106000    0.18635E+01   0.52226E+02   0.17421E-02
+ 147  147 SI     29   -1.1106000   -0.95746E-02  -0.26833E+00  -0.89505E-05
+ 148  148 SI     29   -1.1106000    0.11551E+00   0.32372E+01   0.10798E-03
+ 149  149 SI     29   -1.1106000   -0.77172E-03  -0.21627E-01  -0.72141E-06
+ 150  150 SI     29   -1.1106000    0.57349E+02   0.16072E+04   0.53610E-01
+ 151  151 SI     29   -1.1106000    0.51569E+02   0.14452E+04   0.48208E-01
+ 152  152 SI     29   -1.1106000    0.11034E+00   0.30924E+01   0.10315E-03
+ 153  153 SI     29   -1.1106000    0.13428E-01   0.37633E+00   0.12553E-04
+ 154  154 SI     29   -1.1106000    0.49297E+02   0.13816E+04   0.46084E-01
+ 155  155 SI     29   -1.1106000    0.19542E+01   0.54767E+02   0.18268E-02
+ 156  156 SI     29   -1.1106000    0.12271E+01   0.34390E+02   0.11471E-02
+
+  CONVERSION FACTORS 
+     AN (MILLI T)        28.554470 * GN * P(SPIN) (BOHR**(-3))
+     AN (MHZ)            28.024940 * AN (MILLI T) 
+     AN (CM**(-1))   0.3335641E-04 * AN (MHZ) 
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ISOTROPIC   TELAPSE   119823.94 TCPU   119629.35
+ ENDPROP   
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT END         TELAPSE   119823.94 TCPU   119629.35
+ EEEEEEEEEE TERMINATION  DATE 12 05 2015 TIME 21:13:44.6

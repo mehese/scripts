@@ -10,8 +10,8 @@ import re
 
 print('Starting...\n')
 
-def get_atom(i):
-    with open('out_gtensor', 'r') as f:
+def get_atom(i, cell):
+    with open('crystal_files/gtensor_'+cell, 'r') as f:
         Axx = np.zeros((3,3))
         A0  = np.zeros((3,3))
         txt = f.read()

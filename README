@@ -1,6 +1,8 @@
 Just a set of scripts to parse/plot data
 
 TO DO:
+ - Extract A0 values more handily
 
-Remove all .dat files, link to a folder in which you put them
+ - Remove all .dat files, link to a folder in which you put them
 all
+ - Remove hardcodings of analysis.py path, just use from astools.analysis import [function]
