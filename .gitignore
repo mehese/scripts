@@ -1,6 +1,7 @@
 *pyc
 *.sw[po]
 *.png
+*.log
 *.pdf
 *pass.dat
 .directory
