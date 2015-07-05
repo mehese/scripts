@@ -5,17 +5,21 @@ from astools.ReadWrite import ReadStruct
 from astools.analysis  import distance
 from astools.operations import expand
 
+
 def get_A0(i, cell):
     """ Get AN in MT from CRYSTAL cryapi ISO/ANISO output files. i -- atom
     index, cell is an identification string (like c3, c4p, c2ox)
     (int, str) -> float
     """
     import re
+    import os
+    path = os.path.dirname(os.path.realpath(__file__))
     A0 = None
+
     try:
-        f = open('crystal_files/gtensor_'+cell, 'r')
+        f = open(path+'/crystal_files/gtensor_'+cell, 'r')
     except IOError:
-        print 'No file crystal_files/gtensor_'+cell+' found :('
+        print 'No file '+path+'crystal_files/gtensor_'+cell+' found :('
         return
     except:
         print r'¯\_(ツ)_/¯ Dunno whut happened'
@@ -27,7 +31,7 @@ def get_A0(i, cell):
 
     result = re.search(regex, f.read(), re.M)
 
-    print result.group()
+    #print result.group()
     A0 = float(result.group('AmT'))
  
     return A0
@@ -39,11 +43,13 @@ def get_spin_mom(i, cell):
     (int, str) -> float
     """
     import re
+    import os
+    path = os.path.dirname(os.path.realpath(__file__))
 
     try:
-        f = open('crystal_files/OUTPUT_'+cell, 'r')
+        f = open(path+'/crystal_files/OUTPUT_'+cell, 'r')
     except IOError:
-        print 'No file crystal_files/OUTPUT_'+cell+' found :('
+        print 'No file '+path+'/crystal_files/OUTPUT_'+cell+' found :('
         return
     except:
         print r'¯\_(ツ)_/¯ Dunno whut happened'
@@ -98,16 +104,17 @@ if __name__== "__main__":
     print get_A0(1, 'c5ox')
     print get_A0(11, 'c5ox')
 
-    #print 'Testing get_similar 10 times...'
-    #s = ReadStruct('crystal_files/INPUT_c2')
-    #s2 = ReadStruct('crystal_files/INPUT_c2p')
-    #for _ in range(10):
-    #    ii = randint(0, len(s))
-    #    i, ax = get_similar(s.atoms[ii], s2)
-    #    print i - len([p for p in s2.atoms if p.species=='H'])
-    #    print ii, s.atoms[ii]
-    #    print i, ax
+    print 'Testing get_similar 10 times...'
+    s = ReadStruct('crystal_files/INPUT_c2')
+    s2 = ReadStruct('crystal_files/INPUT_c2p')
+    for _ in range(5):
+        ii = randint(0, len(s)-1)
+        print ii, 
+        print s.atoms[ii]
+        i, ax = get_similar(s.atoms[ii], s2)
+        print i - len([p for p in s2.atoms if p.species=='H'])
+        print i, ax
 
-    #print get_spin_mom(4, 'c5')
+    print get_spin_mom(4, 'c5')
 
     print '\nDone'

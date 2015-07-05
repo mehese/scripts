@@ -11,7 +11,7 @@ from astools.analysis import distance
 import matplotlib.pylab as plt
 from matplotlib.ticker import MultipleLocator
 
-eprime_dict = {'c1': [107],
+bdimer_dict = {'c1': [107],
                'c2': [82],
                'c3': [58, 66],
                'c4': [65, 119],
@@ -24,7 +24,7 @@ eprime_dict = {'c1': [107],
 
 for c in ['c'+ i for i in map(str, range(1, 7))]:
     print c,
-    for eprime in eprime_dict[c]:
+    for eprime in bdimer_dict[c]:
         print eprime,
         x, y_u, y_d = get_at_pdos(c, eprime)
         plt.plot(x, y_u, 'k-')
