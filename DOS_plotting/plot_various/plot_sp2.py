@@ -11,35 +11,30 @@ from astools.analysis import distance
 import matplotlib.pylab as plt
 from matplotlib.ticker import MultipleLocator
 
-bdimer_dict = {'c1': [107],
-               'c2': [82],
-               'c3': [58, 66],
-               'c4': [65, 119],
-               'c5': [82, 102],
-               'c6': [66, 101, 119],
-               'c2ox': [72],
-               'c3ox': [65],
-               'c5ox': [65],
+dimer_dict = {'c1': [57, 113],
+               'c2': [102, 114],
+               'c3': [101, 73],
+               'c4': [],
+               'c5': [65],
+               'c6': [113],
+               'c2ox': [86],
+               'c3ox': [73],
+               'c5ox': [117],
               }
 
-for c in ['c'+ i for i in map(str, range(1, 7))]:
-    print c,
-    for eprime in bdimer_dict[c]:
-        print eprime,
-        x, y_u, y_d = get_at_pdos(c, eprime)
-        plt.plot(x, y_u, 'k-')
-        nps, = plt.plot(x, y_d, 'k-', label='Unpassivated')
-        # Get the Atom object of the eprime
-        at_e = ReadStruct('../../crystal_files/INPUT_'+c,
-                          'crystal').atoms[eprime-1]
-        p_str= ReadStruct('../../crystal_files/INPUT_'+c+'p', 'crystal')
-        # get equivalent atom from passified structure
-        i_x, at_p = get_similar(at_e, p_str)
-        print '{:5.3f}'.format(distance(at_e, at_p)), 
-        x, y_u, y_d = get_at_pdos(c+'p', i_x)
-        plt.plot(x, y_u, 'r-')
-        ps, = plt.plot(x, y_d, 'r-', label='H passivated')
-    print
+x, y_u, y_d = get_at_pdos('c3', 68)
+plt.plot(x, y_u, 'k-')
+nps, =plt.plot(x, y_d, 'k-', label='Unpassivated')
+# Get the Atom object of the atom
+at_e = ReadStruct('../../crystal_files/INPUT_c3', 'crystal').atoms[68-1]
+p_str= ReadStruct('../../crystal_files/INPUT_c3p', 'crystal')
+# get equivalent atom from passified structure
+i_x, at_p = get_similar(at_e, p_str)
+print '{:5.3f}'.format(distance(at_e, at_p)), 
+x, y_u, y_d = get_at_pdos('c3p', i_x)
+plt.plot(x, y_u, 'r-')
+ps, =plt.plot(x, y_d, 'r-', label='H passivated')
+print
 
 minor_locator = MultipleLocator(0.10)
 plt.gca().xaxis.set_minor_locator(minor_locator)
@@ -61,6 +56,8 @@ plt.gca().get_legend().get_frame().set_linewidth(2)
 
 plt.gcf().set_size_inches(20., 3.5)
 plt.xlabel('Energy [eV]', fontweight='bold', fontsize=16)
-plt.savefig('dos_broken_dimer.png', dpi=400, bbox_inches='tight')
+plt.savefig('dos_sp2.png', dpi=400, bbox_inches='tight')
+
 
 plt.show()
+
