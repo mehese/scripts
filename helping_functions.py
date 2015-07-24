@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-p
 
 from astools.ReadWrite import ReadStruct
-from astools.analysis  import distance
+from astools.analysis  import distance, neighbour, dist
 from astools.operations import expand
 
 
@@ -35,6 +35,39 @@ def get_A0(i, cell):
     A0 = float(result.group('AmT'))
  
     return A0
+
+def neighbours_from_file(i, cell):
+    """ Given an atom number and a an identification string (like c1, c2ox, c5p
+    ...) it opens the corresponding output file, scans through it, and returns
+    the printed list of neighbours for the given atom
+    (int, str) -> dist list
+    """
+    import re
+    import os
+    path = os.path.dirname(os.path.realpath(__file__))
+
+    try:
+        f = open(path+'/crystal_files/OUTPUT_'+cell, 'r')
+    except IOError:
+        print 'No file '+path+'/crystal_files/OUTPUT_'+cell+' found :('
+        return
+    except:
+        print r'¯\_(ツ)_/¯ Dunno whut happened'
+
+
+    nbs = []
+    regex = r'^\s+'+str(i)+r'\s+[A-Z]{1,3}\s+\d{1,2}\s+(?P<distance>\d\.\d{3,6})'+\
+            r'\s+\d+\.\d+\s+(?P<other_index>\d{1,3})\s+(?P<species>[A-Z]{1,3})\s+[-]?[1,0]((\s|-)[1,0]){2}$'
+
+    result = re.findall(regex, f.read(), flags=re.M)
+    for line in result:
+        d, ind, species = float(line[0]), int(line[1]), line[2]
+        species = species[0]+species[1:].lower()
+        elem = dist(species, d)
+        nbs.append(elem)
+
+    return nbs
+ 
 
 def get_spin_mom(i, cell):
     """ Given an atom number and a an identification string (like c1, c2ox, c5p
@@ -101,20 +134,22 @@ def get_similar(at, str_x):
 if __name__== "__main__":
     from random import randint
 
-    print get_A0(1, 'c5ox')
-    print get_A0(11, 'c5ox')
+    print neighbours_from_file(16, 'c2ox')
 
-    print 'Testing get_similar 10 times...'
-    s = ReadStruct('crystal_files/INPUT_c2')
-    s2 = ReadStruct('crystal_files/INPUT_c2p')
-    for _ in range(5):
-        ii = randint(0, len(s)-1)
-        print ii, 
-        print s.atoms[ii]
-        i, ax = get_similar(s.atoms[ii], s2)
-        print i - len([p for p in s2.atoms if p.species=='H'])
-        print i, ax
+    #print get_A0(1, 'c5ox')
+    #print get_A0(11, 'c5ox')
 
-    print get_spin_mom(4, 'c5')
+    #print 'Testing get_similar 10 times...'
+    #s = ReadStruct('crystal_files/INPUT_c2')
+    #s2 = ReadStruct('crystal_files/INPUT_c2p')
+    #for _ in range(5):
+    #    ii = randint(0, len(s)-1)
+    #    print ii, 
+    #    print s.atoms[ii]
+    #    i, ax = get_similar(s.atoms[ii], s2)
+    #    print i - len([p for p in s2.atoms if p.species=='H'])
+    #    print i, ax
+
+    #print get_spin_mom(4, 'c5')
 
     print '\nDone'

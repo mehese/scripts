@@ -8,6 +8,7 @@ from helping_functions import get_similar
 from astools.ReadWrite import ReadStruct
 from astools.analysis import distance
 
+import matplotlib
 import matplotlib.pylab as plt
 from matplotlib.ticker import MultipleLocator
 
@@ -23,9 +24,9 @@ bdimer_dict = {'c1': [107],
               }
 
 for c in ['c'+ i for i in map(str, range(1, 7))]:
-    print c,
+    #print c,
     for eprime in bdimer_dict[c]:
-        print eprime,
+        #print eprime,
         x, y_u, y_d = get_at_pdos(c, eprime)
         plt.plot(x, y_u, 'k-')
         nps, = plt.plot(x, y_d, 'k-', label='Unpassivated')
@@ -35,11 +36,10 @@ for c in ['c'+ i for i in map(str, range(1, 7))]:
         p_str= ReadStruct('../../crystal_files/INPUT_'+c+'p', 'crystal')
         # get equivalent atom from passified structure
         i_x, at_p = get_similar(at_e, p_str)
-        print '{:5.3f}'.format(distance(at_e, at_p)), 
+        #print '{:5.3f}'.format(distance(at_e, at_p)), 
         x, y_u, y_d = get_at_pdos(c+'p', i_x)
         plt.plot(x, y_u, 'r-')
         ps, = plt.plot(x, y_d, 'r-', label='H passivated')
-    print
 
 minor_locator = MultipleLocator(0.10)
 plt.gca().xaxis.set_minor_locator(minor_locator)
@@ -62,5 +62,4 @@ plt.gca().get_legend().get_frame().set_linewidth(2)
 plt.gcf().set_size_inches(20., 3.5)
 plt.xlabel('Energy [eV]', fontweight='bold', fontsize=16)
 plt.savefig('dos_broken_dimer.png', dpi=400, bbox_inches='tight')
-
 plt.show()
