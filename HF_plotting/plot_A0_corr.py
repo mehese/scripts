@@ -3,7 +3,7 @@
 import sys
 sys.path.append('../')
 sys.path.append('../../')
-from helping_functions import get_similar, get_A0, get_spin_mom
+from helping_functions import get_similar, get_A0, get_spin_mom, neighbours_from_file
 from astools.ReadWrite import ReadStruct
 from astools.analysis import distance, get_neighbours
 
@@ -13,11 +13,11 @@ from math import fabs
 
 eprime_dict = {'c1': [142, 144],
                'c2': [124, 125, 134],
-               'c3': [81, 113, 128, 134, 135, 147, 148],
-               'c4': [124, 125, 127, 130, 136],
+               'c3': [81, 113, 134, 135, 147, 148],
+               'c4': [127, 130, 136],
                'c5': [126, 133, 135, 137],
-               'c6': [125, 128, 131, 135, 136, 137, 144, 147],
-               'c2ox': [82, 128, 136, 138, 148, 150],
+               'c6': [125, 128, 131, 135, 137, 144, 147],
+               'c2ox': [128, 136, 138, 148, 150],
                'c3ox': [72, 97, 98, 136, 149, 153, 154],
                'c5ox': [98, 141, 150, 151, 154],
               }
@@ -44,49 +44,46 @@ bdimer_dict = {'c1': [107],
                'c5ox': [65],
               }
 
+#for c, _ in eprime_dict.items():
+#    print '\n'+c+'--',
+#    for i in range(1,165):
+#        #print i,
+#        try :
+#            A0 = get_A0(i, c)
+#        except:
+#            break
+#
+#        full, = plt.plot(fabs(A0), 0.5, 'ko', fillstyle='none', markersize=12, label='all')
+#
+
 print 'Eprimes'
-for c, eprimes in eprime_dict.items():
-    s = ReadStruct('../crystal_files/INPUT_'+c) 
-    for eprime in eprimes:
-        at_x = s.atoms[eprime-1]
-        print eprime, at_x
-        nbs = get_neighbours(at_x, s, dmax=4.)
-        d = max(nbs[:-1], key=lambda x: x.length).length
-        A0 = get_A0(eprime, c)
-
-        epr, = plt.plot(d, fabs(A0), 'yo', markersize=12, label="$E'$")
-
-
-print 'Dimers'
+Ds, As = [], []
 for c, dimers in dimer_dict.items():
     s = ReadStruct('../crystal_files/INPUT_'+c) 
     for dimer in dimers:
-        at_x = s.atoms[dimer-1]
-        print dimer, at_x
-        nbs = get_neighbours(at_x, s, dmax=4.)
-        d = max(nbs[:-1], key=lambda x: x.length).length
+        #at_x = s.atoms[dimer-1]
+
+        nbs = neighbours_from_file(dimer, c)
+        print c, dimer, len([n  for n in nbs if (n.length < 2.5 and n.atom_type=='Si')])
+        nb2 = [n.length  for n in nbs if (n.length < 2.5 and n.atom_type=='Si')]
+        print nb2
+        #d = sum(nb2)/len(nb2)
+        d = max(nb2)
+        Ds.append(d)
+        for nb in nbs:
+            print '    ', nb.atom_type, nb.length
+
         A0 = get_A0(dimer, c)
-        dim_,= plt.plot(d, fabs(A0), 'o', color='#00ffff', markersize=12, label="dimer")
+        As.append(fabs(A0))
+    
+        #epr ,= plt.plot(fabs(A0), 0.5, 'yo', markersize=12, label="$E'$")
 
-print 'Broken dimers'
-for c, bdimers in bdimer_dict.items():
-    print c 
-    for bdimer in bdimers:
-        at_x = s.atoms[bdimer-1]
-        print eprime, at_x
-        nbs = get_neighbours(at_x, s, dmax=4.)
-        d = nbs[0].length
-        for n in nbs[:-1]:
-            print ' '*4, n
+print Ds, As
+plt.scatter(Ds, As, color='goldenrod', s=250)
 
-        #print '\t', bdimer,
-        A0 = get_A0(bdimer, c)
-
-        bdim_,= plt.plot(d, fabs(A0), 'ro', markersize=12, label="broken dimer")
-
-
+plt.title('Dimer, max Si-O length', fontweight='bold', fontsize=20)
 plt.gca().xaxis.set_minor_locator(MultipleLocator(5))
-plt.gca().yaxis.set_tick_params(which='major', length=10, width=2, tickdir='left')
+plt.gca().yaxis.set_tick_params(which='major', length=10, width=2)
 
 plt.gca().xaxis.set_tick_params(which='major', length=10, width=2, labelsize=15)
 plt.gca().xaxis.set_tick_params(which='minor', length=5, width=2, labelsize=15)
@@ -99,10 +96,11 @@ for x in ['top', 'bottom', 'left', 'right']:
 
 #plt.legend(handles=[full, epr, dim_, bdim_], fontsize=16, ncol=4)
 #plt.gca().get_legend().get_frame().set_linewidth(2)
-#plt.xlim([5, 75])
-#plt.ylim([-1., 1.])
-plt.xlabel('A0 [mT]', fontweight='bold', fontsize=16)
+plt.xlim([2.2, 2.6])
+plt.ylim(ymin=0)
+plt.xlabel('med length [Angstroem]', fontweight='bold', fontsize=16)
+plt.ylabel('A0 [mT]', fontweight='bold', fontsize=16)
 
-plt.gcf().set_size_inches(20., 7.)
-plt.savefig('A0_defects.png', dpi=400, bbox_inches='tight')
+plt.gcf().set_size_inches(20., 20.)
+plt.savefig('A0_dimer_max.png', dpi=200, bbox_inches='tight')
 plt.show()
