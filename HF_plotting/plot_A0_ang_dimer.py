@@ -12,32 +12,37 @@ from matplotlib.ticker import MultipleLocator
 from math import fabs
 import numpy as np
 import numpy.linalg as ln
-from scipy.stats import pearsonr
 
-eprime_dict = {'c1': [142, 144],
-               'c2': [124, 125, 134],
-               'c3': [81, 113, 134, 135, 147, 148],
-               'c4': [127, 130, 136],
-               'c5': [126, 133, 135, 137],
-               'c6': [125, 128, 131, 135, 137, 144, 147],
-               'c2ox': [128, 136, 138, 148, 150],
-               'c3ox':[72, 97, 98, 136, 149, 153, 154],
-               'c5ox': [98, 141, 150, 151, 154],
-              }
 
-#eprime_dict = {'c5':[135]}
-print 'Eprimes'
+dimer_dict = {'c1': [57, 113],
+              'c2': [102, 114],
+              'c3': [101, 73],
+              'c4': [],
+              'c5': [65],
+              'c6': [113],
+              'c2ox': [86],
+              'c3ox': [73],
+              'c5ox': [117],
+             }
+
+
+#dimer_dict = {'c5':[65]}
+print 'Dimers'
 angs, As = [], []
-for c, eprimes in eprime_dict.items():
+for c, dimers in dimer_dict.items():
     s = ReadStruct('../crystal_files/INPUT_'+c) 
-    for eprime in eprimes:
-        at_x = s.atoms[eprime-1]
+    for dimer in dimers:
+        at_x = s.atoms[dimer-1]
 
-        nbs = get_neighbours(at_x, s, dmax=3.8, no_neighbours=3)
-        #print at_x
+        nbs = get_neighbours(at_x, s, dmax=3.8, no_neighbours=4)
+        if nbs[0].at.species == 'O':
+            nbs = nbs[1:]
+        else:
+            nbs = nbs[:-1]
+        print c, dimer, at_x
         vecs = []
         for nb in nbs:
-            #print '    ', nb
+            print '    ', nb
             vec = np.array([nb.at.x, nb.at.y, nb.at.z]) - np.array([at_x.x, at_x.y, at_x.z])
             #print vec, ln.norm(vec)
             vecs.append(vec)
@@ -46,32 +51,18 @@ for c, eprimes in eprime_dict.items():
         for i, j in (0,1), (1,2), (0,2):
             #print vecs[i], vecs[j]
             angle = np.degrees(np.arccos( np.dot(vecs[i], vecs[j])  / (ln.norm(vecs[i]) * ln.norm(vecs[j]))) )
-            val.append(angle)
+            val.append( angle)
+            print '   angle = ', angle
         
         val = sum(val)/3.
-        #val = max(val) - min(val)
         angs.append(val)
-        A0 = get_A0(eprime, c)
+        A0 = get_A0(dimer, c)
         As.append(fabs(A0))
 
-        if (fabs(A0) > 60) and (val > 110):
-            print c, eprime        
 
-a, A = [], []
-for ang, A0 in zip(angs, As):
-    if (A0 > 60) and (ang > 110):
-        break
-    if (A0 > 5):
-        a.append(ang), A.append(A0)
-
-print 'Correlation coefficient:'
-print '    ', np.corrcoef(a, y=A)
-    
-
-#plt.scatter(a, A, color='salmon', s=250)
 plt.scatter(angs, As, color='salmon', s=250)
 
-plt.title('Eprime, med O-Si-O angle', fontweight='bold', fontsize=20)
+plt.title('Dimer, med Si-Si-Si angle', fontweight='bold', fontsize=20)
 plt.gca().xaxis.set_minor_locator(MultipleLocator(5))
 plt.gca().yaxis.set_tick_params(which='major', length=10, width=2)
 
@@ -88,9 +79,9 @@ for x in ['top', 'bottom', 'left', 'right']:
 #plt.gca().get_legend().get_frame().set_linewidth(2)
 #plt.xlim([1.55, 2.])
 plt.ylim(ymin=-1)
-plt.xlabel('Angle [deg]', fontweight='bold', fontsize=16)
+plt.xlabel('med angle [deg]', fontweight='bold', fontsize=16)
 plt.ylabel('A0 [mT]', fontweight='bold', fontsize=16)
 
 plt.gcf().set_size_inches(20., 20.)
-plt.savefig('A0_eprime_ang_med.png', dpi=200, bbox_inches='tight')
+plt.savefig('A0_dimer_ang_med.png', dpi=200, bbox_inches='tight')
 plt.show()
