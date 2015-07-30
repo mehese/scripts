@@ -10,6 +10,8 @@ from astools.analysis import distance, get_neighbours
 import matplotlib.pylab as plt
 from matplotlib.ticker import MultipleLocator
 from math import fabs
+import numpy as np
+import numpy.linalg as ln
 
 eprime_dict = {'c1': [142, 144],
                'c2': [124, 125, 134],
@@ -22,62 +24,38 @@ eprime_dict = {'c1': [142, 144],
                'c5ox': [98, 141, 150, 151, 154],
               }
 
-dimer_dict = {'c1': [57, 113],
-              'c2': [102, 114],
-              'c3': [101, 73],
-              'c4': [],
-              'c5': [65],
-              'c6': [113],
-              'c2ox': [86],
-              'c3ox': [73],
-              'c5ox': [117],
-             }
-
-bdimer_dict = {'c1': [107],
-               'c2': [82],
-               'c3': [58, 66],
-               'c4': [65, 119],
-               'c5': [82, 102],
-               'c6': [66, 101, 119],
-               'c2ox': [72],
-               'c3ox': [65],
-               'c5ox': [65],
-              }
-
-#for c, _ in eprime_dict.items():
-#    print '\n'+c+'--',
-#    for i in range(1,165):
-#        #print i,
-#        try :
-#            A0 = get_A0(i, c)
-#        except:
-#            break
-#
-#        full, = plt.plot(fabs(A0), 0.5, 'ko', fillstyle='none', markersize=12, label='all')
-#
-
+#eprime_dict = {'c5':[135]}
 print 'Eprimes'
-Ds, As = [], []
+angs, As = [], []
 for c, eprimes in eprime_dict.items():
     s = ReadStruct('../crystal_files/INPUT_'+c) 
     for eprime in eprimes:
         at_x = s.atoms[eprime-1]
 
-
-        nbs = neighbours_from_file(eprime, c)
-        print c, eprime
-        Ds.append((nbs[0].length + nbs[1].length + nbs[2].length)/3)
+        nbs = get_neighbours(at_x, s, dmax=3.8, no_neighbours=3)
+        print at_x
+        vecs = []
         for nb in nbs:
-            print '    ', nb.atom_type, nb.length
-
+            #print '    ', nb
+            vec = np.array([nb.at.x, nb.at.y, nb.at.z]) - np.array([at_x.x, at_x.y, at_x.z])
+            #print vec, ln.norm(vec)
+            vecs.append(vec)
+        
+        val = 0
+        for i, j in (0,1), (1,2), (0,2):
+            #print vecs[i], vecs[j]
+            angle = np.degrees(np.arccos( np.dot(vecs[i], vecs[j])  / (ln.norm(vecs[i]) * ln.norm(vecs[j]))) )
+            val += angle
+            print '   angle = ', angle
+        
+        angs.append(val/3.)
         A0 = get_A0(eprime, c)
         As.append(fabs(A0))
     
-        #epr ,= plt.plot(fabs(A0), 0.5, 'yo', markersize=12, label="$E'$")
 
-plt.scatter(Ds, As, color='salmon', s=250)
+plt.scatter(angs, As, color='salmon', s=250)
 
-plt.title('Eprime, med Si-O length', fontweight='bold', fontsize=20)
+plt.title('Eprime, med O-Si-O angle', fontweight='bold', fontsize=20)
 plt.gca().xaxis.set_minor_locator(MultipleLocator(5))
 plt.gca().yaxis.set_tick_params(which='major', length=10, width=2)
 
@@ -92,11 +70,11 @@ for x in ['top', 'bottom', 'left', 'right']:
 
 #plt.legend(handles=[full, epr, dim_, bdim_], fontsize=16, ncol=4)
 #plt.gca().get_legend().get_frame().set_linewidth(2)
-plt.xlim([1.55, 2.])
+#plt.xlim([1.55, 2.])
 plt.ylim(ymin=0)
 plt.xlabel('med length [Angstroem]', fontweight='bold', fontsize=16)
 plt.ylabel('A0 [mT]', fontweight='bold', fontsize=16)
 
 plt.gcf().set_size_inches(20., 20.)
-plt.savefig('A0_Eprime_med.png', dpi=200, bbox_inches='tight')
+#plt.savefig('A0_Eprime_ang_med.png', dpi=200, bbox_inches='tight')
 plt.show()
