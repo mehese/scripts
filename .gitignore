@@ -3,6 +3,7 @@
 *.png
 *.log
 *.pdf
+*.mp4
 *pass.dat
 .directory
 INPUT_marked
