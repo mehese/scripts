@@ -43,7 +43,7 @@ def get_at_pdos(nm, no, passified=False, verbose=False, total=False,
     """
     import numpy as np
 
-    if ('Si' in nm) or ('si' in nm):
+    if (('Si' in nm) or ('si' in nm)) and ('hfo' not in nm):
         dat = np.loadtxt(pdos_dir+'SiBulk.dat')
         E, dos_u, dos_d = dat[:, 0], dat[:, 1], -dat[:, 1]
         return E, dos_u, dos_d 
