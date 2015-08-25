@@ -32,6 +32,7 @@ for nm in nms:
             #for n in nbs:
             #    print n.atom_type, n.length
             nbs = [nb for nb in nbs if nb.length < 2.5]
+            print len(nbs)
             a[len(nbs)] +=1
             E, up, down = get_at_pdos(nm, at)
             dos = integrate_dos(E, up, down, emin=-2.6, emax=-0.84) # tweak emin and emax
@@ -41,7 +42,7 @@ print a
 print y
 
 
-fig = plt.axes(xlim=(2, 8))
+fig = plt.axes(xlim=(2, 9))
 
 fig.axhline(0, color='black', linewidth=2)
 for i, coord in enumerate(a):

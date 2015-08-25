@@ -28,6 +28,7 @@ for nm in nms:
             #    print n.atom_type, n.length
             nbs = [nb for nb in nbs if nb.length < 2.5]
             #print 'coordination: {}'.format(len(nbs))
+            print 'coord = {}'.format(len(nbs))
             a[len(nbs)] +=1
 
 a = a*100/float(sum(a))
@@ -46,7 +47,7 @@ for at in it:
         #for n in nbs:
         #    print n.atom_type, n.length
         nbs = [nb for nb in nbs if nb.length < 2.5]
-        #print 'coordination: {}'.format(len(nbs))
+        print 'coordination: {}'.format(len(nbs))
         b[len(nbs)] +=1
 
 print b/float(sum(b))
@@ -55,9 +56,9 @@ print np.std(b/float(sum(b)))
 
 b = b*100/float(sum(b))
 
-fig = plt.axes(xlim=(2, 10), ylim=(0,50.))
-fig.bar(range(1, len(b)+1), b, color='paleturquoise', align='edge', width=0.3, label='Bulk Hafnia')
-fig.bar(np.array(range(1, len(b)+1))-0.3, a, color='darksalmon', align='edge', width=0.3,
+fig = plt.axes(xlim=(0, 8), ylim=(0,50.))
+fig.bar(range(0, len(b)), b, color='paleturquoise', align='edge', width=0.3, label='Bulk Hafnia')
+fig.bar(np.array(range(0, len(b)))-0.3, a, color='darksalmon', align='edge', width=0.3,
 label='Si-Hafnia cells')
 fig.set_xlabel('Hf coordination number', fontsize=16, fontweight='bold')
 fig.set_ylabel('% of total', fontsize=16, fontweight='bold')
