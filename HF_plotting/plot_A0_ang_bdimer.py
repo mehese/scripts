@@ -58,9 +58,8 @@ for c, bdimers in bdimer_dict.items():
         As.append(fabs(A0))
 
 
-plt.scatter(angs, As, color='salmon', s=250)
+plt.scatter(angs, As, edgecolor='0.1', linewidths=2, s=250, facecolor='none')
 
-plt.title('Broken dimer, med at-Si-at angle', fontweight='bold', fontsize=20)
 plt.gca().xaxis.set_minor_locator(MultipleLocator(5))
 plt.gca().yaxis.set_tick_params(which='major', length=10, width=2)
 
@@ -77,9 +76,9 @@ for x in ['top', 'bottom', 'left', 'right']:
 #plt.gca().get_legend().get_frame().set_linewidth(2)
 #plt.xlim([1.55, 2.])
 plt.ylim(ymin=-1)
-plt.xlabel('angle[deg]', fontweight='bold', fontsize=16)
+plt.xlabel('Average angle [deg]', fontweight='bold', fontsize=16)
 plt.ylabel('A0 [mT]', fontweight='bold', fontsize=16)
 
-plt.gcf().set_size_inches(20., 20.)
-plt.savefig('A0_bdimer_ang_med.png', dpi=200, bbox_inches='tight')
+plt.gcf().set_size_inches(10., 10.)
+plt.savefig('A0_bdimer_ang.png', dpi=80, bbox_inches='tight')
 plt.show()

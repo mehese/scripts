@@ -12,6 +12,8 @@ import matplotlib
 import matplotlib.pylab as plt
 from matplotlib.ticker import MultipleLocator
 
+o = lambda k : k + 3.313
+
 bdimer_dict = {'c1': [107],
                'c2': [82],
                'c3': [58, 66],
@@ -28,8 +30,9 @@ for c in ['c'+ i for i in map(str, range(1, 7))]:
     for eprime in bdimer_dict[c]:
         #print eprime,
         x, y_u, y_d = get_at_pdos(c, eprime)
-        plt.plot(x, y_u, 'k-')
-        nps, = plt.plot(x, y_d, 'k-', label='Unpassivated')
+        x = [o(p) for p in x]
+        plt.plot(x, y_u, 'k-', linewidth=2)
+        nps, = plt.plot(x, y_d, 'k-', label='Unpassivated', linewidth=2)
         # Get the Atom object of the eprime
         at_e = ReadStruct('../../crystal_files/INPUT_'+c,
                           'crystal').atoms[eprime-1]
@@ -38,18 +41,19 @@ for c in ['c'+ i for i in map(str, range(1, 7))]:
         i_x, at_p = get_similar(at_e, p_str)
         #print '{:5.3f}'.format(distance(at_e, at_p)), 
         x, y_u, y_d = get_at_pdos(c+'p', i_x)
-        plt.plot(x, y_u, 'r-')
-        ps, = plt.plot(x, y_d, 'r-', label='H passivated')
+        x = [o(p) for p in x]
+        plt.plot(x, y_u, 'r-', linewidth=2.5)
+        ps, = plt.plot(x, y_d, 'r-', label='H passivated', linewidth=2.5)
 
 minor_locator = MultipleLocator(0.10)
 plt.gca().xaxis.set_minor_locator(minor_locator)
 plt.gca().tick_params(which='minor', length=5, width=2)
 plt.gca().tick_params(which='major', length=10, width=2, labelsize=15)
 
-plt.legend(handles=[nps, ps], ncol=2, fontsize=16)
-plt.axvspan(-5,-3.313, facecolor='0.85', linewidth=0)
-plt.axvspan(-2.27,0.0, facecolor='0.85', linewidth=0)
-plt.xlim([-5, 0])
+plt.legend(handles=[nps, ps], ncol=2, fontsize=20)
+plt.axvspan(o(-5),o(-3.313), facecolor='0.85', linewidth=0)
+plt.axvspan(o(-2.27),o(0.0), facecolor='0.85', linewidth=0)
+plt.xlim([o(-5), o(0)])
 plt.setp(plt.gca().get_yticklabels(), visible=False)
 
 plt.gca().tick_params(width=2, labelsize=15)
@@ -60,6 +64,6 @@ for x in ['top', 'bottom', 'left', 'right']:
 plt.gca().get_legend().get_frame().set_linewidth(2)
 
 plt.gcf().set_size_inches(20., 3.5)
-plt.xlabel('Energy [eV]', fontweight='bold', fontsize=16)
-plt.savefig('dos_broken_dimer.png', dpi=400, bbox_inches='tight')
+plt.xlabel('Energy [eV]', fontweight='bold', fontsize=20)
+plt.savefig('dos_broken_dimer.png', dpi=80, bbox_inches='tight')
 plt.show()

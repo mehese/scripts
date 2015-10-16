@@ -41,28 +41,33 @@ s = ReadStruct('../../crystal_files/INPUT_aHfO2')
 
 it = (i+1 for i in range(len(s)))
 
+avg = []
+
 for at in it:
     if s.atoms[at-1].species == 'Hf':
         nbs = neighbours_from_file(at, 'aHfO2')
         #for n in nbs:
         #    print n.atom_type, n.length
         nbs = [nb for nb in nbs if nb.length < 2.5]
-        print 'coordination: {}'.format(len(nbs))
+        #print 'coordination: {}'.format(len(nbs))
+        avg.append(len(nbs))
         b[len(nbs)] +=1
-
-print b/float(sum(b))
-print b
-print np.std(b/float(sum(b)))
-
+#
+#print b/float(sum(b))
+#print b
+#print np.std(b/float(sum(b)))
+#
 b = b*100/float(sum(b))
 
-fig = plt.axes(xlim=(0, 8), ylim=(0,50.))
+#print 'Answer', float(sum(avg))/len(avg)
+
+fig = plt.axes(xlim=(0, 9), ylim=(0,50.))
 fig.bar(range(0, len(b)), b, color='paleturquoise', align='edge', width=0.3, label='Bulk Hafnia')
 fig.bar(np.array(range(0, len(b)))-0.3, a, color='darksalmon', align='edge', width=0.3,
 label='Si-Hafnia cells')
-fig.set_xlabel('Hf coordination number', fontsize=16, fontweight='bold')
-fig.set_ylabel('% of total', fontsize=16, fontweight='bold')
-fig.legend(loc='upper left', fontsize=14)
+fig.set_xlabel('Hf coordination number', fontsize=20, fontweight='bold')
+fig.set_ylabel('% of total', fontsize=20, fontweight='bold')
+fig.legend(loc='upper left', fontsize=20)
 
 plt.gca().get_legend().get_frame().set_linewidth(2)
 plt.gca().yaxis.set_major_locator(MultipleLocator(5))
@@ -73,7 +78,7 @@ for x in ['top', 'bottom', 'left', 'right']:
     plt.gca().spines[x].set_linewidth(2)
 
 plt.gcf().set_size_inches(10., 9.)
-plt.savefig('coordination_barchart2.png', dpi=100, bbox_inches='tight')
+plt.savefig('coordination_barchart_fromFile.png', dpi=100, bbox_inches='tight')
 plt.show()
 
 print 'Done'

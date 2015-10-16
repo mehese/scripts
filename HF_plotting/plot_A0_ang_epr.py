@@ -69,9 +69,9 @@ print '    ', np.corrcoef(a, y=A)
     
 
 #plt.scatter(a, A, color='salmon', s=250)
-plt.scatter(angs, As, color='salmon', s=250)
+#plt.scatter(angs, As, color='salmon', s=250)
+plt.scatter(angs, As, edgecolor='0.1', linewidths=2, s=250, facecolor='none')
 
-plt.title('Eprime, med O-Si-O angle', fontweight='bold', fontsize=20)
 plt.gca().xaxis.set_minor_locator(MultipleLocator(5))
 plt.gca().yaxis.set_tick_params(which='major', length=10, width=2)
 
@@ -87,10 +87,10 @@ for x in ['top', 'bottom', 'left', 'right']:
 #plt.legend(handles=[full, epr, dim_, bdim_], fontsize=16, ncol=4)
 #plt.gca().get_legend().get_frame().set_linewidth(2)
 #plt.xlim([1.55, 2.])
-plt.ylim(ymin=-1)
-plt.xlabel('Angle [deg]', fontweight='bold', fontsize=16)
+plt.ylim(ymin=-0.4)
+plt.xlabel(r'Average O-Si-O angle [deg]', fontweight='bold', fontsize=16)
 plt.ylabel('A0 [mT]', fontweight='bold', fontsize=16)
 
-plt.gcf().set_size_inches(20., 20.)
-plt.savefig('A0_eprime_ang_med.png', dpi=200, bbox_inches='tight')
+plt.gcf().set_size_inches(10., 10.)
+plt.savefig('A0_eprime_ang.png', dpi=80, bbox_inches='tight')
 plt.show()

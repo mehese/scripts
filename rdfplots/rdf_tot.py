@@ -51,12 +51,12 @@ y = (np.array(y_c1) + np.array(y_c2) + np.array(y_c3) + np.array(y_c4) +
 f = interp1d(x, y, kind='cubic')
 #print y[2][-1]
 #plt.plot(x, y[2][:-1], 'k-', linewidth=1.8)
-plt.plot(x_, f(x_), '-', color='#009999', linewidth=2.5, label=r'Total $g(\mathbf{r})$')
-plt.legend(fontsize=16, loc='upper right')
+plt.plot(x_, f(x_), '-', color='#009999', linewidth=3, label=r'Total $g(\mathbf{r})$')
+plt.legend(fontsize=20, loc='upper right')
 plt.gca().get_legend().get_frame().set_linewidth(2)
-plt.xlim([1.0, 6.8])
+plt.xlim([1.0, 6.0])
 plt.ylim([.0, np.max(y)])
-plt.xlabel(r'Distance [$\mathbf{\AA}$]', fontweight='bold', fontsize=16)
+plt.xlabel(r'Distance [$\mathbf{\AA}$]', fontweight='bold', fontsize=20)
 # No labels on y axis
 plt.setp(plt.gca().get_yticklabels(), visible=False)
 
@@ -71,7 +71,7 @@ for x in ['top', 'bottom', 'left', 'right']:
     plt.gca().spines[x].set_linewidth(2)
 
 plt.gcf().set_size_inches(20., 3.5)
-plt.savefig('rdf_tot.png', dpi=400, bbox_inches='tight')
+plt.savefig('rdf_tot.png', dpi=100, bbox_inches='tight')
 plt.show()
 
 print 'Done'

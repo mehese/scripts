@@ -1,8 +1,7 @@
 #! /usr/bin/env python
 
 import sys
-sys.path.append('/home/eric/Dropbox/astools/')
-from analysis import *
+from astools.analysis import *
 import matplotlib.pylab as plt
 from matplotlib.ticker import MultipleLocator
 from scipy.ndimage import filters
@@ -16,32 +15,32 @@ def testGauss(x, y):
 
 
 print 'cell 1...'
-cell = ReadStruct('../inputs/INPUT_c1', 'crystal')
+cell = ReadStruct('../crystal_files/INPUT_c1', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
 plt.plot(x, testGauss(x, y), 'k--', label='clean Si fixed boxsize cell')
 
 print 'cell 2...'
-cell = ReadStruct('../inputs/INPUT_c2', 'crystal')
+cell = ReadStruct('../crystal_files/INPUT_c2', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
 plt.plot(x, testGauss(x, y), color='k', label='clean Si boxsize relaxed')
 
 print 'cell 3...'
-cell = ReadStruct('../inputs/INPUT_c3', 'crystal')
+cell = ReadStruct('../crystal_files/INPUT_c3', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
 plt.plot(x, testGauss(x, y), color='k')
 
 print 'cell 4...'
-cell = ReadStruct('../inputs/INPUT_c4', 'crystal')
+cell = ReadStruct('../crystal_files/INPUT_c4', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
 plt.plot(x, testGauss(x, y), color='k')
 
 print 'cell 5...'
-cell = ReadStruct('../inputs/INPUT_c5', 'crystal')
+cell = ReadStruct('../crystal_files/INPUT_c5', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
 plt.plot(x, testGauss(x, y), color='k')
 
 print 'cell 6...'
-cell = ReadStruct('../inputs/INPUT_c6', 'crystal')
+cell = ReadStruct('../crystal_files/INPUT_c6', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
 plt.plot(x, testGauss(x, y), color='k')
 
@@ -53,13 +52,13 @@ plt.plot([cell.coordz/2, cell.coordz], [2.2 , 2.2 ], color="#990033", linewidth=
          label=r'amorphous SiO$_\mathbf{2}$')
 
 
-plt.xlabel(r'z coordinate [$\mathbf{\AA}$]', fontweight='bold', fontsize=16)
-plt.ylabel(r'density [g/cm$^\mathbf{3}$]', fontweight='bold', fontsize=16)
+plt.xlabel(r'z coordinate [$\mathbf{\AA}$]', fontweight='bold', fontsize=20)
+plt.ylabel(r'density [g/cm$^\mathbf{3}$]', fontweight='bold', fontsize=20)
 
 plt.xlim([0, cell.coordz])
-plt.ylim([1.50, 3.0])
+plt.ylim([1.5, 3.3])
 
-plt.legend(fontsize=16, loc=3)
+plt.legend(fontsize=20, loc='upper left', ncol=3)
 l = plt.gca().get_legend().get_frame().set_linewidth(2)
 
 
@@ -74,7 +73,7 @@ for x in ['top', 'bottom', 'left', 'right']:
     plt.gca().spines[x].set_linewidth(2)
 
 plt.gcf().set_size_inches(20., 7.)
-plt.savefig('cleancells.png', dpi=200, bbox_inches='tight')
+plt.savefig('cleancells.png', dpi=100, bbox_inches='tight')
 plt.show()
 
 print 'Done'

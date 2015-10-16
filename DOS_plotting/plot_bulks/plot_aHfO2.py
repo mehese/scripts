@@ -12,6 +12,8 @@ from scipy.signal import wiener, filtfilt, butter, gaussian, freqz
 import matplotlib.pylab as plt
 from matplotlib.ticker import MultipleLocator
 
+f = lambda x: x + 4.3
+
 def testGauss(x, y):
     b = gaussian(10, .2)
     ga = filters.convolve1d(y, b/b.sum())
@@ -20,18 +22,18 @@ def testGauss(x, y):
 
 dat  = np.loadtxt('../../../PDOS_files/a_hfo2_tot.dat')
 x, y = dat[:,0], testGauss(dat[:,0], dat[:,1])
-plt.plot(x, y*1.5, color='#990000', label='amorphous hafnia', linewidth=1.5)
+plt.plot(f(x), y*1.5, color='#990000', label='amorphous hafnia', linewidth=2.5)
 
 pc5  = np.loadtxt('../../../PDOS_files/m_hfo2_tot_figgen.dat')
-plt.plot(pc5[:,0], pc5[:,1]*3, color='#ff9933', label=r'monoclinic hafnia', linewidth=2)
+plt.plot(f(pc5[:,0]), pc5[:,1]*3, color='#ff9933', label=r'monoclinic hafnia', linewidth=3)
 
 minor_locator = MultipleLocator(1.0)
 plt.gca().xaxis.set_minor_locator(minor_locator)
 plt.gca().tick_params(which='minor', length=5, width=2)
 plt.gca().tick_params(which='major', length=10, width=2, labelsize=15)
 
-plt.legend(ncol=1, fontsize=16, loc='upper left')
-plt.xlim([-20, 5])
+plt.legend(ncol=1, fontsize=20, loc='upper left')
+plt.xlim([f(-20), f(5)])
 plt.setp(plt.gca().get_yticklabels(), visible=False)
 
 plt.gca().tick_params(width=2, labelsize=15)
@@ -42,7 +44,7 @@ for x in ['top', 'bottom', 'left', 'right']:
 plt.gca().get_legend().get_frame().set_linewidth(2)
 
 plt.gcf().set_size_inches(20., 3.5)
-plt.xlabel('Energy [eV]', fontweight='bold', fontsize=16)
+plt.xlabel('Energy [eV]', fontweight='bold', fontsize=20)
 plt.savefig('dos_aHfO2.png', dpi=400, bbox_inches='tight')
 
 

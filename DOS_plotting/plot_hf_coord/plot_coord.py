@@ -1,5 +1,9 @@
 #! /usr/bin/python2.7
 
+import sys
+sys.path.append('../../')
+from helping_functions import neighbours_from_file
+
 from astools.ReadWrite import ReadStruct
 from astools.analysis import get_neighbours
 import matplotlib.pyplot as plt
@@ -17,7 +21,7 @@ for nm in nms:
 
     it = (a for a in s.atoms if a.species=='Hf')
 
-    for at in it:
+    for i,at in enumerate(it):
         #print at
 
         nbs = get_neighbours(at, s, no_neighbours=10, dmax=4.)
@@ -26,7 +30,10 @@ for nm in nms:
         #print 'coordination: {}'.format(len(nbs))
         a[len(nbs)] +=1
 
+for c, num in enumerate(a):
+    print '--', c, num
 a = a*100/float(sum(a))
+
 
 # bulk amorphous
 b = np.zeros(12, dtype=int)
@@ -46,9 +53,11 @@ print np.std(b/float(sum(b)))
 
 b = b*100/float(sum(b))
 
+avg = sum(i*w/100. for i, w in enumerate(b))
+
 fig = plt.axes(xlim=(2, 11), ylim=(0,50.))
-fig.bar(range(1, len(b)+1), b, color='paleturquoise', align='edge', width=0.3, label='Bulk Hafnia')
-fig.bar(np.array(range(1, len(b)+1))-0.3, a, color='darksalmon', align='edge', width=0.3,
+fig.bar([x-0.3 for x in range(0, len(b))], b, color='paleturquoise', align='edge', width=0.3, label='Bulk Hafnia')
+fig.bar(range(0, len(b)), a, color='darksalmon', align='edge', width=0.3,
 label='Si-Hafnia cells')
 fig.set_xlabel('Hf coordination number', fontsize=16, fontweight='bold')
 fig.set_ylabel('% of total', fontsize=16, fontweight='bold')

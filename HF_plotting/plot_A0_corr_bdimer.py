@@ -56,26 +56,29 @@ bdimer_dict = {'c1': [107],
 #        full, = plt.plot(fabs(A0), 0.5, 'ko', fillstyle='none', markersize=12, label='all')
 #
 
-print 'Eprimes'
+print 'Broken dimers'
 Ds, As = [], []
-for c, eprimes in eprime_dict.items():
+for c, bdimers in bdimer_dict.items():
     s = ReadStruct('../crystal_files/INPUT_'+c) 
-    for eprime in eprimes:
-        at_x = s.atoms[eprime-1]
+    for bdimer in bdimers:
 
-
-        nbs = neighbours_from_file(eprime, c)
-        print c, eprime
-        Ds.append((nbs[0].length + nbs[1].length + nbs[2].length)/3)
+        nbs = neighbours_from_file(bdimer, c)
+        print c, bdimer, len([n  for n in nbs if (n.length < 2.5)])
+        nb2 = [n.length  for n in nbs if (n.length < 2.5 and n.atom_type=='Si')]
+        print nb2
+        #d = sum(nb2)/len(nb2)
+        d = max(nb2)
+        Ds.append(d)
         for nb in nbs:
             print '    ', nb.atom_type, nb.length
 
-        A0 = get_A0(eprime, c)
+        A0 = get_A0(bdimer, c)
         As.append(fabs(A0))
     
         #epr ,= plt.plot(fabs(A0), 0.5, 'yo', markersize=12, label="$E'$")
 
-plt.scatter(Ds, As, edgecolor='0.1', linewidths=2, s=100, facecolor='none')
+print Ds, As
+plt.scatter(Ds, As, edgecolor='0.1', linewidths=2, s=250, facecolor='none')
 
 plt.gca().xaxis.set_minor_locator(MultipleLocator(5))
 plt.gca().yaxis.set_tick_params(which='major', length=10, width=2)
@@ -91,11 +94,11 @@ for x in ['top', 'bottom', 'left', 'right']:
 
 #plt.legend(handles=[full, epr, dim_, bdim_], fontsize=16, ncol=4)
 #plt.gca().get_legend().get_frame().set_linewidth(2)
-plt.xlim([1.55, 1.85])
-plt.ylim(ymin=-0.4)
-plt.xlabel(r'Si-O length [$\mathbf{\AA{}}$]', fontweight='bold', fontsize=16)
+plt.xlim([2.2, 2.6])
+plt.ylim(ymin=-.4)
+plt.xlabel(r'broken dimer average length [$\mathbf{\AA{}}$]', fontweight='bold', fontsize=16)
 plt.ylabel('A0 [mT]', fontweight='bold', fontsize=16)
 
 plt.gcf().set_size_inches(10., 10.)
-plt.savefig('A0_eprime_length.png', dpi=80, bbox_inches='tight')
+plt.savefig('A0_bdimer_length.png', dpi=80, bbox_inches='tight')
 plt.show()

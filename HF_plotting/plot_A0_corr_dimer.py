@@ -79,9 +79,8 @@ for c, dimers in dimer_dict.items():
         #epr ,= plt.plot(fabs(A0), 0.5, 'yo', markersize=12, label="$E'$")
 
 print Ds, As
-plt.scatter(Ds, As, color='goldenrod', s=250)
+plt.scatter(Ds, As, edgecolor='0.1', linewidths=2, s=250, facecolor='none')
 
-plt.title('Dimer, max Si-O length', fontweight='bold', fontsize=20)
 plt.gca().xaxis.set_minor_locator(MultipleLocator(5))
 plt.gca().yaxis.set_tick_params(which='major', length=10, width=2)
 
@@ -97,10 +96,10 @@ for x in ['top', 'bottom', 'left', 'right']:
 #plt.legend(handles=[full, epr, dim_, bdim_], fontsize=16, ncol=4)
 #plt.gca().get_legend().get_frame().set_linewidth(2)
 plt.xlim([2.2, 2.6])
-plt.ylim(ymin=0)
-plt.xlabel('med length [Angstroem]', fontweight='bold', fontsize=16)
+plt.ylim(ymin=-.4)
+plt.xlabel(r'dimer Si-Si length [$\mathbf{\AA{}}$]', fontweight='bold', fontsize=16)
 plt.ylabel('A0 [mT]', fontweight='bold', fontsize=16)
 
-plt.gcf().set_size_inches(20., 20.)
-plt.savefig('A0_dimer_max.png', dpi=200, bbox_inches='tight')
+plt.gcf().set_size_inches(10., 10.)
+plt.savefig('A0_dimer_length_corr.png', dpi=80, bbox_inches='tight')
 plt.show()

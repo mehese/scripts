@@ -47,9 +47,9 @@ def neighbours_from_file(i, cell):
     path = os.path.dirname(os.path.realpath(__file__))
 
     try:
-        f = open(path+'/crystal_files/OUTPUT_'+cell, 'r')
+        f = open(path+'/neighbour_files/OUTPUT_'+cell, 'r')
     except IOError:
-        print 'No file '+path+'/crystal_files/OUTPUT_'+cell+' found :('
+        print 'No file '+path+'/neighbour_files/OUTPUT_'+cell+' found :('
         return
     except:
         print r'¯\_(ツ)_/¯ Dunno whut happened'

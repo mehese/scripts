@@ -1,7 +1,6 @@
 #! /usr/bin/env python
 
 import sys
-sys.path.append('/home/eric/Dropbox/astools/')
 from astools.analysis import *
 import matplotlib.pylab as plt
 from matplotlib.ticker import MultipleLocator
@@ -15,39 +14,44 @@ def testGauss(x, y):
     return ga
 
 
-print 'cell 2ox...'
-cell = ReadStruct('../crystal_files/INPUT_c2ox', 'crystal')
+print 'cell 1...'
+cell = ReadStruct('../crystal_files/INPUT_hfo2si_c1', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
-plt.plot(x, testGauss(x, y), color='#000000', label='O-rich cells, boxsize relaxed')
-plt.xlim([0,cell.coordz])
+plt.plot(x, testGauss(x, y), 'k-', label='cell 1')
 
-print 'cell 3ox...'
-cell = ReadStruct('../crystal_files/INPUT_c3ox', 'crystal')
+print 'cell 1 ox...'
+cell = ReadStruct('../crystal_files/INPUT_hfo2si_c1ox', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
-plt.plot(x, testGauss(x, y), color='#000000')
-plt.xlim([0,cell.coordz])
+plt.plot(x, testGauss(x, y), 'k--', label='cell 1 ox')
 
-print 'cell 5ox...'
-cell = ReadStruct('../crystal_files/INPUT_c5ox', 'crystal')
+
+print 'cell 2 ox...'
+cell = ReadStruct('../crystal_files/INPUT_hfo2si_c2ox', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
-plt.plot(x, testGauss(x, y), color='#000000')
-plt.xlim([0,cell.coordz])
+plt.plot(x, testGauss(x, y), 'k:', label='cell 2 ox')
+
+print 'cell 3 ox...'
+cell = ReadStruct('../crystal_files/INPUT_hfo2si_c3ox', 'crystal')
+x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
+plt.plot(x, testGauss(x, y), 'k-.', label='cell 3 ox')
 
 
-plt.plot([0, cell.coordz/2], [2.328, 2.328], color="#33D6FF", linewidth=3.5, label='Bulk Si')
+plt.plot([2, cell.coordz/2], [2.328, 2.328], color="#33D6FF", linewidth=3.5, label='Bulk Si')
 plt.plot([cell.coordz/2, cell.coordz], [2.66 , 2.66 ], color="#FF4D4D", linewidth=3.5,
          label=r'$\mathbf{\alpha}$-quartz')
-plt.plot([cell.coordz/2, cell.coordz], [2.2 , 2.2 ], color="#990033", linewidth=3.5,
-         label=r'amorphous SiO$_\mathbf{2}$')
-
+plt.plot([cell.coordz/2, cell.coordz], [9.68 , 9.68 ], color="#A34747", linewidth=3.5,
+         label=r'$m$-HfO$_\mathbf{2}$')
+plt.plot([cell.coordz/2, cell.coordz], [10.87 , 10.87 ], '--', color="#A34747", linewidth=3.5,
+         label=r'$a$-HfO$_\mathbf{2}$')
 
 plt.xlabel(r'z coordinate [$\mathbf{\AA}$]', fontweight='bold', fontsize=20)
 plt.ylabel(r'density [g/cm$^\mathbf{3}$]', fontweight='bold', fontsize=20)
 
 plt.xlim([0, cell.coordz])
-plt.ylim([1.50, 3.3])
+plt.ylim([0, 13])
 
-plt.legend(fontsize=20, loc='upper left', ncol=2)
+
+plt.legend(fontsize=20, loc='upper center', ncol=8)
 l = plt.gca().get_legend().get_frame().set_linewidth(2)
 
 
@@ -62,11 +66,7 @@ for x in ['top', 'bottom', 'left', 'right']:
     plt.gca().spines[x].set_linewidth(2)
 
 plt.gcf().set_size_inches(20., 7.)
-plt.savefig('oxcells.png', dpi=100, bbox_inches='tight')
+plt.savefig('cleancells_hfo2si.png', dpi=100, bbox_inches='tight')
 plt.show()
 
 print 'Done'
-
-
-
-

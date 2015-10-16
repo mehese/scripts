@@ -11,6 +11,8 @@ from astools.analysis import distance
 import matplotlib.pylab as plt
 from matplotlib.ticker import MultipleLocator
 
+o = lambda k : k + 3.313
+
 eprime_dict = {'c1': [142, 144],
                'c2': [124, 125, 134],
                'c3': [81, 113, 128, 134, 135, 147, 148],
@@ -27,8 +29,9 @@ for c in ['c'+ i for i in map(str, range(2, 7))]:
     for eprime in eprime_dict[c]:
         print eprime,
         x, y_u, y_d = get_at_pdos(c, eprime)
-        plt.plot(x, y_u, 'k-')
-        nps, = plt.plot(x, y_d, 'k-', label='Unpassivated')
+        x = [o(p) for p in x]
+        plt.plot(x, y_u, 'k-', linewidth=2)
+        nps, = plt.plot(x, y_d, 'k-', label='Unpassivated', linewidth=2)
         # Get the Atom object of the eprime
         at_e = ReadStruct('../../crystal_files/INPUT_'+c,
                           'crystal').atoms[eprime-1]
@@ -37,8 +40,9 @@ for c in ['c'+ i for i in map(str, range(2, 7))]:
         i_x, at_p = get_similar(at_e, p_str)
         print '{:5.3f}'.format(distance(at_e, at_p)), 
         x, y_u, y_d = get_at_pdos(c+'p', i_x)
-        plt.plot(x, y_u, 'r-')
-        ps,= plt.plot(x, y_d, 'r-', label='H passivated')
+        x = [o(p) for p in x]
+        plt.plot(x, y_u, 'r-', linewidth=2.5)
+        ps,= plt.plot(x, y_d, 'r-', label='H passivated', linewidth=2.5)
     print
 
 minor_locator = MultipleLocator(0.10)
@@ -46,10 +50,10 @@ plt.gca().xaxis.set_minor_locator(minor_locator)
 plt.gca().tick_params(which='minor', length=5, width=2)
 plt.gca().tick_params(which='major', length=10, width=2, labelsize=15)
 
-plt.legend(handles=[nps, ps], ncol=2, fontsize=16)
-plt.axvspan(-5,-3.313, facecolor='0.85', linewidth=0)
-plt.axvspan(-2.27,0.0, facecolor='0.85', linewidth=0)
-plt.xlim([-5, 0])
+plt.legend(handles=[nps, ps], ncol=2, fontsize=20)
+plt.axvspan(o(-5),o(-3.313), facecolor='0.85', linewidth=0)
+plt.axvspan(o(-2.27),o(0.0), facecolor='0.85', linewidth=0)
+plt.xlim([o(-5), o(0)])
 plt.ylim([-60, 60])
 plt.setp(plt.gca().get_yticklabels(), visible=False)
 
@@ -60,9 +64,9 @@ for x in ['top', 'bottom', 'left', 'right']:
     plt.gca().spines[x].set_linewidth(2)
 plt.gca().get_legend().get_frame().set_linewidth(2)
 
-plt.xlabel('Energy [eV]', fontweight='bold', fontsize=16)
+plt.xlabel('Energy [eV]', fontweight='bold', fontsize=20)
 
 plt.gcf().set_size_inches(20., 3.5)
-plt.savefig('dos_eprime.png', dpi=400, bbox_inches='tight')
+plt.savefig('dos_eprime.png', dpi=100, bbox_inches='tight')
 
 plt.show()
