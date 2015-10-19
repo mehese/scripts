@@ -6,6 +6,15 @@ from astools.analysis  import distance, neighbour, dist
 from astools.operations import expand
 
 
+offsets = {
+            'c2':{'VBM':-3.46, 'CBM':-1.64, 'Ef':-2.70},
+            'c3':{'VBM':-3.97, 'CBM':-2.00, 'Ef':-2.94},
+            'c5':{'VBM':-3.52, 'CBM':-1.55, 'Ef':-2.55},
+            'c2ox':{'VBM':-3.69, 'CBM':-1.46, 'Ef':-2.67},
+            'c3ox':{'VBM':-3.44, 'CBM':-1.60, 'Ef':-2.34},
+            'c5ox':{'VBM':-3.67, 'CBM':-1.81, 'Ef':-2.58},
+          }
+
 def get_A0(i, cell):
     """ Get AN in MT from CRYSTAL cryapi ISO/ANISO output files. i -- atom
     index, cell is an identification string (like c3, c4p, c2ox)
@@ -134,7 +143,7 @@ def get_similar(at, str_x):
 if __name__== "__main__":
     from random import randint
 
-    print neighbours_from_file(16, 'c2ox')
+    print neighbours_from_file(16, 'hfo2si_c2ox')
 
     #print get_A0(1, 'c5ox')
     #print get_A0(11, 'c5ox')
