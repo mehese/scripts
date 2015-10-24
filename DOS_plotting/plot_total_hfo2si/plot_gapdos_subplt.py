@@ -24,18 +24,18 @@ from matplotlib.ticker import MultipleLocator
 #nms = ['hfo2si_c1']
 nms = ['hfo2si_c1', 'hfo2si_c1ox', 'hfo2si_c2ox', 'hfo2si_c3ox']
 titles = ['cell 1 (clean)', 'cell 1 (oxidised)', 'cell 2 (oxidised)', 'cell 3 (oxidised)']
-fermis = [-0.3915623715, -1.1526262679, -0.5232161378, -0.8299245876]
+fermis = [-1.2, -1.1526262679, -0.5232161378, -0.8299245876]
 lims = {'hfo2si_c1':  (-2.54, -0.62), 
         'hfo2si_c1ox':(-2.62, -0.74), 
-        'hfo2si_c2ox':(-2.13, -0.32), 
-        'hfo2si_c3ox':(-2.22, -0.04)}
+        'hfo2si_c2ox':(-2.48, -0.32), 
+        'hfo2si_c3ox':(-2.43, -0.04)}
 
 ks = range(3, 7)
 fig = [None,]*len(ks)
 
 x = np.linspace(0, 3*np.pi, 100)
 
-offst = lambda k : k + 3.8
+offst = lambda k : k + 0
 
 minor_locator = MultipleLocator(0.10)
 for i, k, t, Ef in zip(range(len(nms)), nms, titles, fermis):

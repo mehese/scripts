@@ -13,6 +13,11 @@ offsets = {
             'c2ox':{'VBM':-3.69, 'CBM':-1.46, 'Ef':-2.67},
             'c3ox':{'VBM':-3.44, 'CBM':-1.60, 'Ef':-2.34},
             'c5ox':{'VBM':-3.67, 'CBM':-1.81, 'Ef':-2.58},
+            'hfo2si_c1':  {'VBM': -2.54, 'CBM': -0.62}, 
+            'hfo2si_c1ox':{'VBM': -2.62, 'CBM': -0.74}, 
+            'hfo2si_c2ox':{'VBM': -2.48, 'CBM': -0.32}, 
+            'hfo2si_c3ox':{'VBM': -2.43, 'CBM': -0.04}
+
           }
 
 def get_A0(i, cell):
