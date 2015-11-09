@@ -35,7 +35,7 @@ x_ = np.linspace(np.min(x), np.max(x), 600)
 f = interp1d(x, y[2][:-1], kind='cubic')
 #print y[2][-1]
 #plt.plot(x, y[2][:-1], 'k-', linewidth=1.8)
-plt.plot(x_, f(x_), 'k--', linewidth=3, label='fixed boxsize cell')
+plt.plot(x_, f(x_), 'k--', linewidth=3, label='Fixed boxsize cell')
 
 print 'cell 2...'
 cell = ReadStruct('../crystal_files/INPUT_c2', 'crystal')
@@ -43,7 +43,7 @@ x, y = rdf2(cell, 100, dist=2.3)
 x_ = np.linspace(np.min(x), np.max(x), 600)
 f = interp1d(x, y[2][:-1], kind='cubic')
 #plt.plot(x, y[2][:-1], 'k-', linewidth=0.8)
-plt.plot(x_, f(x_), 'k-', linewidth=3, alpha=0.6, label='clean Si cells')
+plt.plot(x_, f(x_), 'k-', linewidth=3, alpha=0.6, label='Unoxidised Si cells')
 
 print 'cell 3...'
 cell = ReadStruct('../crystal_files/INPUT_c3', 'crystal')
@@ -83,7 +83,7 @@ x, y = rdf2(cell, 100, dist=2.3)
 x_ = np.linspace(np.min(x), np.max(x), 600)
 f = interp1d(x, y[2][:-1], kind='cubic')
 #plt.plot(x, y[2][:-1], 'r-', linewidth=0.8)
-plt.plot(x_, f(x_), 'salmon', linewidth=3, alpha=0.6, label='Oxidised cells')
+plt.plot(x_, f(x_), color='#5C2E00', linewidth=3, alpha=0.6, label='Oxidised cells')
 
 print 'cell 3 ox...'
 cell = ReadStruct('../crystal_files/INPUT_c3ox', 'crystal')
@@ -91,7 +91,7 @@ x, y = rdf2(cell, 100, dist=2.3)
 x_ = np.linspace(np.min(x), np.max(x), 600)
 f = interp1d(x, y[2][:-1], kind='cubic')
 #plt.plot(x, y[2][:-1], 'r-', linewidth=0.8)
-plt.plot(x_, f(x_), 'salmon', linewidth=3, alpha=0.6)
+plt.plot(x_, f(x_), color='#5C2E00', linewidth=3, alpha=0.6)
 
 print 'cell 5 ox...'
 cell = ReadStruct('../crystal_files/INPUT_c5ox', 'crystal')
@@ -99,11 +99,11 @@ x, y = rdf2(cell, 100, dist=2.3)
 x_ = np.linspace(np.min(x), np.max(x), 600)
 f = interp1d(x, y[2][:-1], kind='cubic')
 #plt.plot(x, y[2][:-1], 'r-', linewidth=0.8)
-plt.plot(x_, f(x_), 'salmon', linewidth=3, alpha=0.6)
+plt.plot(x_, f(x_), color='#5C2E00', linewidth=3, alpha=0.6)
 
-plt.legend(fontsize=20, loc='upper right')
+plt.legend(fontsize=20, loc='upper left')
 plt.gca().get_legend().get_frame().set_linewidth(2)
-plt.xlim([1.0, 2.28])
+plt.xlim([1., 2.2])
 plt.ylim([.0, 2.8])
 plt.xlabel(r'Distance [$\mathbf{\AA}$]', fontweight='bold', fontsize=20)
 # No labels on y axis

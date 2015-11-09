@@ -7,16 +7,19 @@ from astools.operations import expand
 
 
 offsets = {
+            'c1':{'VBM':-3.20, 'CBM':-2.02, 'Ef':-2.34},
             'c2':{'VBM':-3.46, 'CBM':-1.64, 'Ef':-2.70},
             'c3':{'VBM':-3.97, 'CBM':-2.00, 'Ef':-2.94},
+            'c4':{'VBM':-3.31, 'CBM':-2.12, 'Ef':-2.84},
             'c5':{'VBM':-3.52, 'CBM':-1.55, 'Ef':-2.55},
+            'c6':{'VBM':-3.49, 'CBM':-1.66, 'Ef':-2.64},
             'c2ox':{'VBM':-3.69, 'CBM':-1.46, 'Ef':-2.67},
             'c3ox':{'VBM':-3.44, 'CBM':-1.60, 'Ef':-2.34},
             'c5ox':{'VBM':-3.67, 'CBM':-1.81, 'Ef':-2.58},
-            'hfo2si_c1':  {'VBM': -2.54, 'CBM': -0.62}, 
-            'hfo2si_c1ox':{'VBM': -2.62, 'CBM': -0.74}, 
-            'hfo2si_c2ox':{'VBM': -2.48, 'CBM': -0.32}, 
-            'hfo2si_c3ox':{'VBM': -2.43, 'CBM': -0.04}
+            'hfo2si_c1':  {'VBM': -2.54, 'CBM': -0.62, 'Ef':-1.2}, 
+            'hfo2si_c1ox':{'VBM': -2.62, 'CBM': -0.74, 'Ef':-1.15}, 
+            'hfo2si_c2ox':{'VBM': -2.48, 'CBM': -0.32, 'Ef':-0.52}, 
+            'hfo2si_c3ox':{'VBM': -2.43, 'CBM': -0.04, 'Ef':-0.82}
 
           }
 
@@ -125,7 +128,7 @@ def get_spin_mom(i, cell):
     else:
         print "i larger than number of values extracted!!!"
 
-def get_similar(at, str_x):
+def get_similar(at, str_x, verbose=False):
     """ Find equivalent atoms in structures
     (atom, AtomStruct) -> int, Atom
 
@@ -142,28 +145,16 @@ def get_similar(at, str_x):
             d_min = d_
             at_x = str_x.atoms[i]
             i_x = i
-
+    if verbose:
+        print 'd({}, {}) = {}'.format(at, at_x, d_min)
     return i_x, at_x
 
 if __name__== "__main__":
     from random import randint
 
-    print neighbours_from_file(16, 'hfo2si_c2ox')
+    #print neighbours_from_file(16, 'hfo2si_c2ox')
 
-    #print get_A0(1, 'c5ox')
-    #print get_A0(11, 'c5ox')
 
-    #print 'Testing get_similar 10 times...'
-    #s = ReadStruct('crystal_files/INPUT_c2')
-    #s2 = ReadStruct('crystal_files/INPUT_c2p')
-    #for _ in range(5):
-    #    ii = randint(0, len(s)-1)
-    #    print ii, 
-    #    print s.atoms[ii]
-    #    i, ax = get_similar(s.atoms[ii], s2)
-    #    print i - len([p for p in s2.atoms if p.species=='H'])
-    #    print i, ax
-
-    #print get_spin_mom(4, 'c5')
+    print get_spin_mom(65, 'c5')
 
     print '\nDone'

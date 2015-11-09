@@ -98,7 +98,7 @@ for c, bdimers in bdimer_dict.items():
         bdim_,= plt.plot(fabs(A0), -.5, 'ro', markersize=12, label="broken dimer")
 
 plt.gca().xaxis.set_minor_locator(MultipleLocator(5))
-plt.gca().yaxis.set_tick_params(which='major', length=10, width=2, tickdir='left')
+plt.gca().yaxis.set_tick_params(which='major', length=10, width=2, tickdir='left', labelsize=20)
 
 plt.gca().xaxis.set_tick_params(which='major', length=10, width=2, labelsize=15)
 plt.gca().xaxis.set_tick_params(which='minor', length=5, width=2, labelsize=15)
@@ -109,14 +109,14 @@ for tick in plt.gca().xaxis.get_major_ticks()+plt.gca().yaxis.get_major_ticks():
 for x in ['top', 'bottom', 'left', 'right']:
     plt.gca().spines[x].set_linewidth(2)
 
-plt.legend(handles=[full, epr, dim_, bdim_], fontsize=16, ncol=4)
+plt.legend(handles=[full, epr, dim_, bdim_], fontsize=20, ncol=4)
 plt.gca().get_legend().get_frame().set_linewidth(2)
 plt.yticks([-.5, 0, .5], ["broken dimers  ",'dimers  ',"E'  "])
 #plt.gca().set_yticklabels(("broken dimers  ",'dimers  ',"E'  "))
 plt.xlim([5, 75])
 plt.ylim([-1., 1.])
-plt.xlabel('A0 [mT]', fontweight='bold', fontsize=16)
+plt.xlabel('A0 [mT]', fontweight='bold', fontsize=20)
 
 plt.gcf().set_size_inches(20., 7.)
-plt.savefig('A0_defects.png', dpi=400, bbox_inches='tight')
+plt.savefig('A0_defects.png', dpi=100, bbox_inches='tight')
 plt.show()

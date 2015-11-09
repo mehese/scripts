@@ -7,7 +7,7 @@ import os
 import matplotlib.pyplot as plt
 import numpy as np
 sys.path.append('/home/eric/Dropbox/astools/')
-from analysis import *
+from astools.analysis import *
 from matplotlib.ticker import MultipleLocator
 from matplotlib import rc
 from scipy.interpolate import spline
@@ -157,14 +157,14 @@ for x in ['top', 'bottom', 'left', 'right']:
 
 plt.xlim([0,maxz])
 plt.ylim([0,0.018])
-plt.text(14.6, .014, 'Clean Si cells', weight='bold',fontsize=24)
-plt.ylabel(r"suboxide density [$\mathbf{\AA^{\mathbf{-3}}}$]", fontweight='bold', fontsize=20)
-#plt.plot(z, y1, 'r-', linewidth=2, alpha=0.8, label='Si1+', zorder=0)
-plt.plot(z_, y1new, 'r-', linewidth=3.5, alpha=0.8, label='Si1+', zorder=0)
+plt.text(14.6, .014, 'Unoxidised Si cells', weight='bold',fontsize=24)
+plt.ylabel(r"suboxide density [$\mathbf{\AA^{\mathbf{-3}}}$]", fontweight='bold', fontsize=25)
+#plt.plot(z, y1, 'r-', linewidth=2, alpha=0.8, label=r'Si$^{1+}$', zorder=0)
+plt.plot(z_, y1new, 'r-', linewidth=3.5, alpha=0.8, label=r'Si$^{1+}$', zorder=0)
 #plt.plot(z, y2, 'b-', linewidth=2, alpha=0.8, label='Si2+', zorder=1)
-plt.plot(z_, y2new, 'b-', linewidth=3.5, alpha=0.8, label='Si2+', zorder=1)
+plt.plot(z_, y2new, 'b-', linewidth=3.5, alpha=0.8, label=r'Si$^{2+}$', zorder=1)
 #plt.plot(z, y3, 'g-', linewidth=2, alpha=0.8, label='Si3+', zorder=2)
-plt.plot(z_, y3new, 'g-', linewidth=3.5, alpha=0.8, label='Si3+', zorder=2)
+plt.plot(z_, y3new, 'g-', linewidth=3.5, alpha=0.8, label=r'Si$^{3+}$', zorder=2)
 # this will function as a legend for both graphs
 plt.legend(bbox_to_anchor=(0.3, 0.9), shadow=True, fancybox=True, fontsize=26)
 
@@ -183,7 +183,7 @@ for x in ['top', 'bottom', 'left', 'right']:
 plt.xlim([0,maxz])
 plt.ylim([0,0.018])
 plt.text(14.6, .014, 'Oxidised cells', weight='bold',fontsize=24)
-plt.ylabel(r"suboxide density [$\mathbf{1/\AA^{3}}$]", fontweight='bold', fontsize=16)
+plt.ylabel(r"suboxide density [$\mathbf{1/\AA^{3}}$]", fontweight='bold', fontsize=25)
 #plt.plot(z, y1x, 'r-', linewidth=2, alpha=0.8, label='Si1+', zorder=0)
 plt.plot(z_, y1oxnew, 'r-', linewidth=3.5, alpha=0.8, label='Si1+', zorder=0)
 #plt.plot(z, y2x, 'b-', linewidth=2, alpha=0.8, label='Si2+', zorder=1)
@@ -191,11 +191,11 @@ plt.plot(z_, y2oxnew, 'b-', linewidth=3.5, alpha=0.8, label='Si2+', zorder=1)
 #plt.plot(z, y3x, 'g-', linewidth=2, alpha=0.8, label='Si3+', zorder=2)
 plt.plot(z_, y3oxnew, 'g-', linewidth=3.5, alpha=0.8, label='Si3+', zorder=2)
 
-plt.xlabel(r'z coordinate [$\mathbf{\AA}$]', fontweight='bold', fontsize=20)
-plt.ylabel(r"suboxide density [$\mathbf{\AA^{\mathbf{-3}}}$]", fontsize=20)
+plt.xlabel(r'z coordinate [$\mathbf{\AA}$]', fontweight='bold', fontsize=25)
+plt.ylabel(r"suboxide density [$\mathbf{\AA^{\mathbf{-3}}}$]", fontsize=25)
 
 
 plt.gcf().set_size_inches(20., 14.)
-plt.savefig('suboxide_distribution.png', dpi=400, bbox_inches='tight')
+plt.savefig('suboxide_distribution.png', dpi=100, bbox_inches='tight')
 #plt.show()
 print 'Done!'

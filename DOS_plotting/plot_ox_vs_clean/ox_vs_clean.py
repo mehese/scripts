@@ -33,7 +33,7 @@ plt.axvspan(o(-5),o(-3.313), facecolor='0.85', linewidth=0)
 plt.axvspan(o(-2.27),o(0.0), facecolor='0.85', linewidth=0)
 x, y_u, y_d = get_at_pdos('c2', 1, total=True) 
 x = [o(p) for p in x]
-plt.plot(x, y_u, 'b-', linewidth=3, label='cell 2: clean Si')
+plt.plot(x, y_u, 'b-', linewidth=3, label='cell 2: unoxidised Si')
 plt.plot(x, y_d, 'b-', linewidth=3)
 x, y_u, y_d = get_at_pdos('c2ox', 1, total=True) 
 x = [o(p) for p in x]
@@ -63,7 +63,7 @@ plt.axvspan(o(-5),o(-3.313), facecolor='0.85', linewidth=0)
 plt.axvspan(o(-2.27),o(0.0), facecolor='0.85', linewidth=0)
 x, y_u, y_d = get_at_pdos('c3', 1, total=True) 
 x = [o(p) for p in x]
-plt.plot(x, y_u, 'b-', linewidth=3, label='cell 3: clean Si')
+plt.plot(x, y_u, 'b-', linewidth=3, label='cell 3: unoxidised Si')
 plt.plot(x, y_d, 'b-', linewidth=3)
 x, y_u, y_d = get_at_pdos('c3ox', 1, total=True) 
 x = [o(p) for p in x]
@@ -93,7 +93,7 @@ plt.axvspan(o(-5),o(-3.313), facecolor='0.85', linewidth=0)
 plt.axvspan(o(-2.27),o(0.0), facecolor='0.85', linewidth=0)
 x, y_u, y_d = get_at_pdos('c5', 1, total=True) 
 x = [o(p) for p in x]
-plt.plot(x, y_u, 'b-', linewidth=3, label='cell 5: clean Si')
+plt.plot(x, y_u, 'b-', linewidth=3, label='cell 5: unoxidised Si')
 plt.plot(x, y_d, 'b-', linewidth=3)
 x, y_u, y_d = get_at_pdos('c5ox', 1, total=True) 
 x = [o(p) for p in x]

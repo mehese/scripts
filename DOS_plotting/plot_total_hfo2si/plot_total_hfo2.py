@@ -29,6 +29,7 @@ def testGauss(x, y):
     #plt.plot(x, ga)
     return ga
 
+o = lambda k: k+3.8
 
 SiB = np.loadtxt('SiBulk_20pc_opt.dat')
 c = range(0,4)
@@ -44,23 +45,15 @@ colors = ['#D6AB00', 'palevioletred', 'navy', 'forestgreen']
 for i in range(0,4):
     E, up, down = c[i][:,0], c[i][:,1], c[i][:,3]
     x, y1, y2 = E, testGauss(E, up), testGauss(E, down)
-    #plt.plot(E-1.2+3.8, y1, color=colors[i], label=titles[i])
-    #plt.plot(E-1.2+3.8, y2, color=colors[i])
-    #plt.plot([fermis[i]-1.2+3.8,]*2, [-80, 80], '--', color=colors[i],
-    #         label=r'$\mathbf{E_{f}}$ '+titles[i])
-    #plt.plot([fermis[i]-1.2+3.8,]*2, [-80, 80], '--', color=colors[i])
-    plt.plot(E, y1, color=colors[i], linewidth=2, label=titles[i])
-    plt.plot(E, y2, color=colors[i], linewidth=2)
-    plt.plot([fermis[i]+3.8,]*2, [-80, 100], '--', color=colors[i],
+    plt.plot(o(E), y1, color=colors[i], linewidth=2, label=titles[i])
+    plt.plot(o(E), y2, color=colors[i], linewidth=2)
+    plt.plot([o(fermis[i]),]*2, [-80, 100], '--', color=colors[i],
              label=r'$\mathbf{E_{f}}$ '+titles[i], linewidth=3)
-    #plt.plot([fermis[i]+3.8,]*2, [-80, 80], '--', color=colors[i])
     print i
 
 E_bulk, dos_bulk = SiB[:,0], SiB[:,1]
-#plt.plot(E_bulk+3.8, 20*dos_bulk, color='#0066FF', linewidth=3.0, label='Bulk Si')
-#plt.plot(E_bulk+3.8,-20*dos_bulk, color='#0066FF', linewidth=3.0)
-plt.plot(E_bulk, 20*dos_bulk, color='#0066FF', linewidth=3.5, label='Bulk Si')
-plt.plot(E_bulk,-20*dos_bulk, color='#0066FF', linewidth=3.5)
+plt.plot(o(E_bulk), 20*dos_bulk, color='#0066FF', linewidth=3.5, label='Bulk Si')
+plt.plot(o(E_bulk),-20*dos_bulk, color='#0066FF', linewidth=3.5)
 
 minor_locator = MultipleLocator(1)
 plt.gca().xaxis.set_minor_locator(minor_locator)
@@ -68,7 +61,7 @@ plt.gca().tick_params(which='minor', length=5, width=2)
 plt.gca().tick_params(which='major', length=10, width=2, labelsize=20)
 
 plt.xlabel('Energy (eV)', fontweight='bold', fontsize=20)
-plt.xlim([-20, +6])
+plt.xlim([o(-20), o(+6)])
 
 plt.ylim([-70, 100])
 plt.setp(plt.gca().get_yticklabels(), visible=False)

@@ -63,9 +63,9 @@ for item, i in zip(pairs.items(), range(len(pairs))):
     plt.setp(fig[i].get_yticklabels(), visible=False)
     plt.setp(fig[i].get_xticklabels(), visible=False)
 
-    fig[i].plot(x_main, y_main, color=colors[0], linewidth=2,label='total')
-    fig[i].plot(x1, yy, color=colors[i+1], linewidth=2, label =nm)
-    fig[i].legend(fontsize=18, loc='upper left')
+    fig[i].plot(x_main, y_main, color=colors[0], linewidth=3,label='total')
+    fig[i].plot(x1, yy, color=colors[i+1], linewidth=3, label =nm)
+    fig[i].legend(fontsize=22, loc='upper left')
     fig[i].get_legend().get_frame().set_linewidth(2)
 
 plt.setp(fig[i].get_xticklabels(), visible=True)
@@ -73,9 +73,9 @@ for tick in fig[i].xaxis.get_major_ticks():
     tick.label1.set_fontweight('bold')
 
 plt.subplots_adjust(hspace=0)
-plt.xlabel(r'Distance [$\mathbf{\AA{}}$]', fontweight='bold', fontsize=16)
+plt.xlabel(r'Distance [$\mathbf{\AA{}}$]', fontweight='bold', fontsize=25)
 plt.gcf().set_size_inches(20., len(pairs)*3.5)
-#plt.savefig('rdf_hfo2si_tot.png', dpi=200, bbox_inches='tight')
+plt.savefig('rdf_hfo2si_tot.png', dpi=100, bbox_inches='tight')
 plt.show()
 
 print 'Done'

@@ -16,6 +16,7 @@ from matplotlib.ticker import MultipleLocator
 #plt.plot(x, 70*yu, color='#000000', linewidth=3)
 #plt.plot(x, 70*yd, color='#000000', linewidth=3)
 o = lambda k : k + 3.313
+o = lambda k : k
 
 minor_locator = MultipleLocator(0.10)
 
@@ -32,11 +33,11 @@ for i in range(2, 7):
     plt.axvspan(o(-2.27),o(0.0), facecolor='0.85', linewidth=0)
     x, y_u, y_d = get_at_pdos('c{}'.format(i) , 1, total=True) 
     x = [o(p) for p in x]
-    plt.plot(x, y_u, 'b-', linewidth=3, label='cell '+str(i)+': clean Si')
+    plt.plot(x, y_u, 'b-', linewidth=3, label='cell '+str(i)+': unoxidised Si')
     plt.plot(x, y_d, 'b-', linewidth=3)
     x, y_u, y_d = get_at_pdos('c{}p'.format(i), 1, total=True) 
     x = [o(p) for p in x]
-    plt.plot(x, y_u, 'g-', linewidth=3, label='cell '+str(i)+': clean Si + H')
+    plt.plot(x, y_u, 'g-', linewidth=3, label='cell '+str(i)+': unoxidised Si + H')
     plt.plot(x, y_d, 'g-', linewidth=3)
     #minor_locator = MultipleLocator(0.25)
     plt.gca().xaxis.set_minor_locator(minor_locator)
@@ -58,7 +59,7 @@ for i in range(2, 7):
 print 'Saving figure...'
 plt.gcf().set_size_inches(20., 17.5)
 plt.xlabel('Energy [eV]', fontweight='bold', fontsize=20)
-plt.savefig('dos_clean_pass.png', dpi=80, bbox_inches='tight')
+#plt.savefig('dos_clean_pass.png', dpi=80, bbox_inches='tight')
 plt.show()
 
 print "Done"

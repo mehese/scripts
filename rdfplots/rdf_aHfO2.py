@@ -54,7 +54,7 @@ for x in ['top', 'bottom', 'left', 'right']:
 plt.xlim(xmax=8)
 plt.ylim(ymin=0)
 plt.gcf().set_size_inches(20., 3.5)
-plt.savefig('rdf_aHfO2.png', dpi=400, bbox_inches='tight')
+plt.savefig('rdf_aHfO2.png', dpi=100, bbox_inches='tight')
 plt.show()
 
 print 'Done'

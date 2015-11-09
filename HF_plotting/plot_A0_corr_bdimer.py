@@ -96,8 +96,8 @@ for x in ['top', 'bottom', 'left', 'right']:
 #plt.gca().get_legend().get_frame().set_linewidth(2)
 plt.xlim([2.2, 2.6])
 plt.ylim(ymin=-.4)
-plt.xlabel(r'broken dimer average length [$\mathbf{\AA{}}$]', fontweight='bold', fontsize=16)
-plt.ylabel('A0 [mT]', fontweight='bold', fontsize=16)
+plt.xlabel(r'broken dimer average length [$\mathbf{\AA{}}$]', fontweight='bold', fontsize=25)
+plt.ylabel('A0 [mT]', fontweight='bold', fontsize=25)
 
 plt.gcf().set_size_inches(10., 10.)
 plt.savefig('A0_bdimer_length.png', dpi=80, bbox_inches='tight')

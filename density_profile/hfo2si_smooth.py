@@ -44,14 +44,14 @@ plt.plot([cell.coordz/2, cell.coordz], [9.68 , 9.68 ], color="#A34747", linewidt
 plt.plot([cell.coordz/2, cell.coordz], [10.87 , 10.87 ], '--', color="#A34747", linewidth=3.5,
          label=r'$a$-HfO$_\mathbf{2}$')
 
-plt.xlabel(r'z coordinate [$\mathbf{\AA}$]', fontweight='bold', fontsize=20)
-plt.ylabel(r'density [g/cm$^\mathbf{3}$]', fontweight='bold', fontsize=20)
+plt.xlabel(r'z coordinate [$\mathbf{\AA}$]', fontweight='bold', fontsize=25)
+plt.ylabel(r'density [g/cm$^\mathbf{3}$]', fontweight='bold', fontsize=25)
 
 plt.xlim([0, cell.coordz])
-plt.ylim([0, 13])
+plt.ylim([0, 14])
 
 
-plt.legend(fontsize=20, loc='upper center', ncol=8)
+plt.legend(fontsize=20, loc='upper left', ncol=4)
 l = plt.gca().get_legend().get_frame().set_linewidth(2)
 
 

@@ -15,7 +15,7 @@ x_ = np.linspace(np.min(x), np.max(x), 600)
 f = interp1d(x, y[0][:-1], kind='cubic')
 print y[0][-1]
 #plt.plot(x, y[0][:-1], 'k-', linewidth=1.8)
-plt.plot(x_, f(x_), 'k--', linewidth=3, label='fixed boxsize cell')
+plt.plot(x_, f(x_), 'k--', linewidth=3, label='Fixed boxsize cell')
 
 print 'cell 2...'
 cell = ReadStruct('../crystal_files/INPUT_c2', 'crystal')
@@ -23,7 +23,7 @@ x, y = rdf2(cell, 150, dist=2.9)
 x_ = np.linspace(np.min(x), np.max(x), 600)
 f = interp1d(x, y[0][:-1], kind='cubic')
 #plt.plot(x, y[0][:-1], 'k-', linewidth=0.8)
-plt.plot(x_, f(x_), 'k-', linewidth=3, alpha=0.6, label='clean Si cells')
+plt.plot(x_, f(x_), 'k-', linewidth=3, alpha=0.6, label='Unoxidised Si cells')
 
 print 'cell 3...'
 cell = ReadStruct('../crystal_files/INPUT_c3', 'crystal')

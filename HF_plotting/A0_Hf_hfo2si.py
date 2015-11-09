@@ -74,7 +74,7 @@ plt.gca().xaxis.set_tick_params(which='minor', length=5, width=2, labelsize=15)
 for tick in plt.gca().xaxis.get_major_ticks()+plt.gca().yaxis.get_major_ticks():
     tick.label1.set_fontweight('bold')
 for tick in plt.gca().yaxis.get_major_ticks():
-    tick.label1.set_fontsize('16')
+    tick.label1.set_fontsize('25')
 for x in ['top', 'bottom', 'left', 'right']:
     plt.gca().spines[x].set_linewidth(2)
 
@@ -82,9 +82,9 @@ for x in ['top', 'bottom', 'left', 'right']:
 #plt.gca().get_legend().get_frame().set_linewidth(2)
 plt.yticks([-.5, 0, .5], ["Si   ",'O   ',"Hf  "])
 #plt.gca().set_yticklabels(("broken dimers  ",'dimers  ',"E'  "))
-plt.xlim([-1., 40])
+plt.xlim([-1., 30])
 plt.ylim([-1., 1.])
-plt.xlabel('A0 [mT]', fontweight='bold', fontsize=16)
+plt.xlabel('A0 [mT]', fontweight='bold', fontsize=25)
 
 plt.gcf().set_size_inches(20., 7.)
 plt.savefig('hfo2si_A0_defects.png', dpi=80, bbox_inches='tight')

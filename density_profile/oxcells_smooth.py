@@ -18,7 +18,7 @@ def testGauss(x, y):
 print 'cell 2ox...'
 cell = ReadStruct('../crystal_files/INPUT_c2ox', 'crystal')
 x, y = vertical_density_profile(cell, 1.15, no_points=230, full=True) 
-plt.plot(x, testGauss(x, y), color='#000000', label='O-rich cells, boxsize relaxed')
+plt.plot(x, testGauss(x, y), color='#000000', label='Oxidised Cells')
 plt.xlim([0,cell.coordz])
 
 print 'cell 3ox...'
@@ -38,11 +38,11 @@ plt.plot([0, cell.coordz/2], [2.328, 2.328], color="#33D6FF", linewidth=3.5, lab
 plt.plot([cell.coordz/2, cell.coordz], [2.66 , 2.66 ], color="#FF4D4D", linewidth=3.5,
          label=r'$\mathbf{\alpha}$-quartz')
 plt.plot([cell.coordz/2, cell.coordz], [2.2 , 2.2 ], color="#990033", linewidth=3.5,
-         label=r'amorphous SiO$_\mathbf{2}$')
+         label=r'Amorphous SiO$_\mathbf{2}$')
 
 
-plt.xlabel(r'z coordinate [$\mathbf{\AA}$]', fontweight='bold', fontsize=20)
-plt.ylabel(r'density [g/cm$^\mathbf{3}$]', fontweight='bold', fontsize=20)
+plt.xlabel(r'z coordinate [$\mathbf{\AA}$]', fontweight='bold', fontsize=25)
+plt.ylabel(r'density [g/cm$^\mathbf{3}$]', fontweight='bold', fontsize=25)
 
 plt.xlim([0, cell.coordz])
 plt.ylim([1.50, 3.3])

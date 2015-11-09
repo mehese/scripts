@@ -26,7 +26,7 @@ bdimer_dict = {'c1': [107],
               }
 
 for c in ['c'+ i for i in map(str, range(1, 7))]:
-    #print c,
+    print c,
     for eprime in bdimer_dict[c]:
         #print eprime,
         x, y_u, y_d = get_at_pdos(c, eprime)
@@ -64,6 +64,6 @@ for x in ['top', 'bottom', 'left', 'right']:
 plt.gca().get_legend().get_frame().set_linewidth(2)
 
 plt.gcf().set_size_inches(20., 3.5)
-plt.xlabel('Energy [eV]', fontweight='bold', fontsize=20)
+plt.xlabel('Energy [eV]', fontweight='bold', fontsize=25)
 plt.savefig('dos_broken_dimer.png', dpi=80, bbox_inches='tight')
 plt.show()

@@ -4,6 +4,7 @@
 *.log
 *.pdf
 *.mp4
+*.eps
 *pass.dat
 .directory
 INPUT_marked

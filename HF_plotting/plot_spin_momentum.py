@@ -80,7 +80,7 @@ for c, bdimers in bdimer_dict.items():
         bdim_,= plt.plot(s_m, -.5, 'y.', label="broken dimer")
 
 
-plt.legend(handles=[epr, dim_, bdim_])
+plt.legend(handles=[epr, dim_, bdim_], fontsize=20)
 plt.yticks([-.5, 0, .5])
 plt.ylim([-1.5, 1.5])
 plt.show()

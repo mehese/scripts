@@ -47,15 +47,15 @@ for x in ['top', 'bottom', 'left', 'right']:
     plt.gca().spines[x].set_linewidth(2)
 
 #plt.legend(handles=[full, epr, dim_, bdim_], fontsize=16, ncol=4)
-plt.legend(fontsize=16)
+plt.legend(fontsize=20)
 plt.gca().get_legend().get_frame().set_linewidth(2)
 plt.xlim([90,900])
 plt.ylim(ymin=0)
-plt.xlabel('Wavenumber cm$^\mathbf{-1}$', fontweight='bold', fontsize=16)
-plt.ylabel('Raman Intensity [arbitrary units]', fontweight='bold', fontsize=16)
+plt.xlabel('Wavenumber cm$^\mathbf{-1}$', fontweight='bold', fontsize=25)
+plt.ylabel('Raman Intensity [arbitrary units]', fontweight='bold', fontsize=23)
 
 plt.gcf().set_size_inches(20., 7.)
-plt.savefig('raman.png', dpi=200, bbox_inches='tight')
+plt.savefig('raman.png', dpi=100, bbox_inches='tight')
 
 
 

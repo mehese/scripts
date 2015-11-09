@@ -20,8 +20,9 @@ class data_point:
         self.val = dos_integral
     def __str__(self):
         return 'O coord = {:2.0f}, Hf coord = {:2.0f}, Si coord = {:2.0f}, DOS = {:10.5f}'.format(self.O, self.Hf, self.Si, self.val)
-        
-        
+       
+# Hf coordination radius
+r = 3.       
 
 nms = ['hfo2si_c1', 'hfo2si_c1ox', 'hfo2si_c2ox', 'hfo2si_c3ox']
 lims = {'hfo2si_c1':  (-2.54, -0.62), 
@@ -40,9 +41,9 @@ for nm in nms:
     for i, at in enumerate(s.atoms):
         if at.species == 'Hf':
             nbs = neighbours_from_file(i+1, nm)
-            nbO = [nb for nb in nbs if (nb.length < 3. and nb.atom_type == 'O')]
-            nbH = [nb for nb in nbs if (nb.length < 3. and nb.atom_type == 'Hf')]
-            nbS = [nb for nb in nbs if (nb.length < 3. and nb.atom_type == 'Si')]
+            nbO = [nb for nb in nbs if (nb.length < r and nb.atom_type == 'O')]
+            nbH = [nb for nb in nbs if (nb.length < r and nb.atom_type == 'Hf')]
+            nbS = [nb for nb in nbs if (nb.length < r and nb.atom_type == 'Si')]
             a[len(nbO)] +=1
             E, up, down = get_at_pdos(nm, i+1)
             vbm, cbm = lims[nm]
@@ -73,10 +74,10 @@ for i in range(4, 9):
 
 
 
-fig.set_xlabel('Hf-O coordination number', fontsize=20, fontweight='bold')
-fig.set_ylabel('Integrated Gap DOS', fontsize=20, fontweight='bold')
+fig.set_xlabel('Hf-O coordination number', fontsize=25, fontweight='bold')
+fig.set_ylabel('Integrated Gap DOS', fontsize=25, fontweight='bold')
 
-plt.gca().xaxis.set_tick_params(which='major', length=10, width=2, labelsize=15)
+plt.gca().xaxis.set_tick_params(which='major', length=10, width=2, labelsize=16)
 for tick in plt.gca().xaxis.get_major_ticks()+plt.gca().yaxis.get_major_ticks():
     tick.label1.set_fontweight('bold')
 for x in ['top', 'bottom', 'left', 'right']:

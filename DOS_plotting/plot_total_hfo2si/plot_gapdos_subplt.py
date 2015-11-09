@@ -3,7 +3,7 @@
 import sys
 sys.path.append('../')
 sys.path.append('../../')
-from helping_functions import neighbours_from_file
+from helping_functions import neighbours_from_file, offsets
 from atom_pdos_getter import integrate_dos, get_at_pdos
 from atom_pdos_getter import *
 from astools.ReadWrite import ReadStruct
@@ -23,7 +23,7 @@ from matplotlib.ticker import MultipleLocator
 
 #nms = ['hfo2si_c1']
 nms = ['hfo2si_c1', 'hfo2si_c1ox', 'hfo2si_c2ox', 'hfo2si_c3ox']
-titles = ['cell 1 (clean)', 'cell 1 (oxidised)', 'cell 2 (oxidised)', 'cell 3 (oxidised)']
+titles = ['cell 1 (unoxidised)', 'cell 1 (oxidised)', 'cell 2 (oxidised)', 'cell 3 (oxidised)']
 fermis = [-1.2, -1.1526262679, -0.5232161378, -0.8299245876]
 lims = {'hfo2si_c1':  (-2.54, -0.62), 
         'hfo2si_c1ox':(-2.62, -0.74), 
@@ -35,12 +35,11 @@ fig = [None,]*len(ks)
 
 x = np.linspace(0, 3*np.pi, 100)
 
-offst = lambda k : k + 0
 
 minor_locator = MultipleLocator(0.10)
-for i, k, t, Ef in zip(range(len(nms)), nms, titles, fermis):
+for i, k, t in zip(range(len(nms)), nms, titles):
     fig[i] = plt.subplot(len(ks),1, i+1)
-    fig[i].set_xlim([offst(-5), offst(1)])
+    fig[i].set_xlim([-1, 3])
     fig[i].set_ylim([-50, 50])
     fig[i].xaxis.set_minor_locator(minor_locator)
     fig[i].tick_params(which='minor', length=5, width=2)
@@ -51,11 +50,9 @@ for i, k, t, Ef in zip(range(len(nms)), nms, titles, fermis):
     plt.setp(fig[i].get_yticklabels(), visible=False)
     plt.setp(fig[i].get_xticklabels(), visible=False)
 
-    fig[i].plot([offst(Ef), offst(Ef)], [-50, +50], color='crimson', linewidth=3,
+    fig[i].plot([offsets[k]['Ef'] - offsets[k]['VBM'], ]*2, [-50, +50], color='crimson', linewidth=3,
                 zorder=9)
-    fig[i].text(-1.1, 36, t, fontsize=22, weight='bold')
-    #fig[i].axvspan(-5+3.8,0, facecolor='0.85', linewidth=0)
-    #fig[i].axvspan(1.76,1+2.6, facecolor='0.85', linewidth=0)
+    fig[i].text(-.9, 36, t, fontsize=22, weight='bold')
 
 plt.setp(fig[i].get_xticklabels(), visible=True)
 for tick in fig[i].xaxis.get_major_ticks():
@@ -65,20 +62,34 @@ print 'Done formatting!'
 
 for i, nm in enumerate(nms):
     s = ReadStruct('../../crystal_files/INPUT_'+nm)
-    vbmax, cbmin = map(offst, lims[nm])
-    print vbmax, cbmin
-    fig[i].axvspan(offst(-5),    vbmax, facecolor='0.85', linewidth=0)
-    fig[i].axvspan(    cbmin, offst(1), facecolor='0.85', linewidth=0)
+
+    o = lambda k : k - offsets[nm]['VBM']
+    fig[i].axvspan(-1, 0, facecolor='0.85', linewidth=0)
+    fig[i].axvspan(offsets[nm]['CBM']-offsets[nm]['VBM'], 3, facecolor='0.85', linewidth=0)
 
     
     E, up, down = get_at_pdos(nm, 3, total=True)
-    fig[i].plot(offst(E),   up, '-', color='slateblue', linewidth=3)
-    fig[i].plot(offst(E), down, '-', color='slateblue', linewidth=3)
+    fig[i].plot(o(E),   up, '-', color='slateblue', linewidth=3)
+    fig[i].plot(o(E), down, '-', color='slateblue', linewidth=3)
+
+    p1, p2 = np.zeros(600), np.zeros(600)
+    for ii, at in enumerate(s.atoms):
+        nbs = neighbours_from_file(ii+1, nm) 
+        nbs = [nb for nb in nbs if (nb.atom_type == 'Hf' and nb.length < 3.)]
+        if at.species == 'Si' and nbs:
+            print [(nb.atom_type, nb.length) for nb in nbs] 
+            _, u, d =  get_at_pdos(nm, ii+1)
+            p1 += u
+            p2 += d
+
+    fig[i].plot(o(E),   p1, '-', color='#66FFCC', linewidth=3)
+    fig[i].plot(o(E),   p2, '-', color='#66FFCC', linewidth=3)
+
 
 print 'Done plotting!'
 plt.subplots_adjust(hspace=0)
 plt.gcf().set_size_inches(20., 4*3.5)
-plt.xlabel('Energy [eV]', fontweight='bold', fontsize=20)
+plt.xlabel('Energy [eV]', fontweight='bold', fontsize=25)
 plt.savefig('gap_dos_hfo2si.png', dpi=100, bbox_inches='tight')
 
 plt.show()
